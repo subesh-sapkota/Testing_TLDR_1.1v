@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-29T12:50:34 IST" name="Suite" finished-at="2025-12-29T12:51:11 IST" duration-ms="37494">
+    <groups>
+    </groups>
+    <test started-at="2025-12-29T12:50:34 IST" name="Test" finished-at="2025-12-29T12:51:11 IST" duration-ms="37494">
+      <class name="exam2.LumioTest">
+        <test-method is-config="true" signature="setupMetrics()[pri:0, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:50:34 IST" name="setupMetrics" finished-at="2025-12-29T12:50:34 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMetrics -->
+        <test-method signature="TC_01_OpenBrowser()[pri:1, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:50:34 IST" name="TC_01_OpenBrowser" finished-at="2025-12-29T12:50:36 IST" duration-ms="2764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_OpenBrowser -->
+        <test-method signature="TC_02_VerifyTitle()[pri:2, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:50:36 IST" name="TC_02_VerifyTitle" finished-at="2025-12-29T12:50:36 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_VerifyTitle -->
+        <test-method signature="TC_03_OpenCalendarAndGoToOctober()[pri:3, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:50:36 IST" name="TC_03_OpenCalendarAndGoToOctober" finished-at="2025-12-29T12:50:37 IST" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_OpenCalendarAndGoToOctober -->
+        <test-method signature="TC_04_ValidateWeeklyContentTillEnd()[pri:4, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:50:37 IST" name="TC_04_ValidateWeeklyContentTillEnd" finished-at="2025-12-29T12:50:57 IST" duration-ms="19624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_ValidateWeeklyContentTillEnd -->
+        <test-method signature="TC_05_ValidateProviders()[pri:5, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:50:57 IST" name="TC_05_ValidateProviders" finished-at="2025-12-29T12:50:58 IST" duration-ms="1318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_ValidateProviders -->
+        <test-method signature="TC_006_ValidatePast3WeekContentProvider()[pri:6, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:50:58 IST" name="TC_006_ValidatePast3WeekContentProvider" finished-at="2025-12-29T12:51:10 IST" duration-ms="12071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_ValidatePast3WeekContentProvider -->
+        <test-method signature="TC_08_PageRefreshStability()[pri:8, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:51:10 IST" name="TC_08_PageRefreshStability" finished-at="2025-12-29T12:51:11 IST" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08_PageRefreshStability -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:51:11 IST" name="tearDown" finished-at="2025-12-29T12:51:11 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="printExecutionSummary()[pri:0, instance:exam2.LumioTest@6e35bc3d]" started-at="2025-12-29T12:51:11 IST" name="printExecutionSummary" finished-at="2025-12-29T12:51:11 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printExecutionSummary -->
+      </class> <!-- exam2.LumioTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
