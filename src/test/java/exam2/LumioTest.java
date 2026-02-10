@@ -48,7 +48,7 @@ public class LumioTest {
         log.info("Launching Chrome browser");
 
         ChromeOptions option = new ChromeOptions();
-      // option.addArguments("--headless=new"); 
+       option.addArguments("--headless=new"); 
         option.addArguments("--window-size=1920,1080");
         option.addArguments("--start-maximized");
       
