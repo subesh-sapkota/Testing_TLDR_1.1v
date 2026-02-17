@@ -50,7 +50,7 @@ public class ShowValidation_Top10{
     log.info("Launching Chrome browser");
 
     ChromeOptions options = new ChromeOptions();
-    options.addArguments("--headless=new"); // enable headless
+   // options.addArguments("--headless=new"); // enable headless
     options.addArguments("--window-size=1920,1080"); // must specify for headless
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
@@ -518,6 +518,7 @@ public void changeMonth(String tc) throws InterruptedException {
 	        
 	        MetricsCollector.totalWeekValidated++;
 	        MetricsCollector.weeksTested.add(currentMonth+weekno);
+	        driver.findElement(By.xpath("//button[normalize-space()='SHOWS']")).click();
 	        
 	        checkImageMoviesTitle(tc);
 	        
@@ -613,6 +614,7 @@ public void changeMonth(String tc) throws InterruptedException {
 		        // 5️⃣ Navigate back to home page for next provider
 		        System.out.println("🔙 Navigating back to home page...");
 		        driver.get("https://tldr.lumiolabs.ai/");
+		        driver.findElement(By.xpath("//button[normalize-space()='SHOWS']")).click();
 		        Thread.sleep(2000);
 		        System.out.println("✅ Ready for next provider");
 		    }
@@ -992,6 +994,8 @@ public void changeMonth(String tc) throws InterruptedException {
 	}
 	
 	public void checkImageMoviesTitle(String tc) {
+		
+		 driver.findElement(By.xpath("//button[normalize-space()='SHOWS']")).click();
 
     List<WebElement> listofmoviesimages =
             driver.findElements(By.xpath("//img[@data-card-type='top-ten-card']"));
