@@ -25,7 +25,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
 @Listeners(TestListener.class)
-public class LumioTest {
+public class ShowValidation_Top10{
 
     /* =========================
        LOGGER
@@ -127,6 +127,7 @@ public class LumioTest {
         }
 
         driver.findElement(By.xpath("//button[normalize-space()='1']")).click();
+        driver.findElement(By.xpath("//button[normalize-space()='SHOWS']")).click();
      
     }
     

@@ -45,6 +45,7 @@ public class SliderTest {
     WebDriver driver;
     WebDriverWait wait;
     SoftAssert soft;
+    Actions act;
     MetricsCollectorsSlider metrics;
 
     @BeforeMethod
@@ -54,7 +55,7 @@ public class SliderTest {
         System.out.println("========================================");
 
         ChromeOptions options = new ChromeOptions();
-      // options.addArguments("--headless=new"); // enable if needed
+      options.addArguments("--headless=new"); // enable if needed
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--start-maximized");
@@ -91,7 +92,51 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
     
     System.out.println("📊 Found " + providerCount + " providers to test");
     log.info("📊 Found " + providerCount + " providers to test");
+   
+    
+    ///new code for calendar check - change month to November
 
+        log.info("Opening calendar");
+        
+        WebElement popUpCloseButton = wait.until(
+                ExpectedConditions.presenceOfElementLocated(
+                        By.xpath("(//div[contains(@class,'text-white')])/button")
+                )
+        );
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].click();", popUpCloseButton);           
+        
+        WebElement calendarButton = driver.findElement(By.xpath("//div[contains(@class,'border-l border-[#444444] flex items-center justify-center')]"));
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", calendarButton);
+		
+		act = new Actions(driver);
+		act.moveToElement(calendarButton).perform();
+
+        WebElement prevBtn =driver.findElement(By.xpath("//button[contains(@aria-label,'Go to the Previous Month')]"));
+              
+
+        while (true) {
+            String month = driver.findElement(By.xpath("//span[contains(@role,'status')]")).getText();
+            if (month.equals("November 2025")) {
+                log.info("Reached November 2025");
+                break;
+            }
+            prevBtn.click();
+        }
+
+       
+        
+        driver.findElement(By.xpath("//button[normalize-space()='1']")).click();
+     
+        
+        
+    
+   
+        
+        
     // Loop through each provider
     for(int j = 0; j < providerCount; j++) {
         System.out.println("\n========================================");
@@ -172,6 +217,12 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
         Thread.sleep(2000);
         System.out.println("✅ Ready for next provider");
     }
+    
+    
+    
+    
+    
+    
     
     soft.assertAll();
 }

@@ -4,8 +4,11 @@
   <test thread-count="5" name="Test"  >
     <classes>
     
-      <class name="exam2.LumioTest"/>
-     <!--  <class name="exam2.SliderTest"/>    -->
+     <class name="exam2.LumioTest"/>  
+     <class name="exam2.ShowValidation_Top10"/> 
+      <!--  <class name="exam2.SliderTest"/>   -->
+      
+     
 
     </classes>
   </test> <!-- Test -->

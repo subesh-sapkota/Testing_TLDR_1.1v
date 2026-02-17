@@ -1,305 +1,56 @@
-2026-02-09 10:44:13 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-09 10:45:03 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-09 10:45:14 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
-2026-02-09 10:45:17 INFO  [main] SliderTest - 📊 Found 7 providers to test
-2026-02-09 10:47:35 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-09 10:47:46 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
-2026-02-09 10:47:56 INFO  [main] SliderTest - 📊 Found 7 providers to test
-2026-02-09 10:48:43 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 10:49:15 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 10:50:02 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sarvam Maya
-2026-02-09 10:50:35 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sarvam Maya
-2026-02-09 10:50:44 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-09 10:50:46 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
-2026-02-09 10:50:48 INFO  [main] SliderTest - 📊 Found 7 providers to test
-2026-02-09 10:50:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 10:51:07 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 10:51:14 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sarvam Maya
-2026-02-09 10:51:24 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sarvam Maya
-2026-02-09 10:51:31 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Gustaakh Ishq
-2026-02-09 10:51:41 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Gustaakh Ishq
-2026-02-09 10:51:45 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Gustaakh Ishq
-2026-02-09 10:51:49 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Border
-2026-02-09 10:51:59 INFO  [main] SliderTest - Movie (Border) - Play Trailer validation failed
-2026-02-09 10:52:07 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic World: Fallen Kingdom
-2026-02-09 10:52:16 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Gustaakh Ishq
-2026-02-09 10:52:17 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic World: Fallen Kingdom
-2026-02-09 10:52:26 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Train of Death
-2026-02-09 10:52:36 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Train of Death
-2026-02-09 10:52:43 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Nikita Roy
-2026-02-09 10:52:53 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Nikita Roy
-2026-02-09 10:53:00 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dolittle
-2026-02-09 10:53:07 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Border
-2026-02-09 10:53:10 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dolittle
-2026-02-09 10:53:17 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic World
-2026-02-09 10:53:18 INFO  [main] SliderTest - Movie (Border) - Play Trailer validation failed
-2026-02-09 10:53:27 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic World
-2026-02-09 10:53:35 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic Park
-2026-02-09 10:53:45 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic Park
-2026-02-09 10:54:14 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic World: Fallen Kingdom
-2026-02-09 10:54:27 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic World: Fallen Kingdom
-2026-02-09 10:54:32 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-09 10:54:34 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
-2026-02-09 10:54:36 INFO  [main] SliderTest - 📊 Found 7 providers to test
-2026-02-09 10:54:44 INFO  [main] SliderTest - Description is missing for Sankranthiki Vasthunam
-2026-02-09 10:54:46 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 10:54:56 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 10:55:04 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sarvam Maya
-2026-02-09 10:55:14 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sarvam Maya
-2026-02-09 10:55:21 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Gustaakh Ishq
-2026-02-09 10:55:27 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Train of Death
-2026-02-09 10:55:31 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Gustaakh Ishq
-2026-02-09 10:55:38 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Border
-2026-02-09 10:55:46 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Train of Death
-2026-02-09 10:55:49 INFO  [main] SliderTest - Movie (Border) - Play Trailer validation failed
-2026-02-09 10:55:56 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic World: Fallen Kingdom
-2026-02-09 10:56:07 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic World: Fallen Kingdom
-2026-02-09 10:56:14 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Train of Death
-2026-02-09 10:56:24 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Train of Death
-2026-02-09 10:56:32 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Nikita Roy
-2026-02-09 10:56:37 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Nikita Roy
-2026-02-09 10:56:42 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Nikita Roy
-2026-02-09 10:56:49 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dolittle
-2026-02-09 10:56:53 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Nikita Roy
-2026-02-09 10:56:59 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dolittle
-2026-02-09 10:57:07 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic World
-2026-02-09 10:57:17 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic World
-2026-02-09 10:57:25 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic Park
-2026-02-09 10:57:35 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic Park
-2026-02-09 10:57:38 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dolittle
-2026-02-09 10:57:50 INFO  [main] SliderTest - Description is missing for Tere Ishk Mein
-2026-02-09 10:57:53 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dolittle
-2026-02-09 10:57:56 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Tere Ishk Mein
-2026-02-09 10:58:06 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Tere Ishk Mein
-2026-02-09 10:58:15 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: De De Pyaar De 2
-2026-02-09 10:58:25 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: De De Pyaar De 2
-2026-02-09 10:58:34 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Rip
-2026-02-09 10:58:44 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Rip
-2026-02-09 10:58:49 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic World
-2026-02-09 10:58:52 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Haq
-2026-02-09 10:59:03 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Haq
-2026-02-09 10:59:10 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic World
-2026-02-09 10:59:12 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Akhanda 2: Thaandavam
-2026-02-09 10:59:22 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Akhanda 2: Thaandavam
-2026-02-09 10:59:31 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Ekō
-2026-02-09 10:59:41 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Ekō
-2026-02-09 10:59:50 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Mardaani 2
-2026-02-09 11:00:00 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Mardaani 2
-2026-02-09 11:00:03 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jurassic Park
-2026-02-09 11:00:08 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Mardaani
-2026-02-09 11:00:18 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Mardaani
-2026-02-09 11:00:27 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: People We Meet on Vacation
-2026-02-09 11:00:29 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jurassic Park
-2026-02-09 11:00:37 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: People We Meet on Vacation
-2026-02-09 11:00:46 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Single Salma
-2026-02-09 11:00:56 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Single Salma
-2026-02-09 11:01:10 INFO  [main] SliderTest - Description is missing for Vaa Vaathiyaar
-2026-02-09 11:01:13 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Vaa Vaathiyaar
-2026-02-09 11:01:23 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Vaa Vaathiyaar
-2026-02-09 11:01:31 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Wrecking Crew
-2026-02-09 11:01:41 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Wrecking Crew
-2026-02-09 11:01:48 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Cheekatilo
-2026-02-09 11:01:58 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Cheekatilo
-2026-02-09 11:02:06 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: 120 Bahadur
-2026-02-09 11:02:16 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: 120 Bahadur
-2026-02-09 11:02:24 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jugnuma: The Fable
-2026-02-09 11:02:27 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Tere Ishk Mein
-2026-02-09 11:02:34 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jugnuma: The Fable
-2026-02-09 11:02:41 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 11:02:48 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Tere Ishk Mein
-2026-02-09 11:02:51 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 11:02:59 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dhandoraa
-2026-02-09 11:03:09 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dhandoraa
-2026-02-09 11:03:18 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jigris
-2026-02-09 11:03:28 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jigris
-2026-02-09 11:03:36 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Retta Thala
-2026-02-09 11:03:41 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: De De Pyaar De 2
-2026-02-09 11:03:46 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Retta Thala
-2026-02-09 11:03:54 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: De De Pyaar De 2
-2026-02-09 11:03:54 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Maaman
-2026-02-09 11:04:04 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Maaman
-2026-02-09 11:04:19 INFO  [main] SliderTest - Description is missing for Sirai
-2026-02-09 11:04:22 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sirai
-2026-02-09 11:04:32 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sirai
-2026-02-09 11:04:39 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Mastiii 4
-2026-02-09 11:04:44 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Rip
-2026-02-09 11:04:50 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Mastiii 4
-2026-02-09 11:04:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: 45
-2026-02-09 11:04:59 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Rip
-2026-02-09 11:05:07 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: 45
-2026-02-09 11:05:15 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Gurram Paapi Reddy
-2026-02-09 11:05:25 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Gurram Paapi Reddy
-2026-02-09 11:05:33 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Bha Bha Ba
-2026-02-09 11:05:43 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Bha Bha Ba
-2026-02-09 11:05:49 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Haq
-2026-02-09 11:05:50 INFO  [main] SliderTest - Description is missing for Mask
-2026-02-09 11:05:51 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Mask
-2026-02-09 11:06:07 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Haq
-2026-02-09 11:06:42 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Akhanda 2: Thaandavam
-2026-02-09 11:06:55 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Akhanda 2: Thaandavam
-2026-02-09 11:07:37 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Ekō
-2026-02-09 11:07:52 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Ekō
-2026-02-09 11:08:42 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Mardaani 2
-2026-02-09 11:09:04 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Mardaani 2
-2026-02-09 11:09:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Mardaani
-2026-02-09 11:10:17 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Mardaani
-2026-02-09 11:11:04 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: People We Meet on Vacation
-2026-02-09 11:11:16 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: People We Meet on Vacation
-2026-02-09 11:12:23 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Single Salma
-2026-02-09 11:12:37 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Single Salma
-2026-02-09 11:14:37 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Vaa Vaathiyaar
-2026-02-09 11:15:29 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Vaa Vaathiyaar
-2026-02-09 11:15:59 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Wrecking Crew
-2026-02-09 11:16:11 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Wrecking Crew
-2026-02-09 11:16:34 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Cheekatilo
-2026-02-09 11:17:04 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Cheekatilo
-2026-02-09 11:17:27 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: 120 Bahadur
-2026-02-09 11:17:38 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: 120 Bahadur
-2026-02-09 11:17:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jugnuma: The Fable
-2026-02-09 11:18:21 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jugnuma: The Fable
-2026-02-09 11:18:44 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 11:18:56 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
-2026-02-09 11:19:28 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dhandoraa
-2026-02-09 11:19:45 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dhandoraa
-2026-02-09 11:20:10 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Jigris
-2026-02-09 11:20:26 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jigris
-2026-02-09 11:20:44 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Retta Thala
-2026-02-09 11:20:55 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Retta Thala
-2026-02-09 11:21:14 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Maaman
-2026-02-09 11:21:31 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Maaman
-2026-02-09 11:24:14 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sirai
-2026-02-09 11:24:57 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sirai
-2026-02-09 11:26:52 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Mastiii 4
-2026-02-09 11:27:34 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Mastiii 4
-2026-02-09 11:29:15 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: 45
-2026-02-09 11:29:30 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: 45
-2026-02-09 11:30:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Gurram Paapi Reddy
-2026-02-09 11:31:34 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Gurram Paapi Reddy
-2026-02-09 11:32:48 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Bha Bha Ba
-2026-02-09 11:33:26 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Bha Bha Ba
-2026-02-09 11:33:44 INFO  [main] SliderTest - Description is missing for Mask
-2026-02-09 11:34:39 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Mask
-2026-02-09 11:35:14 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Mask
-2026-02-09 11:36:24 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
-2026-02-09 11:36:43 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
-2026-02-09 11:37:54 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Ek Deewane Ki Deewaniyat
-2026-02-09 11:38:11 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Ek Deewane Ki Deewaniyat
-2026-02-09 11:39:20 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Saali Mohabbat
-2026-02-09 11:39:34 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Saali Mohabbat
-2026-02-09 11:40:41 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dominic and the Ladies' Purse
-2026-02-09 11:40:57 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dominic and the Ladies' Purse
-2026-02-09 11:42:32 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Ranna Baati
-2026-02-09 11:42:46 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Ranna Baati
-2026-02-09 11:43:04 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Eken: Ruddhaswas Rajasthan
-2026-02-09 11:43:22 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Eken: Ruddhaswas Rajasthan
-2026-02-09 11:44:00 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kakababur Protyaborton
-2026-02-09 11:44:13 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kakababur Protyaborton
-2026-02-09 11:44:31 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Karnasubarner Guptodhon
-2026-02-09 11:44:45 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Karnasubarner Guptodhon
-2026-02-09 11:45:06 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Bhooter Bhabishyat
-2026-02-09 11:45:21 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Bhooter Bhabishyat
-2026-02-09 11:45:41 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Putulnacher Itikatha
-2026-02-09 11:46:00 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Putulnacher Itikatha
-2026-02-09 11:46:22 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Killbill Society
-2026-02-09 11:46:36 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Killbill Society
-2026-02-09 11:46:59 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Pradhan
-2026-02-09 11:47:25 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Pradhan
-2026-02-09 11:47:55 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Grihapravesh
-2026-02-09 11:48:10 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Grihapravesh
-2026-02-09 11:48:25 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Raktabeej
-2026-02-09 11:48:39 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Raktabeej
-2026-02-09 11:50:07 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: F1 The Movie
-2026-02-09 11:50:24 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: F1 The Movie
-2026-02-09 11:51:06 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Family Plan 2
-2026-02-09 11:51:24 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Family Plan 2
-2026-02-09 11:52:40 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Family Plan
-2026-02-09 11:53:27 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Family Plan
-2026-02-09 11:54:07 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Gorge
-2026-02-09 11:54:20 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Gorge
-2026-02-09 11:55:01 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Ghosted
-2026-02-09 11:55:19 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Ghosted
-2026-02-09 11:56:00 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Greyhound
-2026-02-09 11:56:13 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Greyhound
-2026-02-09 11:57:07 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Luck
-2026-02-09 11:57:25 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Luck
-2026-02-09 11:58:03 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Fountain of Youth
-2026-02-09 11:58:16 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Fountain of Youth
-2026-02-09 11:58:55 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Wolfs
-2026-02-09 11:59:08 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Wolfs
-2026-02-09 12:00:19 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Lost Bus
-2026-02-09 12:00:39 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Lost Bus
-2026-02-09 12:02:56 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Red Sonja
-2026-02-09 12:03:20 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Red Sonja
-2026-02-09 12:04:16 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Godzilla
-2026-02-09 12:04:34 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Godzilla
-2026-02-09 12:05:19 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Snitch
-2026-02-09 12:05:32 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Snitch
-2026-02-09 12:06:07 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dawood
-2026-02-09 12:06:23 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dawood
-2026-02-09 12:07:02 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Demon Hunter
-2026-02-09 12:07:15 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Demon Hunter
-2026-02-09 12:07:51 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Roofman
-2026-02-09 12:08:04 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Roofman
-2026-02-09 12:08:20 INFO  [main] SliderTest - Description is missing for Rambo: First Blood
-2026-02-09 12:08:39 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Rambo: First Blood
-2026-02-09 12:08:50 INFO  [main] SliderTest - Movie (Rambo: First Blood) - Play Trailer validation failed
-2026-02-09 12:09:21 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: John Wick
-2026-02-09 12:09:34 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: John Wick
-2026-02-09 12:10:12 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Pretty Thing
-2026-02-09 12:10:24 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Pretty Thing
-2026-02-09 12:11:00 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Angels Fallen: Warriors of Peace
-2026-02-09 12:11:12 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Angels Fallen: Warriors of Peace
-2026-02-09 12:12:09 INFO  [main] LumioTest - Launching Chrome browser
-2026-02-09 12:12:19 INFO  [main] LumioTest - Navigated to TLDR application
-2026-02-09 12:12:19 ERROR [main] LumioTest - Failed to capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.133)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [caf52e8c270cd5656cd40e028b829762, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59765}, goog:processID: 2676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59765/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: caf52e8c270cd5656cd40e028b829762
-2026-02-09 12:12:19 INFO  [main] LumioTest - Verifying page title
-2026-02-09 12:12:19 ERROR [main] LumioTest - Failed to capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.133)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [caf52e8c270cd5656cd40e028b829762, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59765}, goog:processID: 2676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59765/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: caf52e8c270cd5656cd40e028b829762
-2026-02-09 12:12:19 INFO  [main] LumioTest - Opening calendar
-2026-02-09 12:12:30 ERROR [main] LumioTest - Failed to capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.133)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [caf52e8c270cd5656cd40e028b829762, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59765}, goog:processID: 2676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59765/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: caf52e8c270cd5656cd40e028b829762
-2026-02-09 12:12:30 INFO  [main] LumioTest - Weekly Content Validation from October to Till of December
-2026-02-09 12:12:30 INFO  [main] LumioTest - Validating weekly content
-2026-02-09 12:12:40 ERROR [main] LumioTest - Failed to capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.133)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [caf52e8c270cd5656cd40e028b829762, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59765}, goog:processID: 2676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59765/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: caf52e8c270cd5656cd40e028b829762
-2026-02-09 12:12:40 INFO  [main] LumioTest - Refreshing page to verify stability
-2026-02-09 12:12:40 ERROR [main] LumioTest - Failed to capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=144.0.7559.133)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.6', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [caf52e8c270cd5656cd40e028b829762, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59765}, goog:processID: 2676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59765/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: caf52e8c270cd5656cd40e028b829762
-2026-02-09 12:12:40 INFO  [main] LumioTest - Closing browser
-2026-02-09 12:12:40 INFO  [main] LumioTest - ===== FINAL EXECUTION SUMMARY =====
+2026-02-17 10:58:31 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-17 10:58:31 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-17 10:58:31 INFO  [TestNG-test-Test-2] LumioTest - Launching Chrome browser
+2026-02-17 10:58:31 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-17 10:58:47 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-17 10:58:58 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-17 10:59:15 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-17 10:59:20 INFO  [TestNG-test-Test-2] LumioTest - Navigated to TLDR application
+2026-02-17 10:59:21 INFO  [TestNG-test-Test-2] LumioTest - Verifying page title
+2026-02-17 10:59:21 INFO  [TestNG-test-Test-2] LumioTest - Opening calendar
+2026-02-17 10:59:32 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-17 10:59:38 INFO  [TestNG-test-Test-2] LumioTest - Reached November 2025
+2026-02-17 10:59:40 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-17 10:59:40 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-17 10:59:53 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-17 10:59:53 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-17 10:59:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-17 10:59:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-17 10:59:55 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-17 10:59:56 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-17 10:59:56 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-17 10:59:56 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-17 10:59:56 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-17 10:59:57 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-17 10:59:58 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-17 10:59:58 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-17 11:00:01 INFO  [TestNG-test-Test-2] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-17 11:00:01 INFO  [TestNG-test-Test-2] LumioTest - Validating weekly content
+2026-02-17 11:00:08 INFO  [TestNG-test-Test-2] LumioTest - Month name    WeekNumber 1
+2026-02-17 11:00:08 INFO  [TestNG-test-Test-2] LumioTest - Total no of movies 10
+2026-02-17 11:00:09 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-17 11:00:09 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-17 11:00:09 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-17 11:00:09 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-17 11:00:09 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-17 11:00:12 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-17 11:00:12 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-17 11:00:12 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-17 11:00:12 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-17 11:00:13 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-17 11:01:07 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-17 11:01:36 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Watch On' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-17 11:01:42 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-17 11:02:20 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-17 11:03:09 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Bhadrakaali
+2026-02-17 11:03:31 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Watch On' validation PASSED for: Search: The Naina Murder Case
+2026-02-17 11:04:07 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Bhadrakaali
+2026-02-17 11:04:27 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Play Trailer' validation PASSED for: Search: The Naina Murder Case
+2026-02-17 11:05:37 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Final Destination Bloodlines
+2026-02-17 11:05:45 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Watch On' validation PASSED for: IT: Welcome to Derry
+2026-02-17 11:06:10 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Play Trailer' validation PASSED for: IT: Welcome to Derry
+2026-02-17 11:06:25 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Final Destination Bloodlines
+2026-02-17 11:07:08 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Watch On' validation PASSED for: Doraemon
+2026-02-17 11:07:20 INFO  [TestNG-test-Test-2] LumioTest - Screenshot saved: screenshots/failures/Movie_Doraemon_TrailerFailed_20260217_110720.png
+2026-02-17 11:07:20 INFO  [TestNG-test-Test-2] LumioTest - Movie (Doraemon) - Play Trailer validation failed
+2026-02-17 11:07:29 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: How to Train Your Dragon
