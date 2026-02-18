@@ -146,7 +146,7 @@ public class LumioTest {
     	
     	//Looping for 2 month
     	
-    	for(int i=0;i<5;i++)
+    	for(int i=0;i<4;i++)
 		{
 			changeMonth("TC_004");	
 		}	
