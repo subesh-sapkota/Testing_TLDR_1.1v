@@ -612,3 +612,68 @@ Session ID: 1ba265626c3eef07daa3181351851820
 2026-02-18 23:39:33 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Final Destination Bloodlines
 2026-02-18 23:40:37 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: How to Train Your Dragon
 2026-02-18 23:41:01 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: How to Train Your Dragon
+2026-02-18 23:43:30 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 23:43:30 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 23:43:30 INFO  [TestNG-test-Test-2] LumioTest - Launching Chrome browser
+2026-02-18 23:43:30 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 23:43:52 INFO  [TestNG-test-Test-2] LumioTest - Navigated to TLDR application
+2026-02-18 23:43:56 INFO  [TestNG-test-Test-2] LumioTest - Verifying page title
+2026-02-18 23:43:57 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 23:43:58 INFO  [TestNG-test-Test-2] LumioTest - Opening calendar
+2026-02-18 23:43:59 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 23:44:00 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 23:45:12 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 23:45:16 INFO  [TestNG-test-Test-2] LumioTest - Reached November 2025
+2026-02-18 23:45:26 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 23:45:26 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 23:45:39 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 23:45:39 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 23:45:41 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-18 23:45:41 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-18 23:45:41 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-18 23:45:43 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-18 23:45:43 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-18 23:45:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-18 23:45:45 INFO  [TestNG-test-Test-2] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 23:45:45 INFO  [TestNG-test-Test-2] LumioTest - Validating weekly content
+2026-02-18 23:45:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-18 23:45:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-18 23:45:47 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-18 23:45:47 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-18 23:45:50 INFO  [TestNG-test-Test-2] LumioTest - Month name    WeekNumber 1
+2026-02-18 23:45:52 INFO  [TestNG-test-Test-2] LumioTest - Total no of movies 10
+2026-02-18 23:45:53 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 23:45:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 23:45:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 23:45:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 23:45:56 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 23:46:02 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 23:46:03 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 23:46:04 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 23:46:04 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 23:46:04 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 23:47:48 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-18 23:48:04 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Watch On' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 23:48:46 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-18 23:49:34 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 23:52:56 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 23:52:56 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 23:52:56 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 23:52:56 INFO  [TestNG-test-Test-2] LumioTest - Launching Chrome browser
+2026-02-18 23:53:29 INFO  [TestNG-test-Test-2] LumioTest - Navigated to TLDR application
+2026-02-18 23:53:32 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 23:53:33 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 23:53:34 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 23:54:46 INFO  [TestNG-test-Test-2] LumioTest - Verifying page title
+2026-02-18 23:55:27 INFO  [TestNG-test-Test-2] LumioTest - Opening calendar
+2026-02-18 23:56:34 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 23:56:35 INFO  [TestNG-test-Test-2] LumioTest - Reached November 2025
+2026-02-18 23:56:59 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 23:56:59 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 23:57:18 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 23:57:18 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 23:57:21 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-18 23:57:21 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-18 23:57:22 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-18 23:57:22 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-18 23:57:23 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
