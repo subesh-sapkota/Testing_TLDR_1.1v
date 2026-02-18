@@ -1,0 +1,232 @@
+2026-02-18 12:00:55 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:01:08 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:01:54 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:02:06 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:03:49 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:04:00 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:04:45 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:04:56 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:11:07 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:11:18 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:14:43 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:14:54 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:19:20 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:19:31 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:22:14 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:22:27 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:34:59 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:35:09 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:42:01 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:42:12 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:52:15 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:52:31 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 12:56:46 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 12:57:31 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 13:11:31 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 13:12:00 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 13:15:45 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 13:15:45 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 13:16:29 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 13:16:48 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 13:16:48 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 13:17:16 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 13:17:51 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 13:17:51 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 13:18:00 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 13:18:01 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 13:18:02 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 13:18:02 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 13:18:02 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 13:18:02 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 13:18:03 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 13:18:03 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 13:18:04 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 13:18:04 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 13:18:04 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 13:18:04 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 13:19:35 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 13:20:11 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 13:21:02 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba0fa4fd0f8861559e9b2d696a8d8aee, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55602}, goog:processID: 63394, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55602/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba0fa4fd0f8861559e9b2d696a8d8aee
+2026-02-18 13:21:02 INFO  [TestNG-test-Test-1] LumioTest - Movie (Search: The Naina Murder Case) - Watch On validation failed
+2026-02-18 13:21:02 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba0fa4fd0f8861559e9b2d696a8d8aee, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55602}, goog:processID: 63394, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55602/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba0fa4fd0f8861559e9b2d696a8d8aee
+2026-02-18 13:21:02 INFO  [TestNG-test-Test-1] LumioTest - Movie (Search: The Naina Murder Case) - Play Trailer validation failed
+2026-02-18 13:21:03 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba0fa4fd0f8861559e9b2d696a8d8aee, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55602}, goog:processID: 63394, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55602/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba0fa4fd0f8861559e9b2d696a8d8aee
+2026-02-18 13:21:03 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ba0fa4fd0f8861559e9b2d696a8d8aee, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55602}, goog:processID: 63394, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55602/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ba0fa4fd0f8861559e9b2d696a8d8aee
+2026-02-18 13:21:03 INFO  [TestNG-test-Test-1] LumioTest - Closing browser
+2026-02-18 13:21:03 INFO  [main] LumioTest - ===== FINAL EXECUTION SUMMARY =====
+2026-02-18 14:37:46 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 14:37:46 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 14:38:03 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 14:38:11 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 14:38:24 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 14:38:54 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 14:39:15 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 14:39:15 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 14:39:23 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 14:39:24 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 14:39:25 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 14:39:26 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 14:39:26 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 14:39:26 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 14:39:26 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 14:39:26 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 14:39:26 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 14:39:27 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 14:39:27 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 14:39:27 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 14:39:52 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8974b3d47ef3010f170f2a4584004c62, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57844}, goog:processID: 63873, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57844/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8974b3d47ef3010f170f2a4584004c62
+2026-02-18 14:39:52 INFO  [TestNG-test-Test-1] LumioTest - Movie (Mahabharat: Ek Dharmayudh) - Watch On validation failed
+2026-02-18 14:39:52 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8974b3d47ef3010f170f2a4584004c62, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57844}, goog:processID: 63873, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57844/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8974b3d47ef3010f170f2a4584004c62
+2026-02-18 14:39:52 INFO  [TestNG-test-Test-1] LumioTest - Movie (Mahabharat: Ek Dharmayudh) - Play Trailer validation failed
+2026-02-18 14:39:52 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8974b3d47ef3010f170f2a4584004c62, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57844}, goog:processID: 63873, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57844/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8974b3d47ef3010f170f2a4584004c62
+2026-02-18 14:39:52 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8974b3d47ef3010f170f2a4584004c62, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57844}, goog:processID: 63873, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57844/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8974b3d47ef3010f170f2a4584004c62
+2026-02-18 14:39:52 INFO  [TestNG-test-Test-1] LumioTest - Closing browser
+2026-02-18 14:39:53 INFO  [main] LumioTest - ===== FINAL EXECUTION SUMMARY =====
+2026-02-18 14:47:33 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 14:47:33 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 14:47:51 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 14:48:02 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 14:48:25 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 14:48:48 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 14:49:14 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 14:49:14 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 14:49:21 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 14:49:22 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 14:49:22 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 14:49:22 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 14:49:22 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 14:49:23 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 14:49:23 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 14:49:23 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 14:49:23 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 14:49:23 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 14:49:23 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 14:49:23 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 14:49:38 INFO  [TestNG-test-Test-1] LumioTest - Screenshot saved: screenshots/failures/Movie_Mahabharat__Ek_Dharmayudh_MissingDescription_20260218_144938.png
+2026-02-18 14:49:38 INFO  [TestNG-test-Test-1] LumioTest - Description is missing for Mahabharat: Ek Dharmayudh
+2026-02-18 14:49:39 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [721ffc0db50deb5231d2efa86a782458, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60357}, goog:processID: 64160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60357/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 721ffc0db50deb5231d2efa86a782458
+2026-02-18 14:49:39 INFO  [TestNG-test-Test-1] LumioTest - Movie (Mahabharat: Ek Dharmayudh) - Watch On validation failed
+2026-02-18 14:49:39 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [721ffc0db50deb5231d2efa86a782458, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60357}, goog:processID: 64160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60357/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 721ffc0db50deb5231d2efa86a782458
+2026-02-18 14:49:39 INFO  [TestNG-test-Test-1] LumioTest - Movie (Mahabharat: Ek Dharmayudh) - Play Trailer validation failed
+2026-02-18 14:49:39 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [721ffc0db50deb5231d2efa86a782458, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60357}, goog:processID: 64160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60357/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 721ffc0db50deb5231d2efa86a782458
+2026-02-18 14:49:39 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [721ffc0db50deb5231d2efa86a782458, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: /var/folders/7c/14lszzc111x...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60357}, goog:processID: 64160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60357/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 721ffc0db50deb5231d2efa86a782458
+2026-02-18 14:49:39 INFO  [TestNG-test-Test-1] LumioTest - Closing browser
+2026-02-18 14:49:39 INFO  [main] LumioTest - ===== FINAL EXECUTION SUMMARY =====
+2026-02-18 15:01:46 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 15:01:46 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 15:02:08 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 15:02:08 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 15:02:08 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 15:03:06 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 15:03:42 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 15:03:42 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 15:03:51 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 15:03:53 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 15:03:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 15:03:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 15:03:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 15:03:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 15:03:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 15:03:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 15:03:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 15:03:54 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 15:03:55 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 15:03:55 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 15:04:17 INFO  [TestNG-test-Test-1] LumioTest - Screenshot saved: screenshots/failures/Movie_Mahabharat__Ek_Dharmayudh_MissingDescription_20260218_150417.png
+2026-02-18 15:04:17 INFO  [TestNG-test-Test-1] LumioTest - Description is missing for Mahabharat: Ek Dharmayudh
+2026-02-18 15:05:22 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 15:05:46 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 15:10:32 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 15:10:32 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 15:11:06 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 15:11:11 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 15:11:31 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 15:12:08 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 15:12:34 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 15:12:34 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 15:12:44 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 15:12:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 15:12:48 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 15:12:50 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 15:13:53 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 15:14:34 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahabharat: Ek Dharmayudh
