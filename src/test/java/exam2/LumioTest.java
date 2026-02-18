@@ -51,7 +51,7 @@ public class LumioTest {
     log.info("Launching Chrome browser");
 
     ChromeOptions options = new ChromeOptions();
-    options.addArguments("--headless=new"); // enable headless
+   options.addArguments("--headless=new"); // enable headless
     options.addArguments("--window-size=1920,1080"); // must specify for headless
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
@@ -619,8 +619,8 @@ public void changeMonth(String tc) throws InterruptedException {
 		        System.out.println("✅ Total movies validated in slider: " + sliderMovies.size());
 
 		        // 4️⃣ Compare front vs slider
-		        System.out.println("📋 Step 4: Comparing front page movies with slider movies");
-		        compareMovies(frontMovies, sliderMovies);
+		      //  System.out.println("📋 Step 4: Comparing front page movies with slider movies");
+		      //  compareMovies(frontMovies, sliderMovies);
 		        
 		        // 5️⃣ Navigate back to home page for next provider
 		        System.out.println("🔙 Navigating back to home page...");

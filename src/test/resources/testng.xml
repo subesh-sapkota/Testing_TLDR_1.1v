@@ -5,7 +5,7 @@
     <classes>
     
      <class name="exam2.LumioTest"/>  
-    <!-- <class name="exam2.ShowValidation_Top10"/> --> 
+  <class name="exam2.ShowValidation_Top10"/> 
      <!--  <class name="exam2.Exp"/> -->
       <!--  <class name="exam2.SliderTest"/>   -->
 

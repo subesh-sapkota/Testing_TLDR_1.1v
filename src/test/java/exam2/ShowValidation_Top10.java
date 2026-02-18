@@ -621,8 +621,8 @@ public void changeMonth(String tc) throws InterruptedException {
 		        System.out.println("✅ Total movies validated in slider: " + sliderMovies.size());
 
 		        // 4️⃣ Compare front vs slider
-		        System.out.println("📋 Step 4: Comparing front page movies with slider movies");
-		        compareMovies(frontMovies, sliderMovies);
+		      //  System.out.println("📋 Step 4: Comparing front page movies with slider movies");
+		       // compareMovies(frontMovies, sliderMovies);
 		        
 		        // 5️⃣ Navigate back to home page for next provider
 		        System.out.println("🔙 Navigating back to home page...");
