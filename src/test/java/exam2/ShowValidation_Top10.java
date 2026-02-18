@@ -50,7 +50,7 @@ public class ShowValidation_Top10{
     log.info("Launching Chrome browser");
 
     ChromeOptions options = new ChromeOptions();
-    options.addArguments("--headless=new"); // enable headless
+   // options.addArguments("--headless=new"); // enable headless
     options.addArguments("--window-size=1920,1080"); // must specify for headless
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
@@ -147,7 +147,7 @@ public class ShowValidation_Top10{
     	
     	//Looping for 2 month
     	
-    	for(int i=0;i<5;i++)
+    	for(int i=0;i<4;i++)
 		{
 			changeMonth("TC_004");	
 		}	
