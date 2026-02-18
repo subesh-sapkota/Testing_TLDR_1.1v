@@ -748,12 +748,14 @@ public void changeMonth(String tc) throws InterruptedException {
 
 	        String xpathofMovieBox = "//div[contains(@class,'swiper-slide-active')]//span[normalize-space()='Watch on']";
 	        String xpathofTailerButton = "//div[contains(@class,'swiper-slide-active')]//span[normalize-space()='Play Trailer']";
-	        String xpathofDescription = "//div[contains(@class,'swiper-slide-active')]//p[contains(@class,'red-hat-semi-bold')]";
+	        String xpathofDescription = "//div[contains(@class,'swiper-slide-active')]//div[contains(@class,'truncate')]/following::p[1]";
 
 	        try {
 	            // ================= Description Validation =================
 	            System.out.println("📝 Checking description...");
-	            String disText = driver.findElement(By.xpath(xpathofDescription)).getText();
+	            String disText = wait.until(
+	                    ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathofDescription))
+	            ).getText();
 
 	            if (disText.isBlank()) {
 	                System.out.println("❌ Description is MISSING for: " + sliderMovie);
