@@ -6,6 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -55,6 +56,18 @@ public class LumioTest {
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
     options.addArguments("--disable-software-rasterizer"); // avoid GPU crash
+ // IMPORTANT: Remove automation flags
+    options.addArguments("--disable-blink-features=AutomationControlled");
+
+    options.setExperimentalOption("excludeSwitches",
+            Arrays.asList("enable-automation"));
+    options.setExperimentalOption("useAutomationExtension", false);
+
+    // Real user-agent (match your Chrome version!)
+    options.addArguments("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) " +
+            "AppleWebKit/537.36 (KHTML, like Gecko) " +
+            "Chrome/120.0.0.0 Safari/537.36");
+    
 
     driver = new ChromeDriver(options);
 

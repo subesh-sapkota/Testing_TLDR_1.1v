@@ -230,3 +230,174 @@ Session ID: 721ffc0db50deb5231d2efa86a782458
 2026-02-18 15:12:50 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
 2026-02-18 15:13:53 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Mahabharat: Ek Dharmayudh
 2026-02-18 15:14:34 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 15:52:13 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 15:52:13 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 15:52:13 INFO  [TestNG-test-Test-2] LumioTest - Launching Chrome browser
+2026-02-18 15:52:13 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 15:52:38 INFO  [TestNG-test-Test-2] LumioTest - Navigated to TLDR application
+2026-02-18 15:52:59 INFO  [TestNG-test-Test-2] LumioTest - Verifying page title
+2026-02-18 15:52:59 INFO  [TestNG-test-Test-2] LumioTest - Opening calendar
+2026-02-18 15:53:03 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 15:53:04 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 15:53:04 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 15:53:24 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 15:53:25 INFO  [TestNG-test-Test-2] LumioTest - Reached November 2025
+2026-02-18 15:53:32 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 15:53:32 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-18 15:53:44 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-18 15:53:45 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-18 15:53:45 INFO  [TestNG-test-Test-2] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 15:53:45 INFO  [TestNG-test-Test-2] LumioTest - Validating weekly content
+2026-02-18 15:53:46 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-18 15:53:52 INFO  [TestNG-test-Test-2] LumioTest - Month name    WeekNumber 1
+2026-02-18 15:53:53 INFO  [TestNG-test-Test-2] LumioTest - Total no of movies 10
+2026-02-18 15:53:53 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 15:53:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 15:53:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 15:53:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 15:53:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 15:53:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 15:53:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 15:53:54 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 15:53:55 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 15:53:55 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 15:54:08 INFO  [TestNG-test-Test-1] LumioTest - Screenshot saved: screenshots/failures/Movie_The_Eken__Ruddhaswas_Rajasthan_MissingDescription_20260218_155408.png
+2026-02-18 15:54:08 INFO  [TestNG-test-Test-1] LumioTest - Description is missing for The Eken: Ruddhaswas Rajasthan
+2026-02-18 15:54:16 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: The Eken: Ruddhaswas Rajasthan
+2026-02-18 15:54:33 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Eken: Ruddhaswas Rajasthan
+2026-02-18 15:55:00 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: The Eken: Benaras e Bibhishika
+2026-02-18 15:55:03 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Watch On' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 15:55:12 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Eken: Benaras e Bibhishika
+2026-02-18 15:55:38 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Raktabeej
+2026-02-18 15:55:59 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 15:56:55 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Raktabeej
+2026-02-18 16:01:45 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 16:01:45 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 16:01:45 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 16:01:45 INFO  [TestNG-test-Test-2] LumioTest - Launching Chrome browser
+2026-02-18 16:02:03 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 16:02:05 INFO  [TestNG-test-Test-2] LumioTest - Navigated to TLDR application
+2026-02-18 16:02:09 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 16:02:09 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:02:09 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 16:02:14 INFO  [TestNG-test-Test-2] LumioTest - Verifying page title
+2026-02-18 16:02:16 INFO  [TestNG-test-Test-2] LumioTest - Opening calendar
+2026-02-18 16:02:22 INFO  [TestNG-test-Test-2] LumioTest - Reached November 2025
+2026-02-18 16:02:27 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:02:27 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 16:02:27 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 16:02:27 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:02:27 INFO  [TestNG-test-Test-1] LumioTest - Closing browser
+2026-02-18 16:02:37 INFO  [TestNG-test-Test-2] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 16:02:37 INFO  [TestNG-test-Test-2] LumioTest - Validating weekly content
+2026-02-18 16:02:42 INFO  [TestNG-test-Test-2] LumioTest - Month name    WeekNumber 1
+2026-02-18 16:02:43 INFO  [TestNG-test-Test-2] LumioTest - Total no of movies 10
+2026-02-18 16:02:43 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 16:02:43 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 16:02:43 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 16:02:48 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 16:02:48 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 16:02:48 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 16:02:49 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 16:02:49 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 16:02:49 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 16:02:50 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 16:03:17 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Watch On' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 16:03:34 INFO  [TestNG-test-Test-2] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahabharat: Ek Dharmayudh
+2026-02-18 16:06:01 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 16:06:01 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 16:06:01 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 16:06:01 INFO  [TestNG-test-Test-2] LumioTest - Launching Chrome browser
+2026-02-18 16:06:19 INFO  [TestNG-test-Test-2] LumioTest - Navigated to TLDR application
+2026-02-18 16:06:23 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 16:06:24 INFO  [TestNG-test-Test-2] LumioTest - Verifying page title
+2026-02-18 16:06:41 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 16:06:41 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:06:41 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 16:06:42 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:06:42 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 16:06:42 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 16:06:42 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:06:42 INFO  [TestNG-test-Test-1] LumioTest - Closing browser
+2026-02-18 16:06:45 INFO  [TestNG-test-Test-2] LumioTest - Opening calendar
+2026-02-18 16:07:00 INFO  [TestNG-test-Test-2] LumioTest - Reached November 2025
+2026-02-18 16:07:16 INFO  [TestNG-test-Test-2] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 16:07:16 INFO  [TestNG-test-Test-2] LumioTest - Validating weekly content
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - Month name    WeekNumber 1
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - Total no of movies 10
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 0 | Title: Mahabharat: Ek Dharmayudh
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 1 | Title: Search: The Naina Murder Case
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 2 | Title: IT: Welcome to Derry
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 3 | Title: Doraemon
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 4 | Title: Shin-chan
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 5 | Title: Game Of Thrones
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 6 | Title: The Legend of Hanuman
+2026-02-18 16:07:22 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 7 | Title: Jujutsu Kaisen
+2026-02-18 16:07:23 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 8 | Title: The Trial: Pyaar, Kaanoon, Dhokha
+2026-02-18 16:07:23 INFO  [TestNG-test-Test-2] LumioTest - ✅ Movie index 9 | Title: Pitch To Get Rich
+2026-02-18 16:08:03 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 16:08:03 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 16:08:13 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 16:08:13 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 16:08:13 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:08:13 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 16:08:21 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:08:21 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 16:08:21 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 16:08:21 ERROR [TestNG-test-Test-1] LumioTest - Failed to capture screenshot: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+2026-02-18 16:08:21 INFO  [TestNG-test-Test-1] LumioTest - Closing browser
+2026-02-18 16:11:03 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 16:11:03 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 16:11:27 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 16:11:28 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 16:11:28 INFO  [TestNG-test-Test-1] LumioTest - Screenshot saved: screenshots/failures/TC_02_VerifyTitle_20260218_161128.png
+2026-02-18 16:11:28 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 16:11:58 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 16:12:02 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 16:12:02 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 16:12:09 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 16:12:10 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 16:12:10 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-18 16:12:10 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-18 16:12:10 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-18 16:12:10 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-18 16:12:10 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-18 16:12:10 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-18 16:12:11 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-18 16:12:11 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-18 16:12:11 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-18 16:12:11 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-18 16:12:39 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: The Eken: Ruddhaswas Rajasthan
+2026-02-18 16:13:04 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Eken: Ruddhaswas Rajasthan
+2026-02-18 16:13:36 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: The Eken: Benaras e Bibhishika
+2026-02-18 16:18:04 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-18 16:18:04 INFO  [TestNG-test-Test-1] LumioTest - Launching Chrome browser
+2026-02-18 16:18:22 INFO  [TestNG-test-Test-1] LumioTest - Navigated to TLDR application
+2026-02-18 16:18:25 INFO  [TestNG-test-Test-1] LumioTest - Verifying page title
+2026-02-18 16:18:28 INFO  [TestNG-test-Test-1] LumioTest - Opening calendar
+2026-02-18 16:18:38 INFO  [TestNG-test-Test-1] LumioTest - Reached November 2025
+2026-02-18 16:18:43 INFO  [TestNG-test-Test-1] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-18 16:18:43 INFO  [TestNG-test-Test-1] LumioTest - Validating weekly content
+2026-02-18 16:18:50 INFO  [TestNG-test-Test-1] LumioTest - Month name    WeekNumber 1
+2026-02-18 16:18:50 INFO  [TestNG-test-Test-1] LumioTest - Total no of movies 10
+2026-02-18 16:18:50 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-18 16:18:51 INFO  [TestNG-test-Test-1] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-18 16:19:33 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-18 16:19:56 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
