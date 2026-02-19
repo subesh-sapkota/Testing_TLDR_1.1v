@@ -533,7 +533,7 @@ public void changeMonth(String tc) throws InterruptedException {
 	        
 	        checkImageMoviesTitle(tc);
 	        
-	        testEachProviderMovies();
+	        testEachProviderMovies(currentMonth,weekno);
 	        
 	        weekno++;
 	    }
@@ -543,7 +543,7 @@ public void changeMonth(String tc) throws InterruptedException {
 
 //new helper function
 	
-	public void testEachProviderMovies() throws InterruptedException{
+	public void testEachProviderMovies(String nameofmonth, int weekno) throws InterruptedException{
 		 List<WebElement> initialProviders = driver.findElements(
 			        By.xpath("//div[@class='py-3 lg:py-4 false']")
 			    );
@@ -551,7 +551,7 @@ public void changeMonth(String tc) throws InterruptedException {
 			    
 		 for(int j = 0; j < providerCount; j++) {
 		        System.out.println("\n========================================");
-		        System.out.println("🔄 Testing Provider " + (j + 1) + " of " + providerCount);
+		        System.out.println("🔄 Testing Provider " + (j + 1) + " of " + providerCount+" Testing for month "+ nameofmonth +" and week "+weekno);
 		        System.out.println("========================================");
 		        
 		        Thread.sleep(2000);
@@ -994,16 +994,25 @@ public void changeMonth(String tc) throws InterruptedException {
 	        }
 	    }    
 	    
-	public String getCurrentMonthName() {
-		try {
-			String calendarYearMonth = driver.findElement(By.xpath("//span[contains(@role,'status')]")).getText();
-			// Extract month name (e.g., "November 2025" -> "November")
-			return calendarYearMonth.split(" ")[0];
-		} catch (Exception e) {
-			System.out.println("Error getting month name: " + e.getMessage());
-			return "November"; // Fallback
-		}
-	}
+	    public String getCurrentMonthName() {
+	        try {
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	            // Wait until the calendar status element is visible and has text
+	            String calendarYearMonth = wait.until(
+	                    ExpectedConditions.visibilityOfElementLocated(
+	                            By.xpath("//span[contains(@role,'status')]")
+	                    )
+	            ).getText();
+
+	            // Extract month name (e.g., "November 2025" -> "November")
+	            return calendarYearMonth.split(" ")[0];
+
+	        } catch (Exception e) {
+	            System.out.println("Error getting month name: " + e.getMessage());
+	            return "November"; // Fallback
+	        }
+	    }
 	
 	public void checkImageMoviesTitle(String tc) {
 
