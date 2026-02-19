@@ -197,3 +197,156 @@
 2026-02-19 07:37:12 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Fountain of Youth
 2026-02-19 07:37:36 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Fountain of Youth
 2026-02-19 07:39:30 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Greyhound
+2026-02-19 08:22:45 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-19 08:22:45 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-19 08:22:57 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-19 08:22:57 INFO  [main] LumioTest - Verifying page title
+2026-02-19 08:23:06 INFO  [main] LumioTest - Opening calendar
+2026-02-19 08:23:30 INFO  [main] LumioTest - Reached October 2025
+2026-02-19 08:23:36 INFO  [main] LumioTest - Weekly Content Validation from October to Till of December
+2026-02-19 08:23:36 INFO  [main] LumioTest - Validating weekly content
+2026-02-19 08:23:42 INFO  [main] LumioTest - Month name    WeekNumber 1
+2026-02-19 08:23:42 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:23:42 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Hridayapoorvam
+2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 1 | Title: The Woman In The Yard
+2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Thammudu
+2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Kill
+2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 5 | Title: 12th Fail
+2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 6 | Title: A Minecraft Movie
+2026-02-19 08:23:44 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Oppenheimer
+2026-02-19 08:23:44 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Sarzameen
+2026-02-19 08:23:44 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Kesari Chapter 2
+2026-02-19 08:23:47 INFO  [main] LumioTest - Month name    WeekNumber 2
+2026-02-19 08:23:49 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:23:50 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Thammudu
+2026-02-19 08:23:50 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Hridayapoorvam
+2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Kill
+2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 4 | Title: 12th Fail
+2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Kesari Chapter 2
+2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Oppenheimer
+2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 8 | Title: The Great Wall
+2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Harry Potter And The Philosopher's Stone
+2026-02-19 08:23:55 INFO  [main] LumioTest - Month name    WeekNumber 3
+2026-02-19 08:23:56 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Final Destination: Bloodlines
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 1 | Title: How To Train Your Dragon
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 3 | Title: 12th Fail
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Thammudu
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Kesari Chapter 2
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Kill
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Fifty Shades Freed
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Hridayapoorvam
+2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Harry Potter And The Philosopher's Stone
+2026-02-19 08:24:01 INFO  [main] LumioTest - Month name    WeekNumber 4
+2026-02-19 08:24:02 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Final Destination: Bloodlines
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 1 | Title: How To Train Your Dragon
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 3 | Title: 12th Fail
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Munjya
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Kill
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Harry Potter And The Philosopher's Stone
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kesari Chapter 2
+2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Avengers: Endgame
+2026-02-19 08:24:07 INFO  [main] LumioTest - Month name    WeekNumber 5
+2026-02-19 08:24:07 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-19 08:24:10 INFO  [main] LumioTest - Validating weekly content
+2026-02-19 08:24:14 INFO  [main] LumioTest - Month name  November  WeekNumber 1
+2026-02-19 08:24:14 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:24:15 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-19 08:24:15 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-19 08:24:15 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-19 08:24:15 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-19 08:24:18 INFO  [main] LumioTest - Month name  November  WeekNumber 2
+2026-02-19 08:24:19 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Mirai
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Lokah Chapter 1: Chandra
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 2 | Title: The Fantastic Four: First Steps
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Bhadrakaali
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Final Destination: Bloodlines
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 5 | Title: How To Train Your Dragon
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Jurassic World Dominion
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 8 | Title: 12th Fail
+2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Bad Girl
+2026-02-19 08:24:22 INFO  [main] LumioTest - Month name  November  WeekNumber 3
+2026-02-19 08:24:22 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Jurassic World Rebirth
+2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Mirai
+2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Lokah Chapter 1: Chandra
+2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 3 | Title: The Fantastic Four: First Steps
+2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Avihitham
+2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Jurassic World Dominion
+2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Bhadrakaali
+2026-02-19 08:24:23 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:24:23 INFO  [main] LumioTest - ✅ Movie index 8 | Title: The Bourne Legacy
+2026-02-19 08:24:23 INFO  [main] LumioTest - ✅ Movie index 9 | Title: How To Train Your Dragon
+2026-02-19 08:24:26 INFO  [main] LumioTest - Month name  November  WeekNumber 4
+2026-02-19 08:24:29 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Jurassic World Rebirth
+2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Mirai
+2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Lokah Chapter 1: Chandra
+2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 3 | Title: The Fantastic Four: First Steps
+2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Jurassic World Dominion
+2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Avihitham
+2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Bhadrakaali
+2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 8 | Title: How To Train Your Dragon
+2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Fifty Shades Freed
+2026-02-19 08:24:41 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/TC_04_ValidateWeeklyContentTillEnd_20260219_082441.png
+2026-02-19 08:24:41 INFO  [main] LumioTest - Validating content providers
+2026-02-19 08:24:41 INFO  [main] LumioTest - Clicking provider: Hotstar
+2026-02-19 08:24:44 INFO  [main] LumioTest - Clicking provider: netflix
+2026-02-19 08:24:45 INFO  [main] LumioTest - Clicking provider: Prime Video
+2026-02-19 08:24:46 INFO  [main] LumioTest - Clicking provider: zee5
+2026-02-19 08:24:46 INFO  [main] LumioTest - Clicking provider: hoichoi
+2026-02-19 08:24:47 INFO  [main] LumioTest - Clicking provider: Apple tv+
+2026-02-19 08:24:48 INFO  [main] LumioTest - Clicking provider: Lionsgate Play
+2026-02-19 08:24:48 INFO  [main] LumioTest - Checking last 3 week Providers Contents
+2026-02-19 08:24:59 INFO  [main] LumioTest - Total no of movies 0
+2026-02-19 08:25:11 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/TC_006_ValidatePast3WeekContentProvider_20260219_082511.png
+2026-02-19 08:25:11 INFO  [main] LumioTest - Refreshing page to verify stability
+2026-02-19 08:25:36 INFO  [main] LumioTest - Closing browser
+2026-02-19 08:25:37 INFO  [main] LumioTest - ===== FINAL EXECUTION SUMMARY =====
+2026-02-19 08:26:57 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-19 08:26:57 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-19 08:27:22 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-19 08:27:27 INFO  [main] LumioTest - Verifying page title
+2026-02-19 08:27:27 INFO  [main] LumioTest - Opening calendar
+2026-02-19 08:27:36 INFO  [main] LumioTest - Reached November 2025
+2026-02-19 08:27:42 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-19 08:27:42 INFO  [main] LumioTest - Validating weekly content
+2026-02-19 08:27:50 INFO  [main] LumioTest - Month name    WeekNumber 1
+2026-02-19 08:27:50 INFO  [main] LumioTest - Total no of movies 10
+2026-02-19 08:27:51 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-19 08:27:52 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-19 08:27:53 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-19 08:27:53 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-19 08:27:56 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-19 08:28:37 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra

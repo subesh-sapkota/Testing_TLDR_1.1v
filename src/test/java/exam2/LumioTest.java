@@ -86,9 +86,8 @@ public class LumioTest {
     Assert.assertTrue(driver.getCurrentUrl().contains("tldr.lumiolabs.ai"));
 }
 
-   
     //  TC_02 – Verify Page Title
-       
+    
     @Test(priority = 2,enabled=true)
     public void TC_02_VerifyTitle() {
 
@@ -159,134 +158,13 @@ public class LumioTest {
     	
     	//Looping for 2 month
     	
-    	for(int i=0;i<4;i++)
+    	for(int i=0;i<5;i++)
 		{
 			changeMonth("TC_004");	
 		}	
     }
     
     
-    // TC_05 – Provider Validation
-
-    
-    @Test(priority = 5,enabled=false)
-    public void TC_05_ValidateProviders() {
-
-        log.info("Validating content providers");
-
-        List<WebElement> providers =
-                driver.findElements(By.xpath("//div[@class='py-3 lg:py-4 false']"));
-
-        for (WebElement provider : providers) {
-
-            String providerName =
-                    provider.findElement(By.tagName("img")).getAttribute("alt");
-
-            log.info("Clicking provider: " + providerName);
-            provider.click();
-
-            MetricsCollector.providersValidated.add(providerName);
-
-            String decodedUrl =
-                    URLDecoder.decode(driver.getCurrentUrl(), StandardCharsets.UTF_8);
-
-            soft.assertTrue(
-                    decodedUrl.toLowerCase().contains(providerName.toLowerCase()),
-                    "Provider URL mismatch for " + providerName
-            );
-        }
-      
-        MetricsCollector.totalProvidersValidated=providers.size();
-        soft.assertAll();
-    }
-    
-    /* =========================
-    TC_06 – Past 3 Week Provider's Content Validation
-    ========================= */
-    
-    @Test(priority =6,enabled=false)
-    
-    public void TC_006_ValidatePast3WeekContentProvider() {
-    	
-    	log.info("Checking last 3 week Providers Contents");
-	    int weekno = 1;
-	    int maxweek = 5;
-	    act = new Actions(driver);
-	    String currentMonth = getCurrentMonthName();
-	    if (currentMonth.equalsIgnoreCase("November")) {
-	        maxweek = 6;
-	    }
-	
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	
-	    for (int weekRow = 1; weekRow <= maxweek; weekRow++) {
-	
-	        // Open calendar (hover safety)
-	        WebElement calendarButton = wait.until(ExpectedConditions
-	                .visibilityOfElementLocated(By.xpath(
-	                        "//div[contains(@class,'border-l border-[#444444]')]")));
-	
-	        js.executeScript("arguments[0].scrollIntoView({block:'center'});", calendarButton);
-	        new Actions(driver).moveToElement(calendarButton).perform();
-	
-	        // 🔑 IMPORTANT: click BUTTON inside TD
-	        List<WebElement> weekButtons = driver.findElements(
-	                By.xpath("//tbody/tr[" + weekRow + "]/td[1]//button"));
-	
-	        if (weekButtons.isEmpty()) {
-	            continue;
-	        }
-	
-	        WebElement weekButton = weekButtons.get(0);
-	
-	        // Skip disabled days
-	        if (!weekButton.isEnabled()) {
-	            continue;
-	        }
-	
-	        wait.until(ExpectedConditions.elementToBeClickable(weekButton));
-	        js.executeScript("arguments[0].click();", weekButton);
-	
-	        System.out.println("Month name  "+currentMonth+ "  WeekNumber " + weekno );
-	        
-	        checkImageMoviesTitle("TC_006");
-	        weekno++;
-	        
-	        providerChangeValidation();
-	        
-	        MetricsCollector.totalWeekCheckforProviderContent++;
-	    }
-    	
-    }
-    
-    /* =========================
-    TC_07 – Validate Watch and Trailer Button of each movies  Validation
-    ========================= */
-    
-  
-
-
-
-
-@Test(priority = 8,enabled=false)
-public void TC_08_PageRefreshStability() {
-
-    log.info("Refreshing page to verify stability");
-
-    driver.navigate().refresh();
-
-    // Wait up to 10 seconds for elements to appear
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-    wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//img[@data-card-type='top-ten-card']")));
-
-    // Assert after wait
-    Assert.assertTrue(
-            driver.findElements(
-                    By.xpath("//img[@data-card-type='top-ten-card']")).size() > 0,
-            "Top ten cards not visible after page refresh!");
-}
 
 
     /* =========================
@@ -533,7 +411,7 @@ public void changeMonth(String tc) throws InterruptedException {
 	        
 	        checkImageMoviesTitle(tc);
 	        
-	        testEachProviderMovies(currentMonth,weekno);
+	        testEachProviderMovies();
 	        
 	        weekno++;
 	    }
@@ -543,7 +421,7 @@ public void changeMonth(String tc) throws InterruptedException {
 
 //new helper function
 	
-	public void testEachProviderMovies(String nameofmonth, int weekno) throws InterruptedException{
+	public void testEachProviderMovies() throws InterruptedException{
 		 List<WebElement> initialProviders = driver.findElements(
 			        By.xpath("//div[@class='py-3 lg:py-4 false']")
 			    );
@@ -551,7 +429,7 @@ public void changeMonth(String tc) throws InterruptedException {
 			    
 		 for(int j = 0; j < providerCount; j++) {
 		        System.out.println("\n========================================");
-		        System.out.println("🔄 Testing Provider " + (j + 1) + " of " + providerCount+" Testing for month "+ nameofmonth +" and week "+weekno);
+		        System.out.println("🔄 Testing Provider " + (j + 1) + " of " + providerCount);
 		        System.out.println("========================================");
 		        
 		        Thread.sleep(2000);
@@ -619,8 +497,8 @@ public void changeMonth(String tc) throws InterruptedException {
 		        System.out.println("✅ Total movies validated in slider: " + sliderMovies.size());
 
 		        // 4️⃣ Compare front vs slider
-		      //  System.out.println("📋 Step 4: Comparing front page movies with slider movies");
-		      //  compareMovies(frontMovies, sliderMovies);
+		        System.out.println("📋 Step 4: Comparing front page movies with slider movies");
+		        compareMovies(frontMovies, sliderMovies);
 		        
 		        // 5️⃣ Navigate back to home page for next provider
 		        System.out.println("🔙 Navigating back to home page...");
@@ -748,14 +626,12 @@ public void changeMonth(String tc) throws InterruptedException {
 
 	        String xpathofMovieBox = "//div[contains(@class,'swiper-slide-active')]//span[normalize-space()='Watch on']";
 	        String xpathofTailerButton = "//div[contains(@class,'swiper-slide-active')]//span[normalize-space()='Play Trailer']";
-	        String xpathofDescription = "//div[contains(@class,'swiper-slide-active')]//div[contains(@class,'truncate')]/following::p[1]";
+	        String xpathofDescription = "//div[contains(@class,'swiper-slide-active')]//p[contains(@class,'red-hat-semi-bold')]";
 
 	        try {
 	            // ================= Description Validation =================
 	            System.out.println("📝 Checking description...");
-	            String disText = wait.until(
-	                    ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathofDescription))
-	            ).getText();
+	            String disText = driver.findElement(By.xpath(xpathofDescription)).getText();
 
 	            if (disText.isBlank()) {
 	                System.out.println("❌ Description is MISSING for: " + sliderMovie);
@@ -994,25 +870,16 @@ public void changeMonth(String tc) throws InterruptedException {
 	        }
 	    }    
 	    
-	    public String getCurrentMonthName() {
-	        try {
-	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-	            // Wait until the calendar status element is visible and has text
-	            String calendarYearMonth = wait.until(
-	                    ExpectedConditions.visibilityOfElementLocated(
-	                            By.xpath("//span[contains(@role,'status')]")
-	                    )
-	            ).getText();
-
-	            // Extract month name (e.g., "November 2025" -> "November")
-	            return calendarYearMonth.split(" ")[0];
-
-	        } catch (Exception e) {
-	            System.out.println("Error getting month name: " + e.getMessage());
-	            return "November"; // Fallback
-	        }
-	    }
+	public String getCurrentMonthName() {
+		try {
+			String calendarYearMonth = driver.findElement(By.xpath("//span[contains(@role,'status')]")).getText();
+			// Extract month name (e.g., "November 2025" -> "November")
+			return calendarYearMonth.split(" ")[0];
+		} catch (Exception e) {
+			System.out.println("Error getting month name: " + e.getMessage());
+			return "November"; // Fallback
+		}
+	}
 	
 	public void checkImageMoviesTitle(String tc) {
 
