@@ -52,3 +52,26 @@
 2026-02-21 00:16:22 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Akhanda 2: Thaandavam
 2026-02-21 00:16:34 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Akhanda 2: Thaandavam
 2026-02-21 00:17:11 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Ekō
+2026-02-21 00:39:10 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-21 00:39:10 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-21 00:39:19 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-21 00:39:20 INFO  [main] LumioTest - Verifying page title
+2026-02-21 00:39:22 INFO  [main] LumioTest - Opening calendar
+2026-02-21 00:39:38 INFO  [main] LumioTest - Reached January 2026
+2026-02-21 00:39:41 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-21 00:39:41 INFO  [main] LumioTest - Validating weekly content
+2026-02-21 00:39:52 INFO  [main] LumioTest - Month name  November  WeekNumber 1
+2026-02-21 00:39:52 INFO  [main] LumioTest - Total no of movies 10
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Mass Jathara
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Autumn and the Black Jaguar
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Kabir Singh
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Avatar: The Way of Water
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 4 | Title: How To Train Your Dragon: The Hidden World
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Mirai
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Jurassic World Rebirth
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Robinhood
+2026-02-21 00:39:53 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Superman
+2026-02-21 00:39:54 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Sister Midnight
+2026-02-21 00:40:32 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mass Jathara
+2026-02-21 00:40:56 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mass Jathara
+2026-02-21 00:41:18 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Autumn_and_the_Black_Jaguar_Exception_20260221_004118.png

@@ -416,6 +416,8 @@ public void changeMonth(String tc) throws InterruptedException {
 	        
 	        
 	        checkImageMoviesTitle(tc);
+	       
+	       
 	        
 	        testEachProviderMovies(currentMonth,weekno,currtUrl);
 	        
@@ -511,6 +513,8 @@ public void changeMonth(String tc) throws InterruptedException {
 		        // 5️⃣ Navigate back to home page for next provider
 		        System.out.println("🔙 Navigating back to home page...");
 		        driver.get(currtUrl);
+		        
+		        
 		        Thread.sleep(2000);
 		        System.out.println("✅ Ready for next provider");
 		    }
