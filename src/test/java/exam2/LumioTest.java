@@ -131,14 +131,14 @@ public class LumioTest {
 
         while (true) {
             String month = driver.findElement(By.xpath("//span[contains(@role,'status')]")).getText();
-            if (month.equals("November 2025")) {
-                log.info("Reached November 2025");
+            if (month.equals("January 2026")) {
+                log.info("Reached January 2026");
                 break;
             }
             prevBtn.click();
         }
 
-        driver.findElement(By.xpath("//button[normalize-space()='1']")).click();
+        driver.findElement(By.xpath("//button[normalize-space()='3']")).click();
      
     }
     
@@ -158,7 +158,7 @@ public class LumioTest {
     	
     	//Looping for 2 month
     	
-    	for(int i=0;i<5;i++)
+    	for(int i=0;i<2;i++)
 		{
 			changeMonth("TC_004");	
 		}	
