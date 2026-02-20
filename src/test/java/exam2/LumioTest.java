@@ -409,19 +409,24 @@ public void changeMonth(String tc) throws InterruptedException {
 	        MetricsCollector.totalWeekValidated++;
 	        MetricsCollector.weeksTested.add(currentMonth+weekno);
 	        
+	       String currtUrl= driver.getCurrentUrl();
+	        
+	        
 	        checkImageMoviesTitle(tc);
 	        
-	        testEachProviderMovies();
+	        testEachProviderMovies(currentMonth,weekno,currtUrl);
 	        
 	        weekno++;
 	    }
+	    
+	    
 	}
 
 	
 
 //new helper function
 	
-	public void testEachProviderMovies() throws InterruptedException{
+	public void testEachProviderMovies(String currentMonth , int weekno,String currtUrl) throws InterruptedException{
 		 List<WebElement> initialProviders = driver.findElements(
 			        By.xpath("//div[@class='py-3 lg:py-4 false']")
 			    );
@@ -429,7 +434,7 @@ public void changeMonth(String tc) throws InterruptedException {
 			    
 		 for(int j = 0; j < providerCount; j++) {
 		        System.out.println("\n========================================");
-		        System.out.println("🔄 Testing Provider " + (j + 1) + " of " + providerCount);
+		        System.out.println("🔄 Testing Provider " + (j + 1) + " of " + providerCount +" current month "+currentMonth+ " current week "+weekno);
 		        System.out.println("========================================");
 		        
 		        Thread.sleep(2000);
@@ -502,7 +507,7 @@ public void changeMonth(String tc) throws InterruptedException {
 		        
 		        // 5️⃣ Navigate back to home page for next provider
 		        System.out.println("🔙 Navigating back to home page...");
-		        driver.get("https://tldr.lumiolabs.ai/");
+		        driver.get(currtUrl);
 		        Thread.sleep(2000);
 		        System.out.println("✅ Ready for next provider");
 		    }
@@ -701,16 +706,16 @@ public void changeMonth(String tc) throws InterruptedException {
 
 	            metrics.addIssue("Movie " + sliderMovie + " - Exception: " + e.getMessage());
 	            
-	            try {
+	      /*   try {
 	                driver.navigate().refresh();
 	                System.out.println("🔄 Page refreshed after exception");
 	            } catch (Exception ex) {
 	                System.out.println("💥 CRITICAL: Failed to refresh page during cleanup: " + ex.getMessage());
 	                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_RefreshFailed");
 	                soft.fail("Failed to refresh page during cleanup: " + ex.getMessage());
-	            }
+	            }  */
 	        }
-	    }    
+	    }   
 	    
 
 	    private String sanitizeFileName(String fileName) {
@@ -872,16 +877,30 @@ public void changeMonth(String tc) throws InterruptedException {
 	        }
 	    }    
 	    
-	public String getCurrentMonthName() {
-		try {
-			String calendarYearMonth = driver.findElement(By.xpath("//span[contains(@role,'status')]")).getText();
-			// Extract month name (e.g., "November 2025" -> "November")
-			return calendarYearMonth.split(" ")[0];
-		} catch (Exception e) {
-			System.out.println("Error getting month name: " + e.getMessage());
-			return "November"; // Fallback
-		}
-	}
+	    public String getCurrentMonthName() {
+	        try {
+	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	            By monthLocator = By.xpath("//span[contains(@role,'status')]");
+
+	            // Wait until element is visible
+	            WebElement monthElement = wait.until(
+	                ExpectedConditions.visibilityOfElementLocated(monthLocator)
+	            );
+
+	            // Optional: Wait until text is not empty
+	            wait.until(driver -> !monthElement.getText().trim().isEmpty());
+
+	            String calendarYearMonth = monthElement.getText().trim();
+
+	            return calendarYearMonth.split(" ")[0];
+
+	        } catch (Exception e) {
+	            System.out.println("Error getting month name: " + e.getMessage());
+	            return "November"; // fallback
+	        }
+	    }
+
 	
 	public void checkImageMoviesTitle(String tc) {
 

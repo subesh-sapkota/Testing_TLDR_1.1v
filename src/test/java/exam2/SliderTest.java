@@ -84,6 +84,19 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
     log.info("🌐 Navigated to: https://tldr.lumiolabs.ai/");
     Thread.sleep(2000);
 
+
+    log.info("Opening calendar");
+    
+    WebElement popUpCloseButton = wait.until(
+            ExpectedConditions.presenceOfElementLocated(
+                    By.xpath("(//div[contains(@class,'text-white')])/button")
+            )
+    );
+
+    ((JavascriptExecutor) driver)
+            .executeScript("arguments[0].click();", popUpCloseButton);    
+    
+    
     // Get the count of providers first
     List<WebElement> initialProviders = driver.findElements(
         By.xpath("//div[@class='py-3 lg:py-4 false']")
@@ -95,17 +108,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
    
     
     ///new code for calendar check - change month to November
-
-        log.info("Opening calendar");
-        
-        WebElement popUpCloseButton = wait.until(
-                ExpectedConditions.presenceOfElementLocated(
-                        By.xpath("(//div[contains(@class,'text-white')])/button")
-                )
-        );
-
-        ((JavascriptExecutor) driver)
-                .executeScript("arguments[0].click();", popUpCloseButton);           
+       
         
         WebElement calendarButton = driver.findElement(By.xpath("//div[contains(@class,'border-l border-[#444444] flex items-center justify-center')]"));
 		

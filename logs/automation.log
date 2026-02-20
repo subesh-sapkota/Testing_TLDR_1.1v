@@ -1,352 +1,152 @@
-2026-02-19 00:02:59 INFO  [TestNG-test-Test-1] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Eken: Benaras e Bibhishika
-2026-02-19 05:37:20 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-19 05:37:20 INFO  [main] LumioTest - Launching Chrome browser
-2026-02-19 05:38:03 INFO  [main] LumioTest - Navigated to TLDR application
-2026-02-19 05:38:03 INFO  [main] LumioTest - Verifying page title
-2026-02-19 05:38:03 INFO  [main] LumioTest - Opening calendar
-2026-02-19 05:38:29 INFO  [main] LumioTest - Reached November 2025
-2026-02-19 05:38:44 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
-2026-02-19 05:38:44 INFO  [main] LumioTest - Validating weekly content
-2026-02-19 05:38:50 INFO  [main] LumioTest - Month name    WeekNumber 1
-2026-02-19 05:38:50 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 05:38:50 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
-2026-02-19 05:38:50 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
-2026-02-19 05:38:50 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
-2026-02-19 05:38:50 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
-2026-02-19 05:38:50 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
-2026-02-19 05:38:50 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 05:38:50 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
-2026-02-19 05:38:50 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
-2026-02-19 05:38:51 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
-2026-02-19 05:38:52 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
-2026-02-19 05:39:10 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
-2026-02-19 05:39:24 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
-2026-02-19 05:40:21 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Bhadrakaali
-2026-02-19 05:41:13 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Bhadrakaali
-2026-02-19 05:42:17 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Final Destination Bloodlines
-2026-02-19 05:42:55 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Final Destination Bloodlines
-2026-02-19 05:43:38 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: How to Train Your Dragon
-2026-02-19 05:43:57 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: How to Train Your Dragon
-2026-02-19 05:44:32 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: M3GAN 2.0
-2026-02-19 05:45:41 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: M3GAN 2.0
-2026-02-19 05:46:31 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Salaar: Part 1 - Ceasefire
-2026-02-19 05:46:51 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Salaar: Part 1 - Ceasefire
-2026-02-19 05:48:57 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Fifty Shades Freed
-2026-02-19 05:49:38 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Fifty Shades Freed
-2026-02-19 05:50:45 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: 12th Fail
-2026-02-19 05:51:09 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: 12th Fail
-2026-02-19 05:52:06 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Kill
-2026-02-19 05:52:37 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Kill
-2026-02-19 05:53:21 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Munjya
-2026-02-19 05:53:32 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Munjya_TrailerFailed_20260219_055332.png
-2026-02-19 05:53:32 INFO  [main] LumioTest - Movie (Munjya) - Play Trailer validation failed
-2026-02-19 05:56:33 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Dhurandhar
-2026-02-19 05:57:44 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Dhurandhar
-2026-02-19 05:59:20 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Tere Ishk Mein
-2026-02-19 06:00:13 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Tere Ishk Mein
-2026-02-19 06:00:38 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mardaani 2
-2026-02-19 06:00:53 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mardaani 2
-2026-02-19 06:02:30 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Champion
-2026-02-19 06:03:05 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Champion
-2026-02-19 06:04:02 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: De De Pyaar De 2
-2026-02-19 06:04:56 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: De De Pyaar De 2
-2026-02-19 06:06:03 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Haq
-2026-02-19 06:06:39 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Haq
-2026-02-19 06:07:02 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mardaani
-2026-02-19 06:07:26 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mardaani
-2026-02-19 06:09:12 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Even If This Love Disappears Tonight
-2026-02-19 06:09:32 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Even If This Love Disappears Tonight
-2026-02-19 06:10:01 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Jolly LLB 3
-2026-02-19 06:10:18 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Jolly LLB 3
-2026-02-19 06:12:13 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Akhanda 2: Thaandavam
-2026-02-19 06:13:00 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Akhanda 2: Thaandavam
-2026-02-19 06:14:42 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-19 06:14:42 INFO  [main] LumioTest - Launching Chrome browser
-2026-02-19 06:14:51 INFO  [main] LumioTest - Navigated to TLDR application
-2026-02-19 06:14:52 INFO  [main] LumioTest - Verifying page title
-2026-02-19 06:14:52 INFO  [main] LumioTest - Opening calendar
-2026-02-19 06:15:22 INFO  [main] LumioTest - Reached November 2025
-2026-02-19 06:15:28 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
-2026-02-19 06:15:28 INFO  [main] LumioTest - Validating weekly content
-2026-02-19 06:15:35 INFO  [main] LumioTest - Month name    WeekNumber 1
-2026-02-19 06:15:35 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 06:15:36 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
-2026-02-19 06:15:36 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
-2026-02-19 06:15:36 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
-2026-02-19 06:15:36 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
-2026-02-19 06:15:36 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
-2026-02-19 06:15:36 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 06:15:37 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
-2026-02-19 06:15:37 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
-2026-02-19 06:15:38 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
-2026-02-19 06:15:38 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
-2026-02-19 06:16:29 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
-2026-02-19 06:16:50 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
-2026-02-19 06:17:53 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Bhadrakaali
-2026-02-19 06:18:50 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Bhadrakaali
-2026-02-19 06:19:20 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-19 06:19:20 INFO  [main] LumioTest - Launching Chrome browser
-2026-02-19 06:19:33 INFO  [main] LumioTest - Navigated to TLDR application
-2026-02-19 06:19:33 INFO  [main] LumioTest - Verifying page title
-2026-02-19 06:19:33 INFO  [main] LumioTest - Opening calendar
-2026-02-19 06:19:54 INFO  [main] LumioTest - Reached November 2025
-2026-02-19 06:19:59 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
-2026-02-19 06:19:59 INFO  [main] LumioTest - Validating weekly content
-2026-02-19 06:20:10 INFO  [main] LumioTest - Month name  November  WeekNumber 1
-2026-02-19 06:20:10 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 06:20:11 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
-2026-02-19 06:20:11 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
-2026-02-19 06:20:13 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
-2026-02-19 06:20:13 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
-2026-02-19 06:20:13 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
-2026-02-19 06:20:13 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 06:20:14 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
-2026-02-19 06:20:14 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
-2026-02-19 06:20:14 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
-2026-02-19 06:20:14 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
-2026-02-19 06:21:12 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
-2026-02-19 06:21:32 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
-2026-02-19 06:23:06 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Bhadrakaali
-2026-02-19 06:23:24 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Bhadrakaali
-2026-02-19 06:24:19 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Final Destination Bloodlines
-2026-02-19 06:24:36 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Final Destination Bloodlines
-2026-02-19 06:25:38 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: How to Train Your Dragon
-2026-02-19 06:25:57 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: How to Train Your Dragon
-2026-02-19 06:26:54 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: M3GAN 2.0
-2026-02-19 06:27:14 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: M3GAN 2.0
-2026-02-19 06:28:04 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Salaar: Part 1 - Ceasefire
-2026-02-19 06:28:28 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Salaar: Part 1 - Ceasefire
-2026-02-19 06:29:25 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Fifty Shades Freed
-2026-02-19 06:29:48 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Fifty Shades Freed
-2026-02-19 06:30:53 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: 12th Fail
-2026-02-19 06:31:10 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: 12th Fail
-2026-02-19 06:32:01 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Kill
-2026-02-19 06:32:27 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Kill
-2026-02-19 06:32:56 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Not_found_Exception_20260219_063256.png
-2026-02-19 06:37:19 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Naari Naari Naduma Murari
-2026-02-19 06:37:30 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Naari Naari Naduma Murari
-2026-02-19 06:38:16 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Vaa Vaathiyaar
-2026-02-19 06:38:27 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Vaa Vaathiyaar
-2026-02-19 06:38:57 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Wrecking Crew
-2026-02-19 06:39:08 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Wrecking Crew
-2026-02-19 06:39:41 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Cheekatilo
-2026-02-19 06:39:54 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Cheekatilo
-2026-02-19 06:40:27 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mahasenha
-2026-02-19 06:40:39 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mahasenha
-2026-02-19 06:41:10 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Maaman
-2026-02-19 06:41:24 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Maaman
-2026-02-19 06:41:53 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: 120 Bahadur
-2026-02-19 06:42:05 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: 120 Bahadur
-2026-02-19 06:42:53 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Jugnuma: The Fable
-2026-02-19 06:43:05 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Jugnuma: The Fable
-2026-02-19 06:43:36 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Strangers: Chapter 2
-2026-02-19 06:43:47 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Strangers: Chapter 2
-2026-02-19 06:44:13 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Vadh
-2026-02-19 06:44:25 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Vadh
-2026-02-19 06:47:31 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mana ShankaraVaraprasad Garu
-2026-02-19 06:48:26 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mana ShankaraVaraprasad Garu
-2026-02-19 06:50:42 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Parasakthi
-2026-02-19 06:51:17 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Parasakthi
-2026-02-19 06:53:18 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Sirai
-2026-02-19 06:54:04 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Sirai
-2026-02-19 06:56:06 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Nellikkampoyil Night Riders
-2026-02-19 06:57:03 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Nellikkampoyil Night Riders
-2026-02-19 06:59:11 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: 45
-2026-02-19 07:00:01 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: 45
-2026-02-19 07:02:07 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mastiii 4
-2026-02-19 07:02:30 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mastiii 4
-2026-02-19 07:04:29 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Gurram Paapi Reddy
-2026-02-19 07:04:49 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Gurram Paapi Reddy
-2026-02-19 07:05:21 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Mask_Exception_20260219_070521.png
-2026-02-19 07:08:40 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Ek Deewane Ki Deewaniyat
-2026-02-19 07:09:35 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Ek Deewane Ki Deewaniyat
-2026-02-19 07:11:33 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Anaconda
-2026-02-19 07:12:15 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
-2026-02-19 07:14:20 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Raktabeej
-2026-02-19 07:15:10 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Raktabeej
-2026-02-19 07:16:06 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Chaalchitro
-2026-02-19 07:16:52 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Chaalchitro
-2026-02-19 07:17:34 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Bogla Mama Jug Jug Jiyo
-2026-02-19 07:17:47 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Bogla Mama Jug Jug Jiyo
-2026-02-19 07:18:43 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Ranna Baati
-2026-02-19 07:18:55 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Ranna Baati
-2026-02-19 07:19:45 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Pradhan
-2026-02-19 07:20:01 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Pradhan
-2026-02-19 07:20:50 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Cheeni 2
-2026-02-19 07:21:05 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Cheeni 2
-2026-02-19 07:21:39 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Eken: Benaras e Bibhishika
-2026-02-19 07:22:03 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Eken: Benaras e Bibhishika
-2026-02-19 07:22:54 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Shontaan
-2026-02-19 07:23:14 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Shontaan
-2026-02-19 07:24:53 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Tirandaj Shabor
-2026-02-19 07:25:16 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Tirandaj Shabor
-2026-02-19 07:26:12 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Grihapravesh
-2026-02-19 07:26:26 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Grihapravesh
-2026-02-19 07:29:22 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: F1 The Movie
-2026-02-19 07:30:09 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: F1 The Movie
-2026-02-19 07:30:58 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Family Plan 2
-2026-02-19 07:31:39 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Family Plan 2
-2026-02-19 07:32:23 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Family Plan
-2026-02-19 07:32:36 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Family Plan
-2026-02-19 07:33:32 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Ghosted
-2026-02-19 07:33:48 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Ghosted
-2026-02-19 07:34:52 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Gorge
-2026-02-19 07:35:08 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Gorge
-2026-02-19 07:36:02 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Wolfs
-2026-02-19 07:36:16 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Wolfs
-2026-02-19 07:37:12 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Fountain of Youth
-2026-02-19 07:37:36 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Fountain of Youth
-2026-02-19 07:39:30 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Greyhound
-2026-02-19 08:22:45 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-19 08:22:45 INFO  [main] LumioTest - Launching Chrome browser
-2026-02-19 08:22:57 INFO  [main] LumioTest - Navigated to TLDR application
-2026-02-19 08:22:57 INFO  [main] LumioTest - Verifying page title
-2026-02-19 08:23:06 INFO  [main] LumioTest - Opening calendar
-2026-02-19 08:23:30 INFO  [main] LumioTest - Reached October 2025
-2026-02-19 08:23:36 INFO  [main] LumioTest - Weekly Content Validation from October to Till of December
-2026-02-19 08:23:36 INFO  [main] LumioTest - Validating weekly content
-2026-02-19 08:23:42 INFO  [main] LumioTest - Month name    WeekNumber 1
-2026-02-19 08:23:42 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:23:42 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Hridayapoorvam
-2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 1 | Title: The Woman In The Yard
-2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Thammudu
-2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Kill
-2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 5 | Title: 12th Fail
-2026-02-19 08:23:43 INFO  [main] LumioTest - ✅ Movie index 6 | Title: A Minecraft Movie
-2026-02-19 08:23:44 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Oppenheimer
-2026-02-19 08:23:44 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Sarzameen
-2026-02-19 08:23:44 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Kesari Chapter 2
-2026-02-19 08:23:47 INFO  [main] LumioTest - Month name    WeekNumber 2
-2026-02-19 08:23:49 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:23:50 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Thammudu
-2026-02-19 08:23:50 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Hridayapoorvam
-2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Kill
-2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 4 | Title: 12th Fail
-2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Kesari Chapter 2
-2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
-2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Oppenheimer
-2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 8 | Title: The Great Wall
-2026-02-19 08:23:51 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Harry Potter And The Philosopher's Stone
-2026-02-19 08:23:55 INFO  [main] LumioTest - Month name    WeekNumber 3
-2026-02-19 08:23:56 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Final Destination: Bloodlines
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 1 | Title: How To Train Your Dragon
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 3 | Title: 12th Fail
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Thammudu
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Kesari Chapter 2
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Kill
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Fifty Shades Freed
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Hridayapoorvam
-2026-02-19 08:23:58 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Harry Potter And The Philosopher's Stone
-2026-02-19 08:24:01 INFO  [main] LumioTest - Month name    WeekNumber 4
-2026-02-19 08:24:02 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Final Destination: Bloodlines
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 1 | Title: How To Train Your Dragon
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 3 | Title: 12th Fail
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Munjya
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Kill
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Harry Potter And The Philosopher's Stone
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kesari Chapter 2
-2026-02-19 08:24:03 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Avengers: Endgame
-2026-02-19 08:24:07 INFO  [main] LumioTest - Month name    WeekNumber 5
-2026-02-19 08:24:07 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
-2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
-2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
-2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
-2026-02-19 08:24:08 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
-2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
-2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
-2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
-2026-02-19 08:24:09 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
-2026-02-19 08:24:10 INFO  [main] LumioTest - Validating weekly content
-2026-02-19 08:24:14 INFO  [main] LumioTest - Month name  November  WeekNumber 1
-2026-02-19 08:24:14 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
-2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
-2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
-2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
-2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
-2026-02-19 08:24:14 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:24:15 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
-2026-02-19 08:24:15 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
-2026-02-19 08:24:15 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
-2026-02-19 08:24:15 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
-2026-02-19 08:24:18 INFO  [main] LumioTest - Month name  November  WeekNumber 2
-2026-02-19 08:24:19 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Mirai
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Lokah Chapter 1: Chandra
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 2 | Title: The Fantastic Four: First Steps
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Bhadrakaali
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Final Destination: Bloodlines
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 5 | Title: How To Train Your Dragon
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Jurassic World Dominion
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 8 | Title: 12th Fail
-2026-02-19 08:24:19 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Bad Girl
-2026-02-19 08:24:22 INFO  [main] LumioTest - Month name  November  WeekNumber 3
-2026-02-19 08:24:22 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Jurassic World Rebirth
-2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Mirai
-2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Lokah Chapter 1: Chandra
-2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 3 | Title: The Fantastic Four: First Steps
-2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Avihitham
-2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Jurassic World Dominion
-2026-02-19 08:24:22 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Bhadrakaali
-2026-02-19 08:24:23 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:24:23 INFO  [main] LumioTest - ✅ Movie index 8 | Title: The Bourne Legacy
-2026-02-19 08:24:23 INFO  [main] LumioTest - ✅ Movie index 9 | Title: How To Train Your Dragon
-2026-02-19 08:24:26 INFO  [main] LumioTest - Month name  November  WeekNumber 4
-2026-02-19 08:24:29 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Jurassic World Rebirth
-2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Mirai
-2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Lokah Chapter 1: Chandra
-2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 3 | Title: The Fantastic Four: First Steps
-2026-02-19 08:24:29 INFO  [main] LumioTest - ✅ Movie index 4 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Jurassic World Dominion
-2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Avihitham
-2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Bhadrakaali
-2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 8 | Title: How To Train Your Dragon
-2026-02-19 08:24:30 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Fifty Shades Freed
-2026-02-19 08:24:41 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/TC_04_ValidateWeeklyContentTillEnd_20260219_082441.png
-2026-02-19 08:24:41 INFO  [main] LumioTest - Validating content providers
-2026-02-19 08:24:41 INFO  [main] LumioTest - Clicking provider: Hotstar
-2026-02-19 08:24:44 INFO  [main] LumioTest - Clicking provider: netflix
-2026-02-19 08:24:45 INFO  [main] LumioTest - Clicking provider: Prime Video
-2026-02-19 08:24:46 INFO  [main] LumioTest - Clicking provider: zee5
-2026-02-19 08:24:46 INFO  [main] LumioTest - Clicking provider: hoichoi
-2026-02-19 08:24:47 INFO  [main] LumioTest - Clicking provider: Apple tv+
-2026-02-19 08:24:48 INFO  [main] LumioTest - Clicking provider: Lionsgate Play
-2026-02-19 08:24:48 INFO  [main] LumioTest - Checking last 3 week Providers Contents
-2026-02-19 08:24:59 INFO  [main] LumioTest - Total no of movies 0
-2026-02-19 08:25:11 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/TC_006_ValidatePast3WeekContentProvider_20260219_082511.png
-2026-02-19 08:25:11 INFO  [main] LumioTest - Refreshing page to verify stability
-2026-02-19 08:25:36 INFO  [main] LumioTest - Closing browser
-2026-02-19 08:25:37 INFO  [main] LumioTest - ===== FINAL EXECUTION SUMMARY =====
-2026-02-19 08:26:57 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
-2026-02-19 08:26:57 INFO  [main] LumioTest - Launching Chrome browser
-2026-02-19 08:27:22 INFO  [main] LumioTest - Navigated to TLDR application
-2026-02-19 08:27:27 INFO  [main] LumioTest - Verifying page title
-2026-02-19 08:27:27 INFO  [main] LumioTest - Opening calendar
-2026-02-19 08:27:36 INFO  [main] LumioTest - Reached November 2025
-2026-02-19 08:27:42 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
-2026-02-19 08:27:42 INFO  [main] LumioTest - Validating weekly content
-2026-02-19 08:27:50 INFO  [main] LumioTest - Month name    WeekNumber 1
-2026-02-19 08:27:50 INFO  [main] LumioTest - Total no of movies 10
-2026-02-19 08:27:51 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
-2026-02-19 08:27:52 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
-2026-02-19 08:27:53 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
-2026-02-19 08:27:53 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
-2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
-2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
-2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
-2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
-2026-02-19 08:27:54 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
-2026-02-19 08:27:56 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
-2026-02-19 08:28:37 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 10:11:55 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 10:12:31 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 10:15:48 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 10:15:57 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 10:16:39 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 10:16:49 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 10:58:58 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 10:59:27 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 11:03:43 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 11:05:10 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 14:29:59 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 14:30:16 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 15:42:46 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 15:43:04 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 15:45:02 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 15:45:23 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 16:09:16 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 16:09:33 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 16:16:58 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 16:17:26 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 16:17:33 INFO  [main] LumioTest - Opening calendar
+2026-02-20 16:18:39 INFO  [main] LumioTest - Reached November 2025
+2026-02-20 16:25:53 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-20 16:26:00 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-20 16:26:00 INFO  [main] SliderTest - Opening calendar
+2026-02-20 16:26:47 INFO  [main] SliderTest - Reached November 2025
+2026-02-20 16:27:36 INFO  [main] SliderTest - Description is missing for Lokah Chapter 1: Chandra
+2026-02-20 16:30:55 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-20 16:31:14 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-20 16:31:14 INFO  [main] SliderTest - Opening calendar
+2026-02-20 16:31:37 INFO  [main] SliderTest - Reached November 2025
+2026-02-20 16:34:02 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-20 16:34:26 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-20 16:34:26 INFO  [main] SliderTest - Opening calendar
+2026-02-20 16:34:46 INFO  [main] SliderTest - Reached November 2025
+2026-02-20 16:35:33 INFO  [main] SliderTest - Description is missing for Lokah Chapter 1: Chandra
+2026-02-20 16:36:37 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 16:37:01 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 16:37:43 INFO  [main] SliderTest - Movie (Bhadrakaali) - Watch On validation failed
+2026-02-20 16:37:44 INFO  [main] SliderTest - Movie (Bhadrakaali) - Play Trailer validation failed
+2026-02-20 16:38:41 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-20 16:39:04 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-20 16:39:04 INFO  [main] SliderTest - Opening calendar
+2026-02-20 16:39:29 INFO  [main] SliderTest - Reached November 2025
+2026-02-20 16:40:16 INFO  [main] SliderTest - Description is missing for Lokah Chapter 1: Chandra
+2026-02-20 16:41:23 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 16:43:05 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-20 16:43:33 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-20 16:43:33 INFO  [main] SliderTest - Opening calendar
+2026-02-20 16:44:00 INFO  [main] SliderTest - Reached November 2025
+2026-02-20 16:49:36 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-20 16:50:01 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-20 16:50:01 INFO  [main] SliderTest - Opening calendar
+2026-02-20 16:50:30 INFO  [main] SliderTest - Reached November 2025
+2026-02-20 16:52:05 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 16:52:47 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 16:54:20 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Bhadrakaali
+2026-02-20 16:55:16 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Bhadrakaali
+2026-02-20 16:56:52 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Final Destination Bloodlines
+2026-02-20 16:57:40 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Final Destination Bloodlines
+2026-02-20 16:58:55 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: How to Train Your Dragon
+2026-02-20 16:59:21 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: How to Train Your Dragon
+2026-02-20 17:00:34 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: M3GAN 2.0
+2026-02-20 18:12:48 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-20 18:12:48 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 18:13:07 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 18:13:08 INFO  [main] LumioTest - Verifying page title
+2026-02-20 18:13:08 INFO  [main] LumioTest - Opening calendar
+2026-02-20 18:14:04 INFO  [main] LumioTest - Reached November 2025
+2026-02-20 18:14:17 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-20 18:14:17 INFO  [main] LumioTest - Validating weekly content
+2026-02-20 18:14:36 INFO  [main] LumioTest - Month name  November  WeekNumber 1
+2026-02-20 18:14:36 INFO  [main] LumioTest - Total no of movies 10
+2026-02-20 18:14:37 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-20 18:14:37 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-20 18:14:37 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-20 18:14:38 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-20 18:14:38 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-20 18:14:38 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-20 18:14:39 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-20 18:14:40 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-20 18:14:40 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-20 18:14:41 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-20 18:16:08 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 18:16:46 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 18:17:54 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-20 18:17:54 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 18:18:12 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 18:18:13 INFO  [main] LumioTest - Verifying page title
+2026-02-20 18:18:37 INFO  [main] LumioTest - Opening calendar
+2026-02-20 18:18:58 INFO  [main] LumioTest - Reached November 2025
+2026-02-20 18:19:08 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-20 18:19:08 INFO  [main] LumioTest - Validating weekly content
+2026-02-20 18:19:28 INFO  [main] LumioTest - Month name  November  WeekNumber 1
+2026-02-20 18:19:28 INFO  [main] LumioTest - Total no of movies 10
+2026-02-20 18:19:35 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-20 18:19:36 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-20 18:19:36 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-20 18:19:37 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-20 18:19:37 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-20 18:19:39 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-20 18:19:39 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-20 18:19:39 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-20 18:19:39 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-20 18:19:40 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-20 18:20:55 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 18:21:32 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 18:23:05 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Bhadrakaali
+2026-02-20 18:24:05 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Bhadrakaali
+2026-02-20 18:25:35 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Final Destination Bloodlines
+2026-02-20 18:26:11 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Final Destination Bloodlines
+2026-02-20 18:27:49 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: How to Train Your Dragon
+2026-02-20 18:28:13 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: How to Train Your Dragon
+2026-02-20 18:29:22 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: M3GAN 2.0
+2026-02-20 18:29:54 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: M3GAN 2.0
+2026-02-20 18:31:15 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Salaar: Part 1 - Ceasefire
+2026-02-20 18:31:55 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Salaar: Part 1 - Ceasefire
+2026-02-20 18:33:16 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Fifty Shades Freed
+2026-02-20 18:33:40 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Fifty Shades Freed
+2026-02-20 18:35:21 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: 12th Fail
+2026-02-20 18:35:44 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: 12th Fail
+2026-02-20 18:37:14 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Kill
+2026-02-20 18:37:45 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Kill
+2026-02-20 18:39:14 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Munjya
+2026-02-20 18:39:27 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Munjya_TrailerFailed_20260220_183927.png
+2026-02-20 18:39:27 INFO  [main] LumioTest - Movie (Munjya) - Play Trailer validation failed
+2026-02-20 18:39:35 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/TC_04_ValidateWeeklyContentTillEnd_20260220_183935.png
+2026-02-20 18:39:35 INFO  [main] LumioTest - Closing browser
+2026-02-20 18:39:35 INFO  [main] LumioTest - ===== FINAL EXECUTION SUMMARY =====
+2026-02-20 18:50:15 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-20 18:50:15 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-20 18:50:33 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-20 18:50:47 INFO  [main] LumioTest - Verifying page title
+2026-02-20 18:51:09 INFO  [main] LumioTest - Opening calendar
+2026-02-20 18:51:25 INFO  [main] LumioTest - Reached November 2025
+2026-02-20 18:51:33 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-20 18:51:33 INFO  [main] LumioTest - Validating weekly content
+2026-02-20 18:51:53 INFO  [main] LumioTest - Month name  November  WeekNumber 1
+2026-02-20 18:51:53 INFO  [main] LumioTest - Total no of movies 10
+2026-02-20 18:51:54 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Lokah Chapter 1: Chandra
+2026-02-20 18:51:57 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Bhadrakaali
+2026-02-20 18:51:58 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Final Destination: Bloodlines
+2026-02-20 18:51:58 INFO  [main] LumioTest - ✅ Movie index 3 | Title: How To Train Your Dragon
+2026-02-20 18:51:58 INFO  [main] LumioTest - ✅ Movie index 4 | Title: M3GAN 2.0
+2026-02-20 18:51:59 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Salaar: Part 1 - Ceasefire
+2026-02-20 18:51:59 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Fifty Shades Freed
+2026-02-20 18:51:59 INFO  [main] LumioTest - ✅ Movie index 7 | Title: 12th Fail
+2026-02-20 18:52:00 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Kill
+2026-02-20 18:52:00 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Munjya
+2026-02-20 18:53:08 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 18:53:45 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-20 18:55:18 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Bhadrakaali
