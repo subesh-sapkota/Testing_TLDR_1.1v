@@ -156,9 +156,9 @@ public class LumioTest {
     	
     	changeWeek("TC_004");
     	
-    	//Looping for 2 month
+    	//Looping for november month to current month feb
     	
-    	for(int i=0;i<2;i++)
+    	for(int i=0;i<4;i++)
 		{
 			changeMonth("TC_004");	
 		}	
@@ -368,6 +368,9 @@ public void changeMonth(String tc) throws InterruptedException {
 	    String currentMonth = getCurrentMonthName();
 	    if (currentMonth.equalsIgnoreCase("November")) {
 	        maxweek = 6;
+	    }
+	    else if (currentMonth.equalsIgnoreCase("February")) {
+	        maxweek = 4;
 	    }
 	
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -731,8 +734,9 @@ public void changeMonth(String tc) throws InterruptedException {
 	        try {
 	            WebElement activeSlide = wait.until(
 	                    ExpectedConditions.presenceOfElementLocated(
-	                            By.cssSelector(".swiper-slide-active .text-white.md\\:text-\\[28px\\]")
+	                            By.xpath("//div[contains(@class,'swiper-slide-active')]//p/preceding::div[contains(@class,'truncate')][1]")
 	                    )
+	                    
 	            );
 
 	            String name = activeSlide.getText().trim();
@@ -888,6 +892,7 @@ public void changeMonth(String tc) throws InterruptedException {
 	                ExpectedConditions.visibilityOfElementLocated(monthLocator)
 	            );
 
+	 
 	            // Optional: Wait until text is not empty
 	            wait.until(driver -> !monthElement.getText().trim().isEmpty());
 
