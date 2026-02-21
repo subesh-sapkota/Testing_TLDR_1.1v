@@ -106,6 +106,9 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
     ((JavascriptExecutor) driver)
             .executeScript("arguments[0].click();", button);
     
+    
+    
+    
     // Get the count of providers first
     List<WebElement> initialProviders = driver.findElements(
         By.xpath("//div[@class='py-3 lg:py-4 false']")
@@ -357,96 +360,98 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
     }
 
     // ===================== CONTENT VALIDATION =====================
-    public void contentValidation(String sliderMovie, SoftAssert soft, int movieIndex) {
-        System.out.println("🔍 Validating content for: " + sliderMovie + " (Position: " + movieIndex + ")");
-        
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    public void contentValidation(String sliderMovie, SoftAssert soft, int movieIndex) {
+	        System.out.println("🔍 Validating content for: " + sliderMovie + " (Position: " + movieIndex + ")");
+	        
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        String xpathofMovieBox = "//div[contains(@class,'swiper-slide-active')]//span[normalize-space()='Watch on']";
-        String xpathofTailerButton = "//div[contains(@class,'swiper-slide-active')]//span[normalize-space()='Play Trailer']";
-        String xpathofDescription = "//div[contains(@class,'swiper-slide-active')]//p[contains(@class,'red-hat-semi-bold')]";
+	        String xpathofMovieBox = "//div[contains(@class,'swiper-slide-active')]//span[normalize-space()='Watch on']";
+	        String xpathofTailerButton = "//div[contains(@class,'swiper-slide-active')]//span[normalize-space()='Play Trailer']";
+	        String xpathofDescription = "//div[contains(@class,'swiper-slide-active')]//div[contains(@class,'truncate')]/following::p[1]";
+	        
+	        try {
+	            // ================= Description Validation =================
+	            System.out.println("📝 Checking description...");
+	            String disText = wait.until(
+	                    ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathofDescription))
+	            ).getText();
 
-        try {
-            // ================= Description Validation =================
-            System.out.println("📝 Checking description...");
-            String disText = driver.findElement(By.xpath(xpathofDescription)).getText();
+	            if (disText.isBlank()) {
+	                System.out.println("❌ Description is MISSING for: " + sliderMovie);
+	                metrics.addDescriptionMissing(sliderMovie);
+	                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_MissingDescription");
+	                log.info("Description is missing for " + sliderMovie);
+	                soft.fail("Description is missing for " + sliderMovie);
+	            } else {
+	                System.out.println("✅ Description found: " + disText.substring(0, Math.min(50, disText.length())) + "...");
+	                metrics.addDescriptionFound(sliderMovie);
+	            }
 
-            if (disText.isBlank()) {
-                System.out.println("❌ Description is MISSING for: " + sliderMovie);
-                metrics.addDescriptionMissing(sliderMovie);
-                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_MissingDescription");
-                log.info("Description is missing for " + sliderMovie);
-                soft.fail("Description is missing for " + sliderMovie);
-            } else {
-                System.out.println("✅ Description found: " + disText.substring(0, Math.min(50, disText.length())) + "...");
-                metrics.addDescriptionFound(sliderMovie);
-            }
+	            // Track validation status
+	            boolean watchOnValidated = false;
+	            boolean trailerValidated = false;
 
-            // Track validation status
-            boolean watchOnValidated = false;
-            boolean trailerValidated = false;
+	            // ================= Watch On Validation =================
+	            System.out.println("🔍 Validating 'Watch On' button for: " + sliderMovie);
+	            if (validateWatchOn(wait, xpathofMovieBox, sliderMovie)) {
+	                watchOnValidated = true;
+	                metrics.incrementWatchOnValidated();
+	                System.out.println("✅ 'Watch On' validation PASSED for: " + sliderMovie);
+	                log.info("✅ 'Watch On' validation PASSED for: " + sliderMovie);
+	            } else {
+	                System.out.println("❌ 'Watch On' validation FAILED for: " + sliderMovie);
+	                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_WatchOnFailed");
+	                soft.fail("Movie (" + sliderMovie + ") - Watch On validation failed");
+	                log.info("Movie (" + sliderMovie + ") - Watch On validation failed");
+	                metrics.incrementWatchOnFailed();
+	            }
 
-            // ================= Watch On Validation =================
-            System.out.println("🔍 Validating 'Watch On' button for: " + sliderMovie);
-            if (validateWatchOn(wait, xpathofMovieBox, sliderMovie)) {
-                watchOnValidated = true;
-                metrics.incrementWatchOnValidated();
-                System.out.println("✅ 'Watch On' validation PASSED for: " + sliderMovie);
-                log.info("✅ 'Watch On' validation PASSED for: " + sliderMovie);
-            } else {
-                System.out.println("❌ 'Watch On' validation FAILED for: " + sliderMovie);
-                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_WatchOnFailed");
-                soft.fail("Movie (" + sliderMovie + ") - Watch On validation failed");
-                log.info("Movie (" + sliderMovie + ") - Watch On validation failed");
-                metrics.incrementWatchOnFailed();
-            }
+	            // ================= Play Trailer Validation =================
+	            System.out.println("🔍 Validating 'Play Trailer' button for: " + sliderMovie);
+	            if (validatePlayTrailer(wait, xpathofTailerButton, sliderMovie)) {
+	                trailerValidated = true;
+	                metrics.incrementTrailerValidated();
+	                System.out.println("✅ 'Play Trailer' validation PASSED for: " + sliderMovie);
+	                log.info("✅ 'Play Trailer' validation PASSED for: " + sliderMovie);
+	                
+	            } else {
+	                System.out.println("❌ 'Play Trailer' validation FAILED for: " + sliderMovie);
+	                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_TrailerFailed");
+	                soft.fail("Movie (" + sliderMovie + ") - Play Trailer validation failed");
+	                log.info("Movie (" + sliderMovie + ") - Play Trailer validation failed");
+	                metrics.incrementTrailerFailed();
+	            }
 
-            // ================= Play Trailer Validation =================
-            System.out.println("🔍 Validating 'Play Trailer' button for: " + sliderMovie);
-            if (validatePlayTrailer(wait, xpathofTailerButton, sliderMovie)) {
-                trailerValidated = true;
-                metrics.incrementTrailerValidated();
-                System.out.println("✅ 'Play Trailer' validation PASSED for: " + sliderMovie);
-                log.info("✅ 'Play Trailer' validation PASSED for: " + sliderMovie);
-                
-            } else {
-                System.out.println("❌ 'Play Trailer' validation FAILED for: " + sliderMovie);
-                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_TrailerFailed");
-                soft.fail("Movie (" + sliderMovie + ") - Play Trailer validation failed");
-                log.info("Movie (" + sliderMovie + ") - Play Trailer validation failed");
-                metrics.incrementTrailerFailed();
-            }
+	            // Close any open dialogs
+	            new Actions(driver)
+	                    .pause(Duration.ofSeconds(5))
+	                    .sendKeys(Keys.ESCAPE)
+	                    .perform();
 
-            // Close any open dialogs
-            new Actions(driver)
-                    .pause(Duration.ofSeconds(5))
-                    .sendKeys(Keys.ESCAPE)
-                    .perform();
+	            // Final status log
+	            String statusEmoji = (watchOnValidated && trailerValidated) ? "✅" : "⚠️";
+	            System.out.println(statusEmoji + " Movie " + movieIndex + " (" + sliderMovie + ") - Validation Summary: " +
+	                    "WatchOn=" + (watchOnValidated ? "PASS" : "FAIL") +
+	                    ", Trailer=" + (trailerValidated ? "PASS" : "FAIL"));
 
-            // Final status log
-            String statusEmoji = (watchOnValidated && trailerValidated) ? "✅" : "⚠️";
-            System.out.println(statusEmoji + " Movie " + movieIndex + " (" + sliderMovie + ") - Validation Summary: " +
-                    "WatchOn=" + (watchOnValidated ? "PASS" : "FAIL") +
-                    ", Trailer=" + (trailerValidated ? "PASS" : "FAIL"));
+	        } catch (Exception e) {
+	            System.out.println("💥 EXCEPTION at movie index " + movieIndex + " (" + sliderMovie + "): " + e.getMessage());
+	            e.printStackTrace();
+	            takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_Exception");
+	            soft.fail("Error at movie index " + movieIndex + " (" + sliderMovie + "): " + e.getMessage());
 
-        } catch (Exception e) {
-            System.out.println("💥 EXCEPTION at movie index " + movieIndex + " (" + sliderMovie + "): " + e.getMessage());
-            e.printStackTrace();
-            takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_Exception");
-            soft.fail("Error at movie index " + movieIndex + " (" + sliderMovie + "): " + e.getMessage());
-
-            metrics.addIssue("Movie " + sliderMovie + " - Exception: " + e.getMessage());
-            
-            try {
-                driver.navigate().refresh();
-                System.out.println("🔄 Page refreshed after exception");
-            } catch (Exception ex) {
-                System.out.println("💥 CRITICAL: Failed to refresh page during cleanup: " + ex.getMessage());
-                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_RefreshFailed");
-                soft.fail("Failed to refresh page during cleanup: " + ex.getMessage());
-            }
-        }
-    }
+	            metrics.addIssue("Movie " + sliderMovie + " - Exception: " + e.getMessage());
+	            
+	      /*   try {
+	                driver.navigate().refresh();
+	                System.out.println("🔄 Page refreshed after exception");
+	            } catch (Exception ex) {
+	                System.out.println("💥 CRITICAL: Failed to refresh page during cleanup: " + ex.getMessage());
+	                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_RefreshFailed");
+	                soft.fail("Failed to refresh page during cleanup: " + ex.getMessage());
+	            }  */
+	        }
+	    }   
 
     // ================= WATCH ON VALIDATION =================
     private boolean validateWatchOn(WebDriverWait wait, String xpath, String title) {
@@ -582,22 +587,24 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
     }
 
     // ===================== CURRENT SLIDE TITLE =====================
-    public String getCurrentMovieName() {
-        try {
-            WebElement activeSlide = wait.until(
-                    ExpectedConditions.presenceOfElementLocated(
-                            By.cssSelector(".swiper-slide-active .text-white.md\\:text-\\[28px\\]")
-                    )
-            );
+   
+	    public String getCurrentMovieName() {
+	        try {
+	            WebElement activeSlide = wait.until(
+	                    ExpectedConditions.presenceOfElementLocated(
+	                            By.xpath("//div[contains(@class,'swiper-slide-active')]//p/preceding::div[contains(@class,'truncate')][1]")
+	                    )
+	                    
+	            );
 
-            String name = activeSlide.getText().trim();
-            return name.isEmpty() ? "Not found" : name;
+	            String name = activeSlide.getText().trim();
+	            return name.isEmpty() ? "Not found" : name;
 
-        } catch (Exception e) {
-            System.out.println("Could not retrieve current movie name: " + e.getMessage());
-            return "Not found";
-        }
-    }
+	        } catch (Exception e) {
+	            System.out.println("Could not retrieve current movie name: " + e.getMessage());
+	            return "Not found";
+	        }
+	    }
 
     // ===================== MOVIE TITLE FROM IMAGE =====================
     public String getMovieTitle(WebElement movieImage) {

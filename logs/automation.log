@@ -653,3 +653,17 @@
 2026-02-22 02:41:10 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Lal Salaam
 2026-02-22 02:42:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dhurandhar
 2026-02-22 02:43:36 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dhurandhar
+2026-02-22 03:13:00 INFO  [TestNG-test-Test-2] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 03:13:02 INFO  [TestNG-test-Test-2] SliderTest - Opening calendar
+2026-02-22 03:13:08 INFO  [TestNG-test-Test-1] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 03:13:10 INFO  [TestNG-test-Test-1] SliderTest - Opening calendar
+2026-02-22 03:13:36 INFO  [TestNG-test-Test-1] SliderTest - 📊 Found 7 providers to test
+2026-02-22 03:13:43 INFO  [TestNG-test-Test-2] SliderTest - 📊 Found 7 providers to test
+2026-02-22 03:15:03 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 03:15:15 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Laughter Chefs Unlimited Entertainment
+2026-02-22 03:15:26 INFO  [TestNG-test-Test-2] SliderTest - Movie (Laughter Chefs Unlimited Entertainment) - Play Trailer validation failed
+2026-02-22 03:15:41 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 03:16:51 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 03:17:05 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: MTV Splitsvilla
+2026-02-22 03:17:16 INFO  [TestNG-test-Test-2] SliderTest - Movie (MTV Splitsvilla) - Play Trailer validation failed
+2026-02-22 03:17:28 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
