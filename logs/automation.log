@@ -693,3 +693,61 @@
 2026-02-22 03:54:03 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
 2026-02-22 03:54:38 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Doraemon
 2026-02-22 03:54:49 INFO  [TestNG-test-Test-2] SliderTest - Movie (Doraemon) - Play Trailer validation failed
+2026-02-22 04:01:54 INFO  [TestNG-test-Test-2] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:01:56 INFO  [TestNG-test-Test-2] SliderTest - Opening calendar
+2026-02-22 04:02:02 INFO  [TestNG-test-Test-1] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:02:04 INFO  [TestNG-test-Test-1] SliderTest - Opening calendar
+2026-02-22 04:02:28 INFO  [TestNG-test-Test-1] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:02:31 INFO  [TestNG-test-Test-2] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:03:51 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 04:03:57 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Laughter Chefs Unlimited Entertainment
+2026-02-22 04:04:08 INFO  [TestNG-test-Test-2] SliderTest - Movie (Laughter Chefs Unlimited Entertainment) - Play Trailer validation failed
+2026-02-22 04:04:21 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 04:05:45 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 04:05:53 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: MTV Splitsvilla
+2026-02-22 04:06:06 INFO  [TestNG-test-Test-2] SliderTest - Movie (MTV Splitsvilla) - Play Trailer validation failed
+2026-02-22 04:06:18 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
+2026-02-22 04:07:27 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: A Knight of the Seven Kingdoms
+2026-02-22 04:07:31 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 04:07:47 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 04:08:04 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Play Trailer' validation PASSED for: A Knight of the Seven Kingdoms
+2026-02-22 04:09:07 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Predator: Badlands
+2026-02-22 04:09:17 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Game of Thrones
+2026-02-22 04:09:41 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Predator: Badlands
+2026-02-22 04:09:48 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Play Trailer' validation PASSED for: Game of Thrones
+2026-02-22 04:11:02 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Doraemon
+2026-02-22 04:11:07 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 04:11:13 INFO  [TestNG-test-Test-2] SliderTest - Movie (Doraemon) - Play Trailer validation failed
+2026-02-22 04:11:22 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 04:12:33 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Sarvam Maya
+2026-02-22 04:12:39 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Bigg Boss
+2026-02-22 04:12:50 INFO  [TestNG-test-Test-2] SliderTest - Movie (Bigg Boss) - Play Trailer validation failed
+2026-02-22 04:12:57 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sarvam Maya
+2026-02-22 04:14:11 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Ask Me What You Want
+2026-02-22 04:14:18 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Shin-chan
+2026-02-22 04:14:29 INFO  [TestNG-test-Test-2] SliderTest - Movie (Shin-chan) - Play Trailer validation failed
+2026-02-22 04:14:35 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Ask Me What You Want
+2026-02-22 04:15:45 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: 3 BHK
+2026-02-22 04:15:57 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Demon Slayer: Kimetsu no Yaiba
+2026-02-22 04:16:12 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: 3 BHK
+2026-02-22 04:16:28 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Play Trailer' validation PASSED for: Demon Slayer: Kimetsu no Yaiba
+2026-02-22 04:17:46 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Jujutsu Kaisen
+2026-02-22 04:17:51 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Gustaakh Ishq
+2026-02-22 04:18:07 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Play Trailer' validation PASSED for: Jujutsu Kaisen
+2026-02-22 04:18:18 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Gustaakh Ishq
+2026-02-22 04:19:31 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Space Gen: Chandrayaan
+2026-02-22 04:19:33 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Lal Salaam
+2026-02-22 04:19:50 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Play Trailer' validation PASSED for: Space Gen: Chandrayaan
+2026-02-22 04:19:57 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Lal Salaam
+2026-02-22 04:20:43 INFO  [TestNG-test-Test-2] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:20:45 INFO  [TestNG-test-Test-2] SliderTest - Opening calendar
+2026-02-22 04:20:50 INFO  [TestNG-test-Test-1] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:20:52 INFO  [TestNG-test-Test-1] SliderTest - Opening calendar
+2026-02-22 04:21:19 INFO  [TestNG-test-Test-1] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:21:27 INFO  [TestNG-test-Test-2] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:22:38 INFO  [TestNG-test-Test-1] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:22:40 INFO  [TestNG-test-Test-1] SliderTest - Opening calendar
+2026-02-22 04:22:40 INFO  [TestNG-test-Test-2] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:22:42 INFO  [TestNG-test-Test-2] SliderTest - Opening calendar
+2026-02-22 04:23:02 INFO  [TestNG-test-Test-1] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:23:10 INFO  [TestNG-test-Test-2] SliderTest - 📊 Found 7 providers to test
