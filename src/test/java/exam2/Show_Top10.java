@@ -1,5 +1,6 @@
 package exam2;
 
+
 import java.io.File;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
@@ -37,8 +38,8 @@ import org.testng.asserts.SoftAssert;
 
 
 @Listeners(TestListener.class)
-public class SliderTest {
-	
+public class Show_Top10 { 
+	// check for latestest top ten movies check 
 	
 	   Logger log = LogManager.getLogger(SliderTest.class);
 
@@ -95,6 +96,16 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
 
     ((JavascriptExecutor) driver)
             .executeScript("arguments[0].click();", popUpCloseButton);
+    
+    By showsBtn = By.xpath("//button[normalize-space()='SHOWS']");
+
+    WebElement button = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(showsBtn)
+    );
+
+    ((JavascriptExecutor) driver)
+            .executeScript("arguments[0].click();", button);
+    
     // Get the count of providers first
     List<WebElement> initialProviders = driver.findElements(
         By.xpath("//div[@class='py-3 lg:py-4 false']")

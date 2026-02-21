@@ -618,3 +618,38 @@
 2026-02-22 02:12:34 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Autumn_and_the_Black_Jaguar_Exception_20260222_021234.png
 2026-02-22 02:13:21 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Kabir Singh
 2026-02-22 02:14:01 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Kabir Singh
+2026-02-22 02:22:31 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-22 02:22:31 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-22 02:22:42 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-22 02:22:42 INFO  [main] LumioTest - Verifying page title
+2026-02-22 02:22:42 INFO  [main] LumioTest - Opening calendar
+2026-02-22 02:24:11 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 02:24:13 INFO  [main] SliderTest - Opening calendar
+2026-02-22 02:24:31 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-22 02:24:36 INFO  [main] SliderTest - Reached November 2025
+2026-02-22 02:25:28 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Lokah Chapter 1: Chandra
+2026-02-22 02:29:34 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 02:29:36 INFO  [main] SliderTest - Opening calendar
+2026-02-22 02:29:51 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-22 02:30:46 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 02:31:06 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 02:31:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 02:32:27 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
+2026-02-22 02:33:09 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 02:33:34 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 02:34:17 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Predator: Badlands
+2026-02-22 02:34:29 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Predator: Badlands
+2026-02-22 02:35:17 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 02:35:35 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 02:36:18 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sarvam Maya
+2026-02-22 02:36:31 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sarvam Maya
+2026-02-22 02:37:15 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Ask Me What You Want
+2026-02-22 02:37:38 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Ask Me What You Want
+2026-02-22 02:38:30 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: 3 BHK
+2026-02-22 02:38:54 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: 3 BHK
+2026-02-22 02:39:45 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Gustaakh Ishq
+2026-02-22 02:40:02 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Gustaakh Ishq
+2026-02-22 02:40:53 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Lal Salaam
+2026-02-22 02:41:10 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Lal Salaam
+2026-02-22 02:42:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dhurandhar
+2026-02-22 02:43:36 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dhurandhar
