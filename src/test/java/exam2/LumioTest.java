@@ -56,8 +56,6 @@ public class LumioTest {
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
     options.addArguments("--disable-software-rasterizer"); // avoid GPU crash
-    options.addArguments("--disable-dev-shm-usage");  // VERY IMPORTANT for Linux
-    options.addArguments("--remote-allow-origins=*"); // Fixes Chrome 111+ issue
  // IMPORTANT: Remove automation flags
     options.addArguments("--disable-blink-features=AutomationControlled");
 
