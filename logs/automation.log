@@ -763,3 +763,14 @@
 2026-02-22 04:31:56 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: 4.7
 2026-02-22 04:33:09 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: 4.8
 2026-02-22 04:33:20 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: 3.9
+2026-02-22 04:40:34 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:40:36 INFO  [main] SliderTest - Opening calendar
+2026-02-22 04:40:48 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:41:31 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 04:42:01 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 04:42:45 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 04:42:56 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
+2026-02-22 04:43:41 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 04:44:10 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 04:44:53 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Predator: Badlands
+2026-02-22 04:45:05 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Predator: Badlands
