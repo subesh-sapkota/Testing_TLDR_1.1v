@@ -218,3 +218,27 @@
 2026-02-21 15:20:26 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Snitch
 2026-02-21 15:20:44 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Snitch
 2026-02-21 15:21:20 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Dawood
+2026-02-21 15:30:11 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-21 15:30:11 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-21 15:30:21 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-21 15:30:21 INFO  [main] LumioTest - Verifying page title
+2026-02-21 15:30:22 INFO  [main] LumioTest - Opening calendar
+2026-02-21 15:30:43 INFO  [main] LumioTest - Reached January 2026
+2026-02-21 15:30:47 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-21 15:30:47 INFO  [main] LumioTest - Validating weekly content
+2026-02-21 15:30:59 INFO  [main] LumioTest - Month name  November  WeekNumber 1
+2026-02-21 15:30:59 INFO  [main] LumioTest - Total no of movies 10
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Mass Jathara
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Autumn and the Black Jaguar
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Kabir Singh
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Avatar: The Way of Water
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 4 | Title: How To Train Your Dragon: The Hidden World
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Mirai
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Jurassic World Rebirth
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Robinhood
+2026-02-21 15:31:00 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Superman
+2026-02-21 15:31:01 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Sister Midnight
+2026-02-21 15:31:48 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mass Jathara
+2026-02-21 15:32:06 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mass Jathara
+2026-02-21 15:33:29 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Raat Akeli Hai: The Bansal Murders
+2026-02-21 15:34:08 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Raat Akeli Hai: The Bansal Murders
