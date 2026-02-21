@@ -61,7 +61,7 @@ public class SliderTest {
         options.addArguments("--start-maximized");
         options.addArguments("--no-sandbox");           // ✅ Critical for Jenkins/CI
         options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-dev-shm-usage");
+       
 
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -572,22 +572,51 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
     }
 
     // ===================== CURRENT SLIDE TITLE =====================
-    public String getCurrentMovieName() {
+   public String getCurrentMovieName() {
+    try {
+        // Strategy 1: XPath (avoids Tailwind CSS escaping issues in Linux)
         try {
-            WebElement activeSlide = wait.until(
-                    ExpectedConditions.presenceOfElementLocated(
-                            By.cssSelector(".swiper-slide-active .text-white.md\\:text-\\[28px\\]")
-                    )
+            List<WebElement> candidates = driver.findElements(
+                By.xpath("//div[contains(@class,'swiper-slide-active')]//span[contains(@class,'text-white')] | " +
+                         "//div[contains(@class,'swiper-slide-active')]//h1 | " +
+                         "//div[contains(@class,'swiper-slide-active')]//h2")
             );
-
-            String name = activeSlide.getText().trim();
-            return name.isEmpty() ? "Not found" : name;
-
-        } catch (Exception e) {
-            System.out.println("Could not retrieve current movie name: " + e.getMessage());
-            return "Not found";
+            for (WebElement el : candidates) {
+                String text = el.getText().trim();
+                if (!text.isEmpty() && text.length() > 2 && text.length() < 100) {
+                    return text;
+                }
+            }
+        } catch (Exception e1) {
+            System.out.println("Strategy 1 failed: " + e1.getMessage());
         }
+
+        // Strategy 2: JavaScript (most reliable in headless)
+        try {
+            String name = (String) ((JavascriptExecutor) driver).executeScript(
+                "var slide = document.querySelector('.swiper-slide-active');" +
+                "if (!slide) return null;" +
+                "var els = slide.querySelectorAll('h1,h2,h3,span,p');" +
+                "for (var i = 0; i < els.length; i++) {" +
+                "  var t = els[i].innerText ? els[i].innerText.trim() : '';" +
+                "  if (t.length > 2 && t.length < 100) return t;" +
+                "}" +
+                "return null;"
+            );
+            if (name != null && !name.isEmpty()) return name;
+        } catch (Exception e2) {
+            System.out.println("Strategy 2 failed: " + e2.getMessage());
+        }
+
+        return "Not found";
+
+    } catch (Exception e) {
+        System.out.println("All strategies failed: " + e.getMessage());
+        return "Not found";
     }
+}
+
+
 
     // ===================== MOVIE TITLE FROM IMAGE =====================
     public String getMovieTitle(WebElement movieImage) {

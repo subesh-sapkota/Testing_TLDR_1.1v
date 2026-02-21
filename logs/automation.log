@@ -751,3 +751,15 @@
 2026-02-22 04:22:42 INFO  [TestNG-test-Test-2] SliderTest - Opening calendar
 2026-02-22 04:23:02 INFO  [TestNG-test-Test-1] SliderTest - 📊 Found 7 providers to test
 2026-02-22 04:23:10 INFO  [TestNG-test-Test-2] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:29:21 INFO  [TestNG-test-Test-1] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:29:22 INFO  [TestNG-test-Test-2] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 04:29:23 INFO  [TestNG-test-Test-1] SliderTest - Opening calendar
+2026-02-22 04:29:24 INFO  [TestNG-test-Test-2] SliderTest - Opening calendar
+2026-02-22 04:29:57 INFO  [TestNG-test-Test-1] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:30:02 INFO  [TestNG-test-Test-2] SliderTest - 📊 Found 7 providers to test
+2026-02-22 04:31:28 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: 4.7
+2026-02-22 04:31:30 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: 8.5
+2026-02-22 04:31:41 INFO  [TestNG-test-Test-2] SliderTest - Movie (8.5) - Play Trailer validation failed
+2026-02-22 04:31:56 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: 4.7
+2026-02-22 04:33:09 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: 4.8
+2026-02-22 04:33:20 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: 3.9

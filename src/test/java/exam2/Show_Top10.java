@@ -63,7 +63,7 @@ public class Show_Top10 {
        
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");           // ✅ Critical for Jenkins/CI
-        options.addArguments("--disable-dev-shm-usage");
+        
 
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
