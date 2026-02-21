@@ -38,7 +38,7 @@ import org.testng.asserts.SoftAssert;
 
 @Listeners(TestListener.class)
 public class SliderTest {
-	
+	// check for latestest top ten movies check 
 	
 	   Logger log = LogManager.getLogger(SliderTest.class);
 
@@ -59,7 +59,8 @@ public class SliderTest {
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--start-maximized");
-        options.addArguments("--no-sandbox");
+        options.addArguments("--no-sandbox");           // ✅ Critical for Jenkins/CI
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-dev-shm-usage");
 
         driver = new ChromeDriver(options);

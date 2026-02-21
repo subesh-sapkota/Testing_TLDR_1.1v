@@ -667,3 +667,29 @@
 2026-02-22 03:17:05 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: MTV Splitsvilla
 2026-02-22 03:17:16 INFO  [TestNG-test-Test-2] SliderTest - Movie (MTV Splitsvilla) - Play Trailer validation failed
 2026-02-22 03:17:28 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
+2026-02-22 03:43:53 INFO  [TestNG-test-Test-2] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 03:43:55 INFO  [TestNG-test-Test-2] SliderTest - Opening calendar
+2026-02-22 03:44:04 INFO  [TestNG-test-Test-1] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 03:44:06 INFO  [TestNG-test-Test-1] SliderTest - Opening calendar
+2026-02-22 03:44:27 INFO  [TestNG-test-Test-1] SliderTest - 📊 Found 7 providers to test
+2026-02-22 03:44:35 INFO  [TestNG-test-Test-2] SliderTest - 📊 Found 7 providers to test
+2026-02-22 03:45:53 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 03:45:57 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Laughter Chefs Unlimited Entertainment
+2026-02-22 03:46:09 INFO  [TestNG-test-Test-2] SliderTest - Movie (Laughter Chefs Unlimited Entertainment) - Play Trailer validation failed
+2026-02-22 03:46:21 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 03:47:40 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 03:47:52 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: MTV Splitsvilla
+2026-02-22 03:48:03 INFO  [TestNG-test-Test-2] SliderTest - Movie (MTV Splitsvilla) - Play Trailer validation failed
+2026-02-22 03:48:14 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
+2026-02-22 03:49:30 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 03:49:34 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: A Knight of the Seven Kingdoms
+2026-02-22 03:50:05 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 03:50:15 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Play Trailer' validation PASSED for: A Knight of the Seven Kingdoms
+2026-02-22 03:51:34 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Predator: Badlands
+2026-02-22 03:51:46 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Game of Thrones
+2026-02-22 03:52:01 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Predator: Badlands
+2026-02-22 03:52:57 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Play Trailer' validation PASSED for: Game of Thrones
+2026-02-22 03:53:28 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 03:54:03 INFO  [TestNG-test-Test-1] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 03:54:38 INFO  [TestNG-test-Test-2] SliderTest - ✅ 'Watch On' validation PASSED for: Doraemon
+2026-02-22 03:54:49 INFO  [TestNG-test-Test-2] SliderTest - Movie (Doraemon) - Play Trailer validation failed
