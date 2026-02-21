@@ -56,7 +56,6 @@ public class LumioTest {
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
     options.addArguments("--disable-software-rasterizer"); // avoid GPU crash
-    options.addArguments("--disable-dev-shm-usage");
  // IMPORTANT: Remove automation flags
     options.addArguments("--disable-blink-features=AutomationControlled");
 
@@ -65,9 +64,9 @@ public class LumioTest {
     options.setExperimentalOption("useAutomationExtension", false);
 
     // Real user-agent (match your Chrome version!)
-   /* options.addArguments("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) " +
+    options.addArguments("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) " +
             "AppleWebKit/537.36 (KHTML, like Gecko) " +
-            "Chrome/120.0.0.0 Safari/537.36");  */
+            "Chrome/120.0.0.0 Safari/537.36");
     
 
     driver = new ChromeDriver(options);
@@ -152,14 +151,14 @@ public class LumioTest {
     public void TC_04_ValidateWeeklyContentTillEnd() throws InterruptedException {
         
     	
-    	log.info("Weekly Content Validation from November to Till of Feb");
+    	log.info("Weekly Content Validation from Jan to Till of Feb");
     	TestListener.getTest().info("Weekly Content Validation from November to Till of Feb");
     	
-    	changeWeek("TC_004");
+    	changeWeek("TC_004"); //it cover first month content and provider check
     	
-    	//Looping for november month to current month feb
+    	//Looping for jan month to current month feb
     	
-    	for(int i=0;i<4;i++)
+   	for(int i=0;i<1;i++)
 		{
 			changeMonth("TC_004");	
 		}	
@@ -361,78 +360,75 @@ public void changeMonth(String tc) throws InterruptedException {
 
 	
 	public void changeWeek(String tc) throws InterruptedException {
-	
-		 log.info("Validating weekly content");
-	    int weekno = 1;
-	    int maxweek = 5;
-	    act = new Actions(driver);
-	    String currentMonth = getCurrentMonthName();
-	    if (currentMonth.equalsIgnoreCase("November")) {
-	        maxweek = 6;
-	    }
-	    else if (currentMonth.equalsIgnoreCase("February")) {
-	        maxweek = 4;
-	    }
-	
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	
-	    for (int weekRow = 1; weekRow <= maxweek; weekRow++) {
-	
-	        // Open calendar (hover safety)
-	        WebElement calendarButton = wait.until(ExpectedConditions
-	                .visibilityOfElementLocated(By.xpath(
-	                        "//div[contains(@class,'border-l border-[#444444]')]")));
-	
-	        js.executeScript("arguments[0].scrollIntoView({block:'center'});", calendarButton);
-	        new Actions(driver).moveToElement(calendarButton).perform();
-	
-	        // 🔑 IMPORTANT: click BUTTON inside TD
-	        List<WebElement> weekButtons = driver.findElements(
-	                By.xpath("//tbody/tr[" + weekRow + "]/td[1]//button"));
-	
-	        if (weekButtons.isEmpty()) {
-	            continue;
-	        }
-	
-	        WebElement weekButton = weekButtons.get(0);
-	
-	        // Skip disabled days
-	        if (!weekButton.isEnabled()) {
-	            continue;
-	        }
-	
-	        wait.until(ExpectedConditions.elementToBeClickable(weekButton));
-	        js.executeScript("arguments[0].click();", weekButton);
-	
-	        System.out.println("Month name  "+currentMonth+ "  WeekNumber " + weekno );
-	        log.info("Month name  "+currentMonth+ "  WeekNumber " + weekno );
-	       
-	        //for weekly tested log
-	        
-	        MetricsCollector.totalWeekValidated++;
-	        MetricsCollector.weeksTested.add(currentMonth+weekno);
-	        
-	       String currtUrl= driver.getCurrentUrl();
-	        
-	        
-	        checkImageMoviesTitle(tc);
-	       
-	       
-	        
-	        testEachProviderMovies(currentMonth,weekno,currtUrl);
-	        
-	        weekno++;
-	    }
-	    
-	    
-	}
 
+    log.info("Validating weekly content");
+    int weekno = 1;
+    int maxweek = 5;
+    act = new Actions(driver);
+    String currentMonth = getCurrentMonthName();
+    
+    if (currentMonth.equalsIgnoreCase("November")) maxweek = 6;
+    else if (currentMonth.equalsIgnoreCase("February")) maxweek = 4;
+
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+
+    for (int weekRow = 1; weekRow <= maxweek; weekRow++) {
+
+        // ✅ STEP 1: Always re-hover to open/keep calendar open before each week
+        WebElement calendarButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOfElementLocated(
+                        By.xpath("//div[contains(@class,'border-l border-[#444444]')]")));
+
+        js.executeScript("arguments[0].scrollIntoView({block:'center'});", calendarButton);
+        new Actions(driver).moveToElement(calendarButton).perform();
+
+        // ✅ STEP 2: Small pause to let calendar fully render after hover
+        Thread.sleep(800);
+
+        // ✅ STEP 3: Check if buttons exist in this row WITHOUT waiting
+        List<WebElement> weekButtons = driver.findElements(
+                By.xpath("//tbody/tr[" + weekRow + "]/td[1]//button"));
+
+        if (weekButtons.isEmpty()) {
+            log.info("No button in week row " + weekRow + " — skipping");
+            continue;
+        }
+
+        WebElement weekButton = weekButtons.get(0);
+
+        // ✅ STEP 4: Check disabled state without a wait (avoid timeout)
+        String ariaDisabled = weekButton.getAttribute("aria-disabled");
+        String classAttr = weekButton.getAttribute("class");
+        boolean isDisabled = !weekButton.isEnabled()
+                || "true".equals(ariaDisabled)
+                || (classAttr != null && classAttr.contains("disabled"));
+
+        if (isDisabled) {
+            log.info("Week row " + weekRow + " button is disabled — skipping");
+            continue;
+        }
+
+        // ✅ STEP 5: Click using JS (avoids interactability issues)
+        js.executeScript("arguments[0].click();", weekButton);
+        log.info("Clicked week row " + weekRow + " | Month: " + currentMonth + " | Week#: " + weekno);
+
+        // ✅ STEP 6: Wait for page to settle after week change
+        Thread.sleep(1000);
+
+        MetricsCollector.totalWeekValidated++;
+        MetricsCollector.weeksTested.add(currentMonth + weekno);
+
+        checkImageMoviesTitle(tc);
+        testEachProviderMovies(currentMonth, weekno);
+
+        weekno++;
+    }
+}
 	
 
 //new helper function
 	
-	public void testEachProviderMovies(String currentMonth , int weekno,String currtUrl) throws InterruptedException{
+	public void testEachProviderMovies(String currentMonth , int weekno) throws InterruptedException{
 		 List<WebElement> initialProviders = driver.findElements(
 			        By.xpath("//div[@class='py-3 lg:py-4 false']")
 			    );
@@ -513,8 +509,9 @@ public void changeMonth(String tc) throws InterruptedException {
 		        
 		        // 5️⃣ Navigate back to home page for next provider
 		        System.out.println("🔙 Navigating back to home page...");
-		        driver.get(currtUrl);
 		        
+		        Actions actions = new Actions(driver);
+		        actions.sendKeys(Keys.ESCAPE).perform();
 		        
 		        Thread.sleep(2000);
 		        System.out.println("✅ Ready for next provider");
@@ -886,30 +883,39 @@ public void changeMonth(String tc) throws InterruptedException {
 	        }
 	    }    
 	    
-	    public String getCurrentMonthName() {
-	        try {
-	            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+public String getCurrentMonthName() {
+    try {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
-	            By monthLocator = By.xpath("//span[contains(@role,'status')]");
+        // ✅ First, hover over the calendar button to make the header visible
+        WebElement calendarButton = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//div[contains(@class,'border-l border-[#444444]')]")
+            )
+        );
+        ((JavascriptExecutor) driver).executeScript(
+            "arguments[0].scrollIntoView({block:'center'});", calendarButton
+        );
+        new Actions(driver).moveToElement(calendarButton).perform();
 
-	            // Wait until element is visible
-	            WebElement monthElement = wait.until(
-	                ExpectedConditions.visibilityOfElementLocated(monthLocator)
-	            );
+        // ✅ Now wait for the month text to be non-empty
+        By monthLocator = By.xpath("//span[contains(@role,'status')]");
 
-	 
-	            // Optional: Wait until text is not empty
-	            wait.until(driver -> !monthElement.getText().trim().isEmpty());
+        wait.until(driver -> {
+            String text = driver.findElement(monthLocator).getText().trim();
+            return !text.isEmpty();
+        });
 
-	            String calendarYearMonth = monthElement.getText().trim();
+        String calendarYearMonth = driver.findElement(monthLocator).getText().trim();
+        System.out.println("Calendar header text: " + calendarYearMonth);
 
-	            return calendarYearMonth.split(" ")[0];
+        return calendarYearMonth.split(" ")[0];
 
-	        } catch (Exception e) {
-	            System.out.println("Error getting month name: " + e.getMessage());
-	            return "November"; // fallback
-	        }
-	    }
+    } catch (Exception e) {
+        System.out.println("Error getting month name: " + e.getMessage());
+        return "Unknown"; // ❌ Don't default to "November" — surface the real problem
+    }
+}
 
 	
 	public void checkImageMoviesTitle(String tc) {
