@@ -75,3 +75,146 @@
 2026-02-21 00:40:32 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mass Jathara
 2026-02-21 00:40:56 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mass Jathara
 2026-02-21 00:41:18 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Autumn_and_the_Black_Jaguar_Exception_20260221_004118.png
+2026-02-21 00:43:36 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Ekō
+2026-02-21 13:55:25 INFO  [main] LumioTest - MetricsCollector reset - starting fresh test run
+2026-02-21 13:55:25 INFO  [main] LumioTest - Launching Chrome browser
+2026-02-21 13:55:39 INFO  [main] LumioTest - Navigated to TLDR application
+2026-02-21 13:55:39 INFO  [main] LumioTest - Verifying page title
+2026-02-21 13:55:39 INFO  [main] LumioTest - Opening calendar
+2026-02-21 13:55:57 INFO  [main] LumioTest - Reached January 2026
+2026-02-21 13:56:01 INFO  [main] LumioTest - Weekly Content Validation from November to Till of Feb
+2026-02-21 13:56:01 INFO  [main] LumioTest - Validating weekly content
+2026-02-21 13:56:13 INFO  [main] LumioTest - Month name  November  WeekNumber 1
+2026-02-21 13:56:13 INFO  [main] LumioTest - Total no of movies 10
+2026-02-21 13:56:13 INFO  [main] LumioTest - ✅ Movie index 0 | Title: Mass Jathara
+2026-02-21 13:56:13 INFO  [main] LumioTest - ✅ Movie index 1 | Title: Autumn and the Black Jaguar
+2026-02-21 13:56:13 INFO  [main] LumioTest - ✅ Movie index 2 | Title: Kabir Singh
+2026-02-21 13:56:13 INFO  [main] LumioTest - ✅ Movie index 3 | Title: Avatar: The Way of Water
+2026-02-21 13:56:13 INFO  [main] LumioTest - ✅ Movie index 4 | Title: How To Train Your Dragon: The Hidden World
+2026-02-21 13:56:13 INFO  [main] LumioTest - ✅ Movie index 5 | Title: Mirai
+2026-02-21 13:56:13 INFO  [main] LumioTest - ✅ Movie index 6 | Title: Jurassic World Rebirth
+2026-02-21 13:56:13 INFO  [main] LumioTest - ✅ Movie index 7 | Title: Robinhood
+2026-02-21 13:56:14 INFO  [main] LumioTest - ✅ Movie index 8 | Title: Superman
+2026-02-21 13:56:14 INFO  [main] LumioTest - ✅ Movie index 9 | Title: Sister Midnight
+2026-02-21 13:56:59 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mass Jathara
+2026-02-21 13:57:15 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mass Jathara
+2026-02-21 13:57:42 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Autumn_and_the_Black_Jaguar_Exception_20260221_135742.png
+2026-02-21 13:58:24 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Kabir Singh
+2026-02-21 13:59:06 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Kabir Singh
+2026-02-21 13:59:52 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Avatar: The Way of Water
+2026-02-21 14:00:05 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Avatar: The Way of Water
+2026-02-21 14:00:58 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: How to Train Your Dragon: The Hidden World
+2026-02-21 14:01:17 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: How to Train Your Dragon: The Hidden World
+2026-02-21 14:02:13 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mirai
+2026-02-21 14:02:31 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mirai
+2026-02-21 14:03:18 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Jurassic World Rebirth
+2026-02-21 14:03:31 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Jurassic World Rebirth
+2026-02-21 14:04:27 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Robinhood
+2026-02-21 14:04:40 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Robinhood
+2026-02-21 14:05:34 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Superman
+2026-02-21 14:05:47 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Superman
+2026-02-21 14:06:38 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Sister Midnight
+2026-02-21 14:07:00 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Sister Midnight
+2026-02-21 14:08:53 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Raat Akeli Hai: The Bansal Murders
+2026-02-21 14:09:07 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Raat Akeli Hai: The Bansal Murders
+2026-02-21 14:10:02 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Great Flood
+2026-02-21 14:10:17 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Great Flood
+2026-02-21 14:11:12 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: RaPo 22
+2026-02-21 14:11:35 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: RaPo 22
+2026-02-21 14:12:23 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Premante
+2026-02-21 14:12:38 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Premante
+2026-02-21 14:13:32 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Little Hearts
+2026-02-21 14:13:48 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Little Hearts
+2026-02-21 14:14:32 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Single Salma
+2026-02-21 14:14:46 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Single Salma
+2026-02-21 14:15:40 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Girlfriend
+2026-02-21 14:15:58 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Girlfriend
+2026-02-21 14:16:49 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Dangal
+2026-02-21 14:17:02 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Dangal
+2026-02-21 14:17:52 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Revolver Rita
+2026-02-21 14:18:42 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Revolver Rita
+2026-02-21 14:19:34 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Jolly LLB 3
+2026-02-21 14:20:12 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Jolly LLB 3
+2026-02-21 14:21:56 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Drive
+2026-02-21 14:22:20 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Drive
+2026-02-21 14:23:06 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Thamma
+2026-02-21 14:23:19 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Thamma
+2026-02-21 14:23:39 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Naked Gun
+2026-02-21 14:23:56 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Naked Gun
+2026-02-21 14:24:18 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Kantara - A Legend: Chapter 1
+2026-02-21 14:24:30 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Kantara - A Legend: Chapter 1
+2026-02-21 14:24:50 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Mission: Impossible - The Final Reckoning
+2026-02-21 14:25:03 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Mission: Impossible - The Final Reckoning
+2026-02-21 14:25:24 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Others
+2026-02-21 14:25:37 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Others
+2026-02-21 14:25:59 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Santhana Prapthirasthu
+2026-02-21 14:26:14 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Santhana Prapthirasthu
+2026-02-21 14:26:36 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Trap House
+2026-02-21 14:26:53 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Trap House
+2026-02-21 14:27:18 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Sister Midnight
+2026-02-21 14:27:32 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Sister Midnight
+2026-02-21 14:27:53 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: 12A Railway Colony
+2026-02-21 14:28:11 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: 12A Railway Colony
+2026-02-21 14:30:57 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Ek Deewane Ki Deewaniyat
+2026-02-21 14:31:48 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Ek Deewane Ki Deewaniyat
+2026-02-21 14:33:54 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Dominic and the Ladies' Purse
+2026-02-21 14:34:25 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Dominic and the Ladies' Purse
+2026-02-21 14:36:27 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Beauty
+2026-02-21 14:36:55 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Beauty
+2026-02-21 14:39:05 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Middle Class
+2026-02-21 14:39:57 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Middle Class
+2026-02-21 14:40:31 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Naanu_Matthu_Gunda_2_Exception_20260221_144031.png
+2026-02-21 14:42:40 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Saali Mohabbat
+2026-02-21 14:43:27 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Saali Mohabbat
+2026-02-21 14:45:48 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Bengal Files
+2026-02-21 14:46:10 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Bengal Files
+2026-02-21 14:48:26 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Great Pre-Wedding Show
+2026-02-21 14:49:10 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Great Pre-Wedding Show
+2026-02-21 14:51:22 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Godday Godday Chaa 2
+2026-02-21 14:51:53 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Godday Godday Chaa 2
+2026-02-21 14:54:05 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
+2026-02-21 14:54:53 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
+2026-02-21 14:56:54 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Putulnacher Itikatha
+2026-02-21 14:57:08 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Putulnacher Itikatha
+2026-02-21 14:58:03 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Chaalchitro
+2026-02-21 14:58:17 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Chaalchitro
+2026-02-21 14:58:53 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Killbill Society
+2026-02-21 14:59:06 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Killbill Society
+2026-02-21 14:59:48 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Eken: Benaras e Bibhishika
+2026-02-21 15:00:01 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Eken: Benaras e Bibhishika
+2026-02-21 15:00:30 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Byomkesh Gowtro
+2026-02-21 15:00:51 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Byomkesh Gowtro
+2026-02-21 15:01:22 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Bishorjon
+2026-02-21 15:01:35 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Bishorjon
+2026-02-21 15:02:09 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Kabuliwala
+2026-02-21 15:02:24 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Kabuliwala
+2026-02-21 15:03:03 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Raktabeej
+2026-02-21 15:03:16 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Raktabeej
+2026-02-21 15:03:52 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Shotyi Bole Shotyi Kichhu Nei
+2026-02-21 15:04:05 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Shotyi Bole Shotyi Kichhu Nei
+2026-02-21 15:04:33 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Pokkhirajer Dim
+2026-02-21 15:04:51 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Pokkhirajer Dim
+2026-02-21 15:07:13 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: F1 The Movie
+2026-02-21 15:07:28 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: F1 The Movie
+2026-02-21 15:08:43 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Family Plan 2
+2026-02-21 15:09:00 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Family Plan 2
+2026-02-21 15:09:41 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Family Plan
+2026-02-21 15:09:55 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Family Plan
+2026-02-21 15:10:51 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Wolfs
+2026-02-21 15:11:05 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Wolfs
+2026-02-21 15:12:04 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: The Lost Bus
+2026-02-21 15:12:17 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: The Lost Bus
+2026-02-21 15:12:59 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Fountain of Youth
+2026-02-21 15:13:17 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Fountain of Youth
+2026-02-21 15:13:58 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Ghosted
+2026-02-21 15:14:11 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Ghosted
+2026-02-21 15:14:54 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Killers of the Flower Moon
+2026-02-21 15:15:07 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Killers of the Flower Moon
+2026-02-21 15:16:18 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Greyhound
+2026-02-21 15:16:31 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Greyhound
+2026-02-21 15:16:58 INFO  [main] LumioTest - Screenshot saved: screenshots/failures/Movie_Apple_Music_Live__Fred_again___Exception_20260221_151658.png
+2026-02-21 15:18:56 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Red Sonja
+2026-02-21 15:19:36 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Red Sonja
+2026-02-21 15:20:26 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Snitch
+2026-02-21 15:20:44 INFO  [main] LumioTest - ✅ 'Play Trailer' validation PASSED for: Snitch
+2026-02-21 15:21:20 INFO  [main] LumioTest - ✅ 'Watch On' validation PASSED for: Dawood

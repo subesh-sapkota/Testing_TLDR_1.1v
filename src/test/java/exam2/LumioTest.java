@@ -56,6 +56,8 @@ public class LumioTest {
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
     options.addArguments("--disable-software-rasterizer"); // avoid GPU crash
+    options.addArguments("--disable-dev-shm-usage");  // VERY IMPORTANT for Linux
+    options.addArguments("--remote-allow-origins=*"); // Fixes Chrome 111+ issue
  // IMPORTANT: Remove automation flags
     options.addArguments("--disable-blink-features=AutomationControlled");
 
@@ -64,9 +66,9 @@ public class LumioTest {
     options.setExperimentalOption("useAutomationExtension", false);
 
     // Real user-agent (match your Chrome version!)
-    options.addArguments("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) " +
+   /* options.addArguments("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) " +
             "AppleWebKit/537.36 (KHTML, like Gecko) " +
-            "Chrome/120.0.0.0 Safari/537.36");
+            "Chrome/120.0.0.0 Safari/537.36");  */
     
 
     driver = new ChromeDriver(options);
