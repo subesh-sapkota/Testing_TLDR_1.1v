@@ -578,7 +578,18 @@ public void changeMonth(String tc) throws InterruptedException {
 	            contentValidation(movieName, soft, i + 1);
 
 	            // Navigate to next slide
-	            driver.findElement(By.tagName("body")).sendKeys(Keys.ARROW_RIGHT);
+	            WebElement nextButton = wait.until(
+	                    ExpectedConditions.elementToBeClickable(
+	                            By.xpath("//div[contains(@class,'swiper-button-next')]")
+	                    )
+	            );
+
+	            ((JavascriptExecutor) driver).executeScript(
+	                    "arguments[0].click();", 
+	                    nextButton
+	            );
+	            
+	            Thread.sleep(800);
 	            System.out.println("⏭️ Navigated to next slide");
 	            Thread.sleep(800);
 	        }
