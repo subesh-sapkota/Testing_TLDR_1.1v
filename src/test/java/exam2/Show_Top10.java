@@ -590,7 +590,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
 
     // ===================== CURRENT SLIDE TITLE =====================
    
-  
+  /*
    public String getCurrentMovieName() {
     try {
         WebDriverWait localWait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -612,6 +612,26 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
         return "Not found";
     }
 }
+   */
+   
+   public String getCurrentMovieName() {
+       try {
+           WebElement activeSlide = wait.until(
+                   ExpectedConditions.presenceOfElementLocated(
+                           By.cssSelector(".swiper-slide-active .text-white.md\\:text-\\[28px\\]")
+                   )
+           );
+
+           String name = activeSlide.getText().trim();
+           return name.isEmpty() ? "Not found" : name;
+
+       } catch (Exception e) {
+           System.out.println("Could not retrieve current movie name: " + e.getMessage());
+           return "Not found";
+       }
+   }
+   
+   
 
     // ===================== MOVIE TITLE FROM IMAGE =====================
     public String getMovieTitle(WebElement movieImage) {
