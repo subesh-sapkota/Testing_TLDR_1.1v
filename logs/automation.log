@@ -813,3 +813,23 @@
 2026-02-22 11:00:10 INFO  [main] SliderTest - 📊 Found 7 providers to test
 2026-02-22 11:00:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
 2026-02-22 11:01:21 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 14:42:55 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 14:42:57 INFO  [main] SliderTest - Opening calendar
+2026-02-22 14:43:11 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-22 14:44:07 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Not found
+2026-02-22 14:44:26 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Not found
+2026-02-22 14:45:22 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Not found
+2026-02-22 14:45:34 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Not found
+2026-02-22 14:46:49 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 14:46:51 INFO  [main] SliderTest - Opening calendar
+2026-02-22 14:47:06 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-22 14:47:54 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 14:48:16 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 14:49:04 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 14:49:17 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
+2026-02-22 14:49:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 14:50:32 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 14:51:36 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Predator: Badlands
+2026-02-22 14:51:47 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Predator: Badlands
+2026-02-22 14:52:45 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 14:53:00 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
