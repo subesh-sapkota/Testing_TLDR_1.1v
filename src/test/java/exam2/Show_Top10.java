@@ -39,7 +39,7 @@ import org.testng.asserts.SoftAssert;
 
 @Listeners(TestListener.class)
 public class Show_Top10 { 
-	// check for latestest top ten movies check 
+	// check for latestest top ten shows check 
 	
 	   Logger log = LogManager.getLogger(SliderTest.class);
 
@@ -79,7 +79,7 @@ public class Show_Top10 {
  @Test(priority = 1)
 public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throws InterruptedException {
     System.out.println("========================================");
-    System.out.println("🎬 TEST: Validate Front Top Ten vs Slider Movies");
+    System.out.println("🎬 TEST: Validate Front Top Ten vs Slider Shows");
     System.out.println("========================================");
     TestListener.getTest().info("Watch on and Tailer  button Validation");
     driver.get("https://tldr.lumiolabs.ai/");
@@ -193,8 +193,8 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
         
         Thread.sleep(1500);
 
-        // 1️⃣ Get front page Top Ten movies
-        System.out.println("📋 Step 1: Collecting movies from front page");
+        // 1️⃣ Get front page Top Ten Shows
+        System.out.println("📋 Step 1: Collecting Shows from front page");
         List<String> frontMovies = getFrontTopTenMovies();
         soft.assertFalse(frontMovies.isEmpty(), "❌ No movies found on front page for provider " + (j + 1));
         
@@ -265,24 +265,24 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
                 By.xpath("//img[@data-card-type='top-ten-card']")
         );
 
-        System.out.println("📊 Found " + movies.size() + " movie elements on front page");
+        System.out.println("📊 Found " + movies.size() + " shows elements on front page");
 
         for (int i = 0; i < movies.size(); i++) {
             WebElement movie = movies.get(i);
             String title = getMovieTitle(movie);
             if (title != null && !title.isEmpty()) {
                 frontMovies.add(title.trim());
-                System.out.println("   Movie " + (i + 1) + ": " + title.trim());
+                System.out.println("   Show " + (i + 1) + ": " + title.trim());
             }
         }
 
-        System.out.println("🎬 Front Page Movies List:");
+        System.out.println("🎬 Front Page Shows List:");
         frontMovies.forEach(m -> System.out.println(" ➤ " + m));
 
         return frontMovies;
     }
 
-    // ===================== SLIDER MOVIES =====================
+    // ===================== SLIDER shows =====================
     public List<String> getSliderMovies(int expectedCount,SoftAssert soft) throws InterruptedException {
         System.out.println("🔄 Starting slider navigation and validation...");
         List<String> sliderMovies = new ArrayList<>();
@@ -323,7 +323,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
 
     // ===================== COMPARE =====================
     public void compareMovies(List<String> front, List<String> slider) {
-        System.out.println("🔍 Comparing front page movies with slider movies...");
+        System.out.println("🔍 Comparing front page shows with slider shows...");
 
         soft.assertEquals(
                 slider.size(),
