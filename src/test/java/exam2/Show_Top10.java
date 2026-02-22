@@ -362,7 +362,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
     }
 
     // ===================== CONTENT VALIDATION =====================
-	    public void contentValidation(String sliderMovie, SoftAssert soft, int movieIndex) {
+	      public void contentValidation(String sliderMovie, SoftAssert soft, int movieIndex) {
 	        System.out.println("🔍 Validating content for: " + sliderMovie + " (Position: " + movieIndex + ")");
 	        
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

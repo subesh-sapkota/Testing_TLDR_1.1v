@@ -799,3 +799,12 @@
 2026-02-22 08:07:12 INFO  [main] SliderTest - Opening calendar
 2026-02-22 08:07:27 INFO  [main] SliderTest - 📊 Found 7 providers to test
 2026-02-22 08:08:12 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 08:08:31 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 08:09:13 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 08:09:26 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
+2026-02-22 08:41:44 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 08:41:46 INFO  [main] SliderTest - Opening calendar
+2026-02-22 08:42:01 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-22 08:42:49 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 08:43:15 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 08:43:58 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
