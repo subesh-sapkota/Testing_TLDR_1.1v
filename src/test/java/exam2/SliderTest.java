@@ -579,9 +579,8 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
         try {
             WebElement activeSlide = wait.until(
                     ExpectedConditions.presenceOfElementLocated(
-                            By.xpath("//div[contains(@class,'swiper-slide-active')]//p/preceding::div[contains(@class,'truncate')][1]")
+                            By.cssSelector(".swiper-slide-active .text-white.md\\:text-\\[28px\\]")
                     )
-                    
             );
 
             String name = activeSlide.getText().trim();
@@ -592,6 +591,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
             return "Not found";
         }
     }
+    
 
 
 
