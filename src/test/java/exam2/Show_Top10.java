@@ -314,7 +314,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
             // Navigate to next slide
             driver.findElement(By.tagName("body")).sendKeys(Keys.ARROW_RIGHT);
             System.out.println("⏭️ Navigated to next slide");
-            Thread.sleep(800);
+            Thread.sleep(15000);
         }
 
         System.out.println("----------------------------------------");
