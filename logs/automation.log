@@ -808,3 +808,8 @@
 2026-02-22 08:42:49 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
 2026-02-22 08:43:15 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
 2026-02-22 08:43:58 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 10:59:54 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 10:59:56 INFO  [main] SliderTest - Opening calendar
+2026-02-22 11:00:10 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-22 11:00:57 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 11:01:21 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
