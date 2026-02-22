@@ -614,22 +614,38 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
 }
    */
    
-   public String getCurrentMovieName() {
-       try {
-           WebElement activeSlide = wait.until(
-                   ExpectedConditions.presenceOfElementLocated(
-                           By.cssSelector(".swiper-slide-active .text-white.md\\:text-\\[28px\\]")
-                   )
-           );
+    public String getCurrentMovieName() {
+        try {
+            WebDriverWait nameWait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-           String name = activeSlide.getText().trim();
-           return name.isEmpty() ? "Not found" : name;
+            // Wait for active slide to be present
+            WebElement activeImg = nameWait.until(
+                ExpectedConditions.presenceOfElementLocated(
+                    By.xpath("//div[contains(@class,'swiper-slide-active')]//img[@data-card-type='hero-poster-cards']")
+                )
+            );
 
-       } catch (Exception e) {
-           System.out.println("Could not retrieve current movie name: " + e.getMessage());
-           return "Not found";
-       }
-   }
+            String name = activeImg.getAttribute("alt");
+            
+            if (name != null && !name.trim().isEmpty()) {
+                return name.trim();
+            }
+
+            // JS fallback
+            String jsResult = (String) ((JavascriptExecutor) driver).executeScript(
+                "var active = document.querySelector('.swiper-slide-active');" +
+                "if (!active) return null;" +
+                "var img = active.querySelector('img[data-card-type=\"hero-poster-cards\"]');" +
+                "return img ? img.getAttribute('alt') : null;"
+            );
+
+            return (jsResult != null && !jsResult.isEmpty()) ? jsResult.trim() : "Not found";
+
+        } catch (Exception e) {
+            System.out.println("Could not retrieve current movie name: " + e.getMessage());
+            return "Not found";
+        }
+    }
    
    
 
