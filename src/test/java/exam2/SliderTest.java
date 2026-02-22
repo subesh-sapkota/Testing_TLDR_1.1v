@@ -576,22 +576,21 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
     public String getCurrentMovieName() {
         try {
             WebElement activeSlide = wait.until(
-                ExpectedConditions.presenceOfElementLocated(
-                    By.xpath("//div[contains(@class,'swiper-slide-active')]//div[contains(@class,'truncate')]")
-                )
+                    ExpectedConditions.presenceOfElementLocated(
+                            By.xpath("//div[contains(@class,'swiper-slide-active')]//p/preceding::div[contains(@class,'truncate')][1]")
+                    )
+                    
             );
 
-            // Use JS to get full text content, bypassing CSS truncation
-            String name = (String) ((JavascriptExecutor) driver)
-                .executeScript("return arguments[0].textContent;", activeSlide);
-
-            return (name == null || name.trim().isEmpty()) ? "Not found" : name.trim();
+            String name = activeSlide.getText().trim();
+            return name.isEmpty() ? "Not found" : name;
 
         } catch (Exception e) {
             System.out.println("Could not retrieve current movie name: " + e.getMessage());
             return "Not found";
         }
     }
+
 
 
 
