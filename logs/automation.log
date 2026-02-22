@@ -838,3 +838,24 @@
 2026-02-22 15:03:25 INFO  [main] SliderTest - 📊 Found 7 providers to test
 2026-02-22 15:04:14 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Dhurandhar
 2026-02-22 15:04:32 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Dhurandhar
+2026-02-22 15:30:52 INFO  [main] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-02-22 15:30:54 INFO  [main] SliderTest - Opening calendar
+2026-02-22 15:31:11 INFO  [main] SliderTest - 📊 Found 7 providers to test
+2026-02-22 15:31:59 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 15:32:32 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Kis Kisko Pyaar Karoon 2
+2026-02-22 15:33:18 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Anaconda
+2026-02-22 15:33:30 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Anaconda
+2026-02-22 15:34:14 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 15:34:58 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: The Conjuring: Last Rites
+2026-02-22 15:35:52 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Predator: Badlands
+2026-02-22 15:36:08 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Predator: Badlands
+2026-02-22 15:36:52 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 15:37:36 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sankranthiki Vasthunam
+2026-02-22 15:38:23 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Sarvam Maya
+2026-02-22 15:38:35 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Sarvam Maya
+2026-02-22 15:39:24 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Ask Me What You Want
+2026-02-22 15:39:40 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Ask Me What You Want
+2026-02-22 15:40:38 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: 3 BHK
+2026-02-22 15:40:59 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: 3 BHK
+2026-02-22 15:41:58 INFO  [main] SliderTest - ✅ 'Watch On' validation PASSED for: Gustaakh Ishq
+2026-02-22 15:42:11 INFO  [main] SliderTest - ✅ 'Play Trailer' validation PASSED for: Gustaakh Ishq
