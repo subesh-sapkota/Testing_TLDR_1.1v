@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite"  thread-count="5">
-  <test thread-count="5" name="Test"  >
+  <test thread-count="5"  parallel="classes"  name="Test"  >
     <classes>
     
-   <!--    <class name="exam2.LumioTest"/> -->
-    <!--    <class name="exam2.UpdatedTc"/>   -->
+    
+    
+    <!--   <class name="exam2.FooterValidation"/>
+    
+     <class name="exam2.LumioTest"/>
+     <class name="exam2.UpdatedTc"/>   -->
       
     <!--<class name="exam2.ShowValidation_Top10"/>   --> 
      <!--  <class name="exam2.Exp"/> -->
-       <class name="exam2.SliderTest"/>  
-        <class name="exam2.Show_Top10"/>  
+       <class name="exam2.Movies_Top10"/>   
+        <class name="exam2.Show_Top10"/> 
        
        
 

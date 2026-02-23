@@ -1,6 +1,5 @@
 package exam2;
 
-
 import java.io.File;
 import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
@@ -39,8 +38,8 @@ import org.testng.asserts.SoftAssert;
 
 
 @Listeners(TestListener.class)
-public class Show_Top10 { 
-	// check for latestest top ten shows check 
+public class Movies_Top10{
+	// check for latestest top ten movies check 
 	
 	   Logger log = LogManager.getLogger(SliderTest.class);
 
@@ -53,7 +52,7 @@ public class Show_Top10 {
     @BeforeMethod
     public void setup() {
         System.out.println("========================================");
-        System.out.println("🚀 Starting Test Setup for Latest Top 10 Shows Validation.");
+        System.out.println("🚀 Starting Test Setup for Latest Top 10 Movie Validation.");
         System.out.println("========================================");
 
         ChromeOptions options = new ChromeOptions();
@@ -61,10 +60,9 @@ public class Show_Top10 {
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--start-maximized");
-       
-        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");           // ✅ Critical for Jenkins/CI
-        
+        options.addArguments("--disable-dev-shm-usage");
+       
 
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -78,9 +76,9 @@ public class Show_Top10 {
     }
 
  @Test(priority = 1)
-public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws InterruptedException {
+public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throws InterruptedException {
     System.out.println("========================================");
-    System.out.println("🎬 TEST: Validate Front Top Ten vs Slider Shows");
+    System.out.println("🎬 TEST: Validate Front Top Ten vs Slider Movies");
     System.out.println("========================================");
     TestListener.getTest().info("Watch on and Tailer  button Validation");
     driver.get("https://tldr.lumiolabs.ai/");
@@ -99,19 +97,6 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws
 
     ((JavascriptExecutor) driver)
             .executeScript("arguments[0].click();", popUpCloseButton);
-    
-    By showsBtn = By.xpath("//button[normalize-space()='SHOWS']");
-
-    WebElement button = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(showsBtn)
-    );
-
-    ((JavascriptExecutor) driver)
-            .executeScript("arguments[0].click();", button);
-    
-    
-    
-    
     // Get the count of providers first
     List<WebElement> initialProviders = driver.findElements(
         By.xpath("//div[@class='py-3 lg:py-4 false']")
@@ -194,8 +179,8 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws
         
         Thread.sleep(1500);
 
-        // 1️⃣ Get front page Top Ten Shows
-        System.out.println("📋 Step 1: Collecting Shows from front page");
+        // 1️⃣ Get front page Top Ten movies
+        System.out.println("📋 Step 1: Collecting movies from front page");
         List<String> frontMovies = getFrontTopTenMovies();
         soft.assertFalse(frontMovies.isEmpty(), "❌ No movies found on front page for provider " + (j + 1));
         
@@ -266,24 +251,24 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws
                 By.xpath("//img[@data-card-type='top-ten-card']")
         );
 
-        System.out.println("📊 Found " + movies.size() + " shows elements on front page");
+        System.out.println("📊 Found " + movies.size() + " movie elements on front page");
 
         for (int i = 0; i < movies.size(); i++) {
             WebElement movie = movies.get(i);
             String title = getMovieTitle(movie);
             if (title != null && !title.isEmpty()) {
                 frontMovies.add(title.trim());
-                System.out.println("   Show " + (i + 1) + ": " + title.trim());
+                System.out.println("   Movie " + (i + 1) + ": " + title.trim());
             }
         }
 
-        System.out.println("🎬 Front Page Shows List:");
+        System.out.println("🎬 Front Page Movies List:");
         frontMovies.forEach(m -> System.out.println(" ➤ " + m));
 
         return frontMovies;
     }
 
-    // ===================== SLIDER shows =====================
+    // ===================== SLIDER MOVIES =====================
     public List<String> getSliderMovies(int expectedCount,SoftAssert soft) throws InterruptedException {
         System.out.println("🔄 Starting slider navigation and validation...");
         List<String> sliderMovies = new ArrayList<>();
@@ -324,7 +309,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws
 
     // ===================== COMPARE =====================
     public void compareMovies(List<String> front, List<String> slider) {
-        System.out.println("🔍 Comparing front page shows with slider shows...");
+        System.out.println("🔍 Comparing front page movies with slider movies...");
 
         soft.assertEquals(
                 slider.size(),
@@ -363,7 +348,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws
     }
 
     // ===================== CONTENT VALIDATION =====================
-	      public void contentValidation(String sliderMovie, SoftAssert soft, int movieIndex) {
+    public void contentValidation(String sliderMovie, SoftAssert soft, int movieIndex) {
 	        System.out.println("🔍 Validating content for: " + sliderMovie + " (Position: " + movieIndex + ")");
 	        
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -556,6 +541,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws
         return false;
     }
 }
+
     // ================= PLAY TRAILER VALIDATION =================
     private boolean validatePlayTrailer(WebDriverWait wait, String xpath, String title) {
         try {
@@ -599,7 +585,6 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws
     }
 
     // ===================== CURRENT SLIDE TITLE =====================
-   
   
     public String getCurrentMovieName() {
         try {
@@ -618,6 +603,9 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderShows() throws
             return "Not found";
         }
     }
+
+
+
 
     // ===================== MOVIE TITLE FROM IMAGE =====================
     public String getMovieTitle(WebElement movieImage) {

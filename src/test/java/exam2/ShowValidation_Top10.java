@@ -55,8 +55,7 @@ public class ShowValidation_Top10 {
    options.addArguments("--headless=new"); // enable headless
     options.addArguments("--window-size=1920,1080"); // must specify for headless
     options.addArguments("--disable-gpu"); // stable on Mac
-    options.addArguments("--no-sandbox");           // ✅ Critical for Jenkins/CI
-    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--no-sandbox"); // sometimes needed on Mac
     options.addArguments("--disable-software-rasterizer"); // avoid GPU crash
     
     options.addArguments("--disable-blink-features=AutomationControlled");

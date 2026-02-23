@@ -8,6 +8,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -441,95 +442,105 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
 	    }   
 
     // ================= WATCH ON VALIDATION =================
-    private boolean validateWatchOn(WebDriverWait wait, String xpath, String title) {
-        try {
-            String parentWindow = driver.getWindowHandle();
+   private boolean validateWatchOn(WebDriverWait wait, String xpath, String title) {
+    try {
+        String parentWindow = driver.getWindowHandle();
 
-            WebElement watchButton = findElementSafely(wait, By.xpath(xpath));
-            if (watchButton == null) {
-                System.out.println("❌ 'Watch On' button NOT FOUND for: " + title);
-                soft.fail("'Watch On' button not found for: " + title);
-                return false;
-            }
-
-            System.out.println("✅ 'Watch On' button found for: " + title);
-
-            ((JavascriptExecutor) driver)
-                    .executeScript("arguments[0].scrollIntoView({block:'center'});", watchButton);
-
-            try {
-                watchButton.click();
-                System.out.println("Clicked 'Watch On' button using standard click");
-            } catch (ElementNotInteractableException e) {
-                System.out.println("Using JavaScript click for 'Watch On' button");
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", watchButton);
-            }
-
-            // Wait for new window
-            try {
-                wait.until(d -> d.getWindowHandles().size() > 1);
-                System.out.println("New window opened successfully");
-            } catch (TimeoutException e) {
-                System.out.println("❌ New window DID NOT OPEN for: " + title);
-                soft.fail("New window didn't open for: " + title);
-                return false;
-            }
-
-            // Switch to new window
-            boolean windowSwitched = false;
-            for (String window : driver.getWindowHandles()) {
-                if (!window.equals(parentWindow)) {
-                    driver.switchTo().window(window);
-                    windowSwitched = true;
-                    try {
-                        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-                        // Wait for full page load
-                        wait.until(webDriver ->
-                                ((JavascriptExecutor) webDriver)
-                                        .executeScript("return document.readyState")
-                                        .equals("complete")
-                        );
-
-                        String providerPageTitle = driver.getTitle();
-                        String providerPageUrl = driver.getCurrentUrl();
-
-                        System.out.println("✅ Provider page opened - Title: " + providerPageTitle);
-                        System.out.println("   Provider URL: " + providerPageUrl);
-
-                        metrics.addProviderPage(providerPageTitle, providerPageUrl);
-
-                        if (providerPageTitle.toLowerCase().contains(title.toLowerCase())) {
-                            System.out.println("✅ Provider page title matches movie: " + title);
-                        } else {
-                            System.out.println("⚠️ Provider page title may not match - Expected: " + title + " | Actual: " + providerPageTitle);
-                        }
-
-                    } catch (Exception e) {
-                        System.out.println("⚠️ Could not get provider page details: " + e.getMessage());
-                    }
-                    driver.close();
-                    System.out.println("Closed provider window");
-                    break;
-                }
-            }
-
-            driver.switchTo().window(parentWindow);
-
-            if (!windowSwitched) {
-                System.out.println("❌ Failed to switch to new window for: " + title);
-                return false;
-            }
-
-            return true;
-
-        } catch (Exception e) {
-            System.out.println("💥 Watch On validation exception for " + title + ": " + e.getMessage());
-            e.printStackTrace();
-            soft.fail("Watch On validation error for " + title + ": " + e.getMessage());
+        WebElement watchButton = findElementSafely(wait, By.xpath(xpath));
+        if (watchButton == null) {
+            System.out.println("❌ 'Watch On' button NOT FOUND for: " + title);
+            soft.fail("'Watch On' button not found for: " + title);
             return false;
         }
+
+        System.out.println("✅ 'Watch On' button found for: " + title);
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView({block:'center'});", watchButton);
+
+        try {
+            watchButton.click();
+            System.out.println("Clicked 'Watch On' button using standard click");
+        } catch (ElementNotInteractableException e) {
+            System.out.println("Using JavaScript click for 'Watch On' button");
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", watchButton);
+        }
+
+        // Wait for new tab/window
+        try {
+            wait.until(driver -> driver.getWindowHandles().size() > 1);
+            System.out.println("New tab opened successfully");
+        } catch (TimeoutException e) {
+            System.out.println("❌ New tab DID NOT OPEN for: " + title);
+            soft.fail("New tab didn't open for: " + title);
+            return false;
+        }
+
+        // Switch to new tab
+        Set<String> allWindows = driver.getWindowHandles();
+        allWindows.remove(parentWindow);
+
+        if (allWindows.isEmpty()) {
+            System.out.println("❌ No new tab found after click for: " + title);
+            return false;
+        }
+
+        String newTab = allWindows.iterator().next();
+        driver.switchTo().window(newTab);
+
+        WebDriverWait newWait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        // Wait until navigation actually happens
+        try {
+            newWait.until(d ->
+                    !d.getCurrentUrl().equals("about:blank")
+                            && !d.getCurrentUrl().isEmpty()
+            );
+        } catch (TimeoutException e) {
+            System.out.println("⚠️ URL did not change from about:blank");
+        }
+
+        String providerPageUrl = driver.getCurrentUrl();
+        String providerPageTitle = driver.getTitle();
+
+        System.out.println("✅ Provider page opened");
+        System.out.println("   Title: " + providerPageTitle);
+        System.out.println("   URL: " + providerPageUrl);
+
+        metrics.addProviderPage(providerPageTitle, providerPageUrl);
+
+        // ---- Robust Validation ----
+        boolean validated = false;
+
+        if (providerPageUrl.contains("hotstar.com")) {
+            System.out.println("✅ Redirected to Hotstar domain");
+            validated = true;
+        } else {
+            String expectedSlug = title.toLowerCase().replace(" ", "-");
+            if (providerPageUrl.toLowerCase().contains(expectedSlug)) {
+                System.out.println("✅ Provider URL matches movie slug");
+                validated = true;
+            } else {
+                System.out.println("⚠️ Provider URL does not clearly match movie");
+            }
+        }
+
+        // Close new tab
+        driver.close();
+        System.out.println("Closed provider tab");
+
+        // Switch back to parent
+        driver.switchTo().window(parentWindow);
+
+        return validated;
+
+    } catch (Exception e) {
+        System.out.println("💥 Watch On validation exception for " + title + ": " + e.getMessage());
+        e.printStackTrace();
+        soft.fail("Watch On validation error for " + title + ": " + e.getMessage());
+        return false;
     }
+}
 
     // ================= PLAY TRAILER VALIDATION =================
     private boolean validatePlayTrailer(WebDriverWait wait, String xpath, String title) {

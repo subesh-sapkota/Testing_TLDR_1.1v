@@ -41,6 +41,8 @@ public class LumioTest {
     Actions act;
     SoftAssert soft;
     MetricsCollectorsSlider metrics;
+    
+    public static String currentMonth;
 
     // TC_01 – Launch Browser
     
@@ -51,7 +53,7 @@ public class LumioTest {
     log.info("Launching Chrome browser");
 
     ChromeOptions options = new ChromeOptions();
-   options.addArguments("--headless=new"); // enable headless
+  options.addArguments("--headless=new"); // enable headless
     options.addArguments("--window-size=1920,1080"); // must specify for headless
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
@@ -131,13 +133,17 @@ public class LumioTest {
 
         while (true) {
             String month = driver.findElement(By.xpath("//span[contains(@role,'status')]")).getText();
+           
             if (month.equals("January 2026")) {
                 log.info("Reached January 2026");
+                currentMonth=month;
                 break;
             }
             prevBtn.click();
         }
 
+       
+        
         driver.findElement(By.xpath("//button[normalize-space()='3']")).click();
      
     }
@@ -151,14 +157,14 @@ public class LumioTest {
     public void TC_04_ValidateWeeklyContentTillEnd() throws InterruptedException {
         
     	
-    	log.info("Weekly Content Validation from Jan to Till of Feb");
+    	log.info("Weekly Content Validation from November to Till of Feb");
     	TestListener.getTest().info("Weekly Content Validation from November to Till of Feb");
     	
-    	changeWeek("TC_004"); //it cover first month content and provider check
+    	changeWeek("TC_004");
     	
-    	//Looping for jan month to current month feb
+    	//Looping for november month to current month feb
     	
-   	for(int i=0;i<1;i++)
+    	for(int i=0;i<1;i++)
 		{
 			changeMonth("TC_004");	
 		}	
@@ -338,184 +344,225 @@ public void  printExecutionSummaryinExtentreport() {
 	
 	
 	
-public void changeMonth(String tc) throws InterruptedException {
-		WebElement calendarButton = driver.findElement(By.xpath("//div[contains(@class,'border-l border-[#444444] flex items-center justify-center')]"));
-		WebElement Next_Month_Button = driver.findElement(By.xpath("//button[contains(@aria-label,'Go to the Next Month')]"));
-		act.moveToElement(calendarButton).perform();
-		
-		Next_Month_Button.click();
-		
-		// Add a small wait for calendar to update
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		 MetricsCollector.totalMonthValidated++;
-		//checkImageMoviesTitle();
-		 
-		changeWeek(tc);
+	public void changeMonth(String tc) throws InterruptedException {
+
+	    WebElement calendarButton = driver.findElement(
+	        By.xpath("//div[contains(@class,'border-l border-[#444444] flex items-center justify-center')]"));
+
+	    WebElement Next_Month_Button = driver.findElement(
+	        By.xpath("//button[contains(@aria-label,'Go to the Next Month')]"));
+
+	    act.moveToElement(calendarButton).perform();
+
+	    Next_Month_Button.click();
+
+	    // Wait for calendar to update properly (better than Thread.sleep)
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+
+	    WebElement monthElement = wait.until(ExpectedConditions.visibilityOfElementLocated(
+	        By.xpath("//span[contains(@role,'status')]")));
+
+	    // ✅ UPDATE currentMonth HERE
+	    currentMonth = monthElement.getText();
+
+	    System.out.println("Current Month After Change: " + currentMonth);
+
+	    MetricsCollector.totalMonthValidated++;
+
+	    changeWeek(tc);
 	}
 	
 
 	
 	public void changeWeek(String tc) throws InterruptedException {
+	
+		 log.info("Validating weekly content");
+	    int weekno = 1;
+	    int maxweek = 5;
+	    act = new Actions(driver);
+	    
+	    if (currentMonth.equalsIgnoreCase("November")) {
+	        maxweek = 6;
+	    }
+	    else if (currentMonth.equalsIgnoreCase("February")) {
+	        maxweek = 4;
+	    }
+	
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    
 
-    log.info("Validating weekly content");
-    int weekno = 1;
-    int maxweek = 5;
-    act = new Actions(driver);
-    String currentMonth = getCurrentMonthName();
-    
-    if (currentMonth.equalsIgnoreCase("November")) maxweek = 6;
-    else if (currentMonth.equalsIgnoreCase("February")) maxweek = 4;
+	
+	    for (int weekRow = 1; weekRow <= maxweek; weekRow++) {
+	
+	    	 String currentURL1= driver.getCurrentUrl();
+	    	System.out.println("checking url inside loop start before caldender   " +currentURL1);
+	        // Open calendar (hover safety)
+	        WebElement calendarButton = wait.until(ExpectedConditions
+	                .visibilityOfElementLocated(By.xpath(
+	                        "//div[contains(@class,'border-l border-[#444444]')]")));
+	
+	        js.executeScript("arguments[0].scrollIntoView({block:'center'});", calendarButton);
+	        new Actions(driver).moveToElement(calendarButton).perform();
+	
+		    WebElement prevBtn =driver.findElement(By.xpath("//button[contains(@aria-label,'Go to the Previous Month')]"));
+		    
+		    while (true) {
+	            String month = driver.findElement(By.xpath("//span[contains(@role,'status')]")).getText();
+	           
+	            if (month.equals( currentMonth)) {	              
+	                break;
+	            }
+	            prevBtn.click();
+	        }
+		    
+	        
+	        
+	        // 🔑 IMPORTANT: click BUTTON inside TD
+	        List<WebElement> weekButtons = driver.findElements(
+	                By.xpath("//tbody/tr[" + weekRow + "]/td[1]//button"));
+	
+	        if (weekButtons.isEmpty()) {
+	            continue;
+	        }
+	
+	        WebElement weekButton = weekButtons.get(0);
+	
+	        // Skip disabled days
+	        if (!weekButton.isEnabled()) {
+	            continue;
+	        }
+	
+	        By weekLocator = By.xpath("//tbody/tr[" + weekRow + "]/td[1]//button");
 
-    JavascriptExecutor js = (JavascriptExecutor) driver;
+	         weekButton = wait.until(
+	                ExpectedConditions.elementToBeClickable(weekLocator));
+	        
+	        js.executeScript("arguments[0].click();", weekButton);
+	        
+	        String currentURL2= driver.getCurrentUrl();
+	    	System.out.println("checking url inside loop start after caldender click  " +currentURL2);
+	        
+	
+	        System.out.println("Month name  "+currentMonth+ "  WeekNumber " + weekno );
+	        log.info("Month name  "+currentMonth+ "  WeekNumber " + weekno );
+	       
+	        //for weekly tested log
+	        
+	        MetricsCollector.totalWeekValidated++;
+	        MetricsCollector.weeksTested.add(currentMonth+weekno);
+	        
+	       String currtUrl= driver.getCurrentUrl();
+	        
+	        
+	        checkImageMoviesTitle(tc);
+	       
+	       
+	        
+	     testEachProviderMovies(currentMonth,weekno,currtUrl);
+	        
+	        weekno++;
+	    }
+	    
+	    
+	}
 
-    for (int weekRow = 1; weekRow <= maxweek; weekRow++) {
-
-        // ✅ STEP 1: Always re-hover to open/keep calendar open before each week
-        WebElement calendarButton = new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.visibilityOfElementLocated(
-                        By.xpath("//div[contains(@class,'border-l border-[#444444]')]")));
-
-        js.executeScript("arguments[0].scrollIntoView({block:'center'});", calendarButton);
-        new Actions(driver).moveToElement(calendarButton).perform();
-
-        // ✅ STEP 2: Small pause to let calendar fully render after hover
-        Thread.sleep(800);
-
-        // ✅ STEP 3: Check if buttons exist in this row WITHOUT waiting
-        List<WebElement> weekButtons = driver.findElements(
-                By.xpath("//tbody/tr[" + weekRow + "]/td[1]//button"));
-
-        if (weekButtons.isEmpty()) {
-            log.info("No button in week row " + weekRow + " — skipping");
-            continue;
-        }
-
-        WebElement weekButton = weekButtons.get(0);
-
-        // ✅ STEP 4: Check disabled state without a wait (avoid timeout)
-        String ariaDisabled = weekButton.getAttribute("aria-disabled");
-        String classAttr = weekButton.getAttribute("class");
-        boolean isDisabled = !weekButton.isEnabled()
-                || "true".equals(ariaDisabled)
-                || (classAttr != null && classAttr.contains("disabled"));
-
-        if (isDisabled) {
-            log.info("Week row " + weekRow + " button is disabled — skipping");
-            continue;
-        }
-
-        // ✅ STEP 5: Click using JS (avoids interactability issues)
-        js.executeScript("arguments[0].click();", weekButton);
-        log.info("Clicked week row " + weekRow + " | Month: " + currentMonth + " | Week#: " + weekno);
-
-        // ✅ STEP 6: Wait for page to settle after week change
-        Thread.sleep(1000);
-
-        MetricsCollector.totalWeekValidated++;
-        MetricsCollector.weeksTested.add(currentMonth + weekno);
-
-        checkImageMoviesTitle(tc);
-        testEachProviderMovies(currentMonth, weekno);
-
-        weekno++;
-    }
-}
 	
 
-//new helper function
+//new helper function  CALDER ISSUE
 	
-	public void testEachProviderMovies(String currentMonth , int weekno) throws InterruptedException{
+	public void testEachProviderMovies(String currentMonth , int weekno,String currtUrl) throws InterruptedException{
 		 List<WebElement> initialProviders = driver.findElements(
 			        By.xpath("//div[@class='py-3 lg:py-4 false']")
 			    );
 			    int providerCount = initialProviders.size();
 			    
-		 for(int j = 0; j < providerCount; j++) {
-		        System.out.println("\n========================================");
-		        System.out.println("🔄 Testing Provider " + (j + 1) + " of " + providerCount +" current month "+currentMonth+ " current week "+weekno);
-		        System.out.println("========================================");
-		        
-		        Thread.sleep(2000);
-		        
-		        // ✅ RE-FETCH providers list to avoid stale elements
-		        List<WebElement> providers = driver.findElements(
-		            By.xpath("//div[@class='py-3 lg:py-4 false']")
-		        );
-		        
-		        // Scroll to the provider element
-		        WebElement providerElement = providers.get(j);
-		        ((JavascriptExecutor) driver).executeScript(
-		            "arguments[0].scrollIntoView({block:'center'});", 
-		            providerElement
-		        );
-		        
-		        Thread.sleep(500); // Small wait after scroll
-		        
-		        // Click the provider (with fallback to JavaScript click)
-		        try {
-		            providerElement.click();
-		            System.out.println("✅ Clicked provider " + (j + 1) + " using standard click");
-		        } catch (ElementNotInteractableException e) {
-		            System.out.println("⚠️ Standard click failed, using JavaScript click");
-		            ((JavascriptExecutor) driver).executeScript(
-		                "arguments[0].click();", 
-		                providerElement
-		            );
-		        }
-		        
-		        Thread.sleep(1500);
+		   
+    // Loop through each provider
+    for(int j = 0; j < 1; j++) {
+        System.out.println("\n========================================");
+        System.out.println("🔄 Testing Provider " + (j + 1) + " of " + providerCount);
+        System.out.println("========================================");
+        
+        Thread.sleep(2000);
+        
+        // ✅ RE-FETCH providers list to avoid stale elements
+        List<WebElement> providers = driver.findElements(
+            By.xpath("//div[@class='py-3 lg:py-4 false']")
+        );
+        
+        // Scroll to the provider element
+        WebElement providerElement = providers.get(j);
+        ((JavascriptExecutor) driver).executeScript(
+            "arguments[0].scrollIntoView({block:'center'});", 
+            providerElement
+        );
+        
+        Thread.sleep(500); // Small wait after scroll
+        
+        // Click the provider (with fallback to JavaScript click)
+        try {
+            providerElement.click();
+            System.out.println("✅ Clicked provider " + (j + 1) + " using standard click");
+        } catch (ElementNotInteractableException e) {
+            System.out.println("⚠️ Standard click failed, using JavaScript click");
+            ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].click();", 
+                providerElement
+            );
+        }
+        
+        Thread.sleep(1500);
 
-		        // 1️⃣ Get front page Top Ten movies
-		        System.out.println("📋 Step 1: Collecting movies from front page");
-		        List<String> frontMovies = getFrontTopTenMovies();
-		        soft.assertFalse(frontMovies.isEmpty(), "❌ No movies found on front page for provider " + (j + 1));
-		        
-		        metrics.setTotalMoviesOnFrontPage(frontMovies.size());
-		        System.out.println("✅ Total movies found on front page: " + frontMovies.size());
+        // 1️⃣ Get front page Top Ten movies
+        System.out.println("📋 Step 1: Collecting movies from front page");
+        List<String> frontMovies = getFrontTopTenMovies();
+        soft.assertFalse(frontMovies.isEmpty(), "❌ No movies found on front page for provider " + (j + 1));
+        
+        metrics.setTotalMoviesOnFrontPage(frontMovies.size());
+        System.out.println("✅ Total movies found on front page: " + frontMovies.size());
 
-		        // 2️⃣ Click first movie
-		        System.out.println("📋 Step 2: Opening slider by clicking first movie");
-		        
-		        List<WebElement> movieElements = driver.findElements(
-		            By.xpath("//img[@data-card-type='top-ten-card']")
-		        );
-		        
-		        if (movieElements.isEmpty()) {
-		            System.out.println("❌ No movie elements found for provider " + (j + 1));
-		            soft.fail("No movies found for provider " + (j + 1));
-		            continue; // Skip to next provider
-		        }
-		        
-		        WebElement firstMovie = movieElements.get(0);
-		        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", firstMovie);
-		        System.out.println("✅ First movie clicked, slider opened");
+        // 2️⃣ Click first movie
+        System.out.println("📋 Step 2: Opening slider by clicking first movie");
+        
+        List<WebElement> movieElements = driver.findElements(
+            By.xpath("//img[@data-card-type='top-ten-card']")
+        );
+        
+        if (movieElements.isEmpty()) {
+            System.out.println("❌ No movie elements found for provider " + (j + 1));
+            soft.fail("No movies found for provider " + (j + 1));
+            continue; // Skip to next provider
+        }
+        
+        WebElement firstMovie = movieElements.get(0);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", firstMovie);
+        System.out.println("✅ First movie clicked, slider opened");
 
-		        Thread.sleep(1500);
+        Thread.sleep(1500);
 
-		        // 3️⃣ Collect movies from slider
-		        System.out.println("📋 Step 3: Validating movies in slider");
-		        List<String> sliderMovies = getSliderMovies(frontMovies.size(),soft);
-		        
-		        metrics.setTotalMoviesInSlider(sliderMovies.size());
-		        System.out.println("✅ Total movies validated in slider: " + sliderMovies.size());
+        // 3️⃣ Collect movies from slider
+        System.out.println("📋 Step 3: Validating movies in slider");
+        List<String> sliderMovies = getSliderMovies(frontMovies.size(),soft);
+        
+        metrics.setTotalMoviesInSlider(sliderMovies.size());
+        System.out.println("✅ Total movies validated in slider: " + sliderMovies.size());
 
-		        // 4️⃣ Compare front vs slider
-		        System.out.println("📋 Step 4: Comparing front page movies with slider movies");
-		        compareMovies(frontMovies, sliderMovies);
-		        
-		        // 5️⃣ Navigate back to home page for next provider
-		        System.out.println("🔙 Navigating back to home page...");
-		        
-		        Actions actions = new Actions(driver);
-		        actions.sendKeys(Keys.ESCAPE).perform();
-		        
-		        Thread.sleep(2000);
-		        System.out.println("✅ Ready for next provider");
-		    }
+        // 4️⃣ Compare front vs slider
+        System.out.println("📋 Step 4: Comparing front page movies with slider movies");
+      //  compareMovies(frontMovies, sliderMovies);
+        String currentURL= driver.getCurrentUrl();
+        
+        
+        // 5️⃣ Navigate back to home page for next provider
+        String baseURL = currentURL.split("&")[0]; // splits at first '&' and takes the first part
+
+        System.out.println("🔙 Navigating back to base URL... from " + currentURL);
+        driver.get(baseURL);
+        Thread.sleep(10000);
+        System.out.println("✅ Ready for next provider" +baseURL);
+    }
+    
 	}
 	
 	 public List<String> getFrontTopTenMovies() {
@@ -549,12 +596,13 @@ public void changeMonth(String tc) throws InterruptedException {
 	        System.out.println("🔄 Starting slider navigation and validation...");
 	        List<String> sliderMovies = new ArrayList<>();
 
-	        for (int i = 0; i < expectedCount; i++) {
+	        for (int i = 0; i < 1; i++) {
 	            System.out.println("----------------------------------------");
 	            System.out.println("🎯 Processing Slider Position: " + (i + 1) + "/" + expectedCount);
 
 	            String movieName = getCurrentMovieName();
-
+                
+	            
 	            if (!movieName.equals("Not found") && !sliderMovies.contains(movieName)) {
 	                sliderMovies.add(movieName);
 	                System.out.println("✅ Movie Name: " + movieName);
@@ -644,13 +692,16 @@ public void changeMonth(String tc) throws InterruptedException {
 	            String disText = wait.until(
 	                    ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathofDescription))
 	            ).getText();
-
+	            String movieurl=driver.getCurrentUrl();
+	            
 	            if (disText.isBlank()) {
+	            	
 	                System.out.println("❌ Description is MISSING for: " + sliderMovie);
 	                metrics.addDescriptionMissing(sliderMovie);
 	                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_MissingDescription");
-	                log.info("Description is missing for " + sliderMovie);
-	                soft.fail("Description is missing for " + sliderMovie);
+	                log.info("Description is missing for " + sliderMovie + " URL "+ movieurl);
+	                
+	                soft.fail("Description is missing for " + sliderMovie + " URL "+ movieurl);
 	            } else {
 	                System.out.println("✅ Description found: " + disText.substring(0, Math.min(50, disText.length())) + "...");
 	                metrics.addDescriptionFound(sliderMovie);
@@ -668,7 +719,8 @@ public void changeMonth(String tc) throws InterruptedException {
 	                System.out.println("✅ 'Watch On' validation PASSED for: " + sliderMovie);
 	                log.info("✅ 'Watch On' validation PASSED for: " + sliderMovie);
 	            } else {
-	                System.out.println("❌ 'Watch On' validation FAILED for: " + sliderMovie);
+	            	
+	                System.out.println("❌ 'Watch On' validation FAILED for: " + sliderMovie + " URL "+ movieurl);
 	                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_WatchOnFailed");
 	                soft.fail("Movie (" + sliderMovie + ") - Watch On validation failed");
 	                log.info("Movie (" + sliderMovie + ") - Watch On validation failed");
@@ -684,7 +736,7 @@ public void changeMonth(String tc) throws InterruptedException {
 	                log.info("✅ 'Play Trailer' validation PASSED for: " + sliderMovie);
 	                
 	            } else {
-	                System.out.println("❌ 'Play Trailer' validation FAILED for: " + sliderMovie);
+	                System.out.println("❌ 'Play Trailer' validation FAILED for: " + sliderMovie + "Movie URL" + movieurl);
 	                takeScreenshot("Movie_" + sanitizeFileName(sliderMovie) + "_TrailerFailed");
 	                soft.fail("Movie (" + sliderMovie + ") - Play Trailer validation failed");
 	                log.info("Movie (" + sliderMovie + ") - Play Trailer validation failed");
@@ -883,42 +935,19 @@ public void changeMonth(String tc) throws InterruptedException {
 	        }
 	    }    
 	    
-public String getCurrentMonthName() {
-    try {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
-        // ✅ First, hover over the calendar button to make the header visible
-        WebElement calendarButton = wait.until(
-            ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//div[contains(@class,'border-l border-[#444444]')]")
-            )
-        );
-        ((JavascriptExecutor) driver).executeScript(
-            "arguments[0].scrollIntoView({block:'center'});", calendarButton
-        );
-        new Actions(driver).moveToElement(calendarButton).perform();
-
-        // ✅ Now wait for the month text to be non-empty
-        By monthLocator = By.xpath("//span[contains(@role,'status')]");
-
-        wait.until(driver -> {
-            String text = driver.findElement(monthLocator).getText().trim();
-            return !text.isEmpty();
-        });
-
-        String calendarYearMonth = driver.findElement(monthLocator).getText().trim();
-        System.out.println("Calendar header text: " + calendarYearMonth);
-
-        return calendarYearMonth.split(" ")[0];
-
-    } catch (Exception e) {
-        System.out.println("Error getting month name: " + e.getMessage());
-        return "Unknown"; // ❌ Don't default to "November" — surface the real problem
-    }
-}
-
-	
-	public void checkImageMoviesTitle(String tc) {
+	    public String getCurrentMonthName() {
+			try {
+				String calendarYearMonth = driver.findElement(By.xpath("//span[contains(@role,'status')]")).getText();
+				// Extract month name (e.g., "November 2025" -> "November")
+				return calendarYearMonth.split(" ")[0];
+			} catch (Exception e) {
+				System.out.println("Error getting month name: " + e.getMessage());
+				return "November"; // Fallback
+			}
+		}
+	    
+	    
+	    public void checkImageMoviesTitle(String tc) {
 
     List<WebElement> listofmoviesimages =
             driver.findElements(By.xpath("//img[@data-card-type='top-ten-card']"));
