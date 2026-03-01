@@ -1,0 +1,6 @@
+2026-03-01 23:27:11 INFO  [TestNG-test-Test-2] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-03-01 23:27:13 INFO  [TestNG-test-Test-2] SliderTest - Opening calendar
+2026-03-01 23:27:15 INFO  [TestNG-test-Test-1] SliderTest - 🌐 Navigated to: https://tldr.lumiolabs.ai/
+2026-03-01 23:27:17 INFO  [TestNG-test-Test-1] SliderTest - Opening calendar
+2026-03-01 23:27:43 INFO  [TestNG-test-Test-1] SliderTest - 📊 Found 7 providers to test
+2026-03-01 23:27:56 INFO  [TestNG-test-Test-2] SliderTest - 📊 Found 7 providers to test

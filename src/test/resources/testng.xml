@@ -6,13 +6,13 @@
     
     
     
-    <!--   <class name="exam2.FooterValidation"/>
+   <!--   <class name="exam2.FooterValidation"/>
     
-     <class name="exam2.LumioTest"/>
-     <class name="exam2.UpdatedTc"/>   -->
+       <class name="exam2.LumioTest"/>
+     <class name="exam2.UpdatedTc"/>  
       
-    <!--<class name="exam2.ShowValidation_Top10"/>   --> 
-     <!--  <class name="exam2.Exp"/> -->
+   <class name="exam2.ShowValidation_Top10"/>  
+     <class name="exam2.Exp"/> -->
        <class name="exam2.Movies_Top10"/>   
         <class name="exam2.Show_Top10"/> 
        

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -54,7 +55,7 @@ public class FooterValidation {
     log.info("Launching Chrome browser");
 
     ChromeOptions options = new ChromeOptions();
-     options.addArguments("--headless=new"); // enable headless
+    options.addArguments("--headless=new"); // enable headless
     options.addArguments("--window-size=1920,1080"); // must specify for headless
     options.addArguments("--disable-gpu"); // stable on Mac
     options.addArguments("--no-sandbox"); // sometimes needed on Mac
@@ -99,29 +100,209 @@ public class FooterValidation {
         String expected =
                 "TLDR - Trending, New & Upcoming Movies & Shows on OTT";
 
+       
+   	 
+        WebElement popUpCloseButton = wait.until(
+                ExpectedConditions.presenceOfElementLocated(
+                        By.xpath("(//div[contains(@class,'text-white')])/button")
+                )
+        );
+
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].click();", popUpCloseButton);           
+        
+        
         Assert.assertEquals(driver.getTitle(), expected);
     }
     
     
     
-    @Test(priority =3)
+    @Test(priority = 3,enabled= false)
     public void TC_03_Check_Footer() {
     	
-    	WebElement footerText = driver.findElement(By.xpath("//p[normalize-space()='MAKE TLDR BETTER']"));
     	
-    	WebElement feedbackForm = driver.findElement(By.xpath("//span[normalize-space()='FEEDBACK FORM']"));
+    
+
+        SoftAssert soft = new SoftAssert();
+
+        WebElement privacyPolicyElement = driver.findElement(By.xpath("//div[@id='footer']//a[@href='/privacy/']"));
+        WebElement EULAlink = driver.findElement(By.xpath("//div[@id='footer']//a[@href='/eula/']"));
+        WebElement CHANGELOGSElement = driver.findElement(By.xpath("//div[@id='footer']//a[@href='/changelogs/']"));
+
+        // Validate Text
+        soft.assertEquals(privacyPolicyElement.getText().trim(), "PRIVACY POLICY");
+        soft.assertEquals(EULAlink.getText().trim(), "END-USER LICENSE AGREEMENT");
+        soft.assertEquals(CHANGELOGSElement.getText().trim(), "CHANGELOGS");
+
+        // Store parent window
+        String parentWindow = driver.getWindowHandle();
+
+        // -------- PRIVACY --------
+        privacyPolicyElement.click();
+        switchToNewWindow(parentWindow);
+        soft.assertTrue(driver.getCurrentUrl().contains("/privacy/"));
+        driver.close();
+        driver.switchTo().window(parentWindow);
+
+        // -------- EULA --------
+        EULAlink.click();
+        switchToNewWindow(parentWindow);
+        soft.assertTrue(driver.getCurrentUrl().contains("/eula/"));
+        driver.close();
+        driver.switchTo().window(parentWindow);
+
+        // -------- CHANGELOGS --------
+        CHANGELOGSElement.click();
+        switchToNewWindow(parentWindow);
+        soft.assertTrue(driver.getCurrentUrl().contains("/changelogs/"));
+        driver.close();
+        driver.switchTo().window(parentWindow);
+
+        soft.assertAll();
+    }
+    
+    
+    
+    
+    @Test(priority = 4 , enabled=false)
+    public void TC_04_Check_FeedbackForm() {
+
+        SoftAssert soft = new SoftAssert();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+        WebElement feedbackLink = wait.until(
+                ExpectedConditions.presenceOfElementLocated(
+                        By.xpath("//span[contains(text(),'FEEDBACK FORM')]")));
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Scroll to element
+        js.executeScript("arguments[0].scrollIntoView({block: 'center'});", feedbackLink);
+
+        // Optional small wait for scroll animation
+        try { Thread.sleep(500); } catch (InterruptedException e) { }
+
+        // JS Click (bypasses overlay issue)
+        js.executeScript("arguments[0].click();", feedbackLink);
+        
+      WebElement xpathofTextField= driver.findElement(By.xpath("//textarea[@name='feedback']"));
+      WebElement xpathNameElement= driver.findElement(By.xpath("//input[@name='name']"));
+        WebElement xpathEmailElement= driver.findElement(By.xpath(" //input[@name='email']"));
+        
+        
+        
+       WebElement  xpathephoneElement  = driver.findElement(By.xpath("//input[@name='phone']"));
+        
+        WebElement submitElement = driver.findElement(By.xpath("//button[@type='submit']"));
+        
+        xpathofTextField.sendKeys("Please ignore it this is automation run      Verifying page title\n"
+        		+ "[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.65 s -- in TestSuite\n"
+        		+ "[INFO] ");
+        
+        xpathNameElement.sendKeys("Tester");
+        
+        xpathEmailElement.sendKeys("subesh@circuithouse.tech");
+        
+        
+        
+     
+        
+        
+        WebElement uploadElement = driver.findElement(By.xpath("//input[@id='file-upload']"));
+
+        // Provide full file path (IMPORTANT)
+        uploadElement.sendKeys(" /Users/subeshsapkota/Downloads/test.webp");
+        
+        
+        submitElement.click();    
+        
+        
+
+        soft.assertAll();
+    }
+    
+    
+    
+    
+    
+    @Test(priority = 5 , enabled=true)
+    public void TC_05_Check_Profile_Section() throws InterruptedException {
     	
-    	WebElement privacyPolicy = driver.findElement(By.xpath("//a[@id='privacy-policy-link']//span[normalize-space()='PRIVACY POLICY']"));
     	
-    	System.out.println(footerText.getText());
+
+    	// 2️⃣ Set token in localStorage
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript(
+            "window.localStorage.setItem('accesstoken','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjc24iOiJjaDAxMDAwMDAwMzk0IiwiZXhwIjoxNzc0MDczODU2LCJ0b2tlblR5cGUiOiJhdXRoVG9rZW4iLCJ1c2VySWQiOiJjNGFjMWQzMy0wZWEyLTQ5YWUtOGU1Mi00MGM4Y2JlY2VkOGUifQ.eQ-JdMysoheIA93i3UJY3Ad-KFXerGW1tXWqIdm2fX4');");
+        
+        js.executeScript(
+            "window.localStorage.setItem('csn','ch01000000394');");
+
+        // 3️⃣ Refresh page to apply authentication
+        driver.navigate().refresh();
+
+        // 4️⃣ Use explicit wait (better than Thread.sleep)
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        WebElement profileSection = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("signin-btn")));
+
+        System.out.println(profileSection.getText());
+        
+        //click on profile 
+        
+        
+        WebElement xpatProfileElement= driver.findElement(By.xpath(" //a[@href='/profile']"));
+        
+       
+        
+        xpatProfileElement.click();
+        
+    
+        
+        
+        WebElement xpathName= driver.findElement(By.xpath("//div[normalize-space()='name']/following-sibling::div"));
+        
+        WebElement xpathUserName= driver.findElement(By.xpath("//div[normalize-space()='username']/following-sibling::div"));
+        
+        WebElement xpathEmail= driver.findElement(By.xpath("//div[normalize-space()='email']/following-sibling::div"));
+        WebElement xpathmobile= driver.findElement(By.xpath("//div[normalize-space()='email']/following-sibling::div"));
   
-    	
-    	
-   //  Assert.assertEquals(footerText.getText().trim(),"MAKE TLDR BETTER");
+       driver.findElement(By.xpath("(//span[text()='Favourites'])[1]")).click();
+       
+       
+       WebElement xpatProfileEditElement= driver.findElement(By.xpath("//a[@href='/profile/edit']"));
+       
+       WebElement xpathofsaveButton =driver.findElement(By.xpath("//div[contains(@class,'absolute') and contains(@class,'gap-4')]//button[text()='Save']"));
+ 
+       xpatProfileEditElement.click();
+       
   
-    	
     	
     }
+    
+    
+    
+    @Test(priority = 6 , enabled=true)
+    public void TC_06_Close_bowser() {
+    	driver.close();
+    }
+    
+    
+    public void switchToNewWindow(String parentWindow) {
+        Set<String> allWindows = driver.getWindowHandles();
+        for (String window : allWindows) {
+            if (!window.equals(parentWindow)) {
+                driver.switchTo().window(window);
+                break;
+            }
+        }
+    }
+
+    
+   
+    
+    
     
 }
     

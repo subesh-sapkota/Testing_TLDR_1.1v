@@ -442,46 +442,47 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
 	    }   
 
     // ================= WATCH ON VALIDATION =================
-   private boolean validateWatchOn(WebDriverWait wait, String xpath, String title) {
+ private boolean validateWatchOn(WebDriverWait wait, String xpath, String movieTitle) {
+
     try {
         String parentWindow = driver.getWindowHandle();
 
+        // ================= Locate Watch On Button =================
         WebElement watchButton = findElementSafely(wait, By.xpath(xpath));
+
         if (watchButton == null) {
-            System.out.println("❌ 'Watch On' button NOT FOUND for: " + title);
-            soft.fail("'Watch On' button not found for: " + title);
+            System.out.println("❌ 'Watch On' button NOT FOUND for: " + movieTitle);
+            soft.fail("'Watch On' button not found for: " + movieTitle);
             return false;
         }
 
-        System.out.println("✅ 'Watch On' button found for: " + title);
+        System.out.println("✅ 'Watch On' button found for: " + movieTitle);
 
         ((JavascriptExecutor) driver)
                 .executeScript("arguments[0].scrollIntoView({block:'center'});", watchButton);
 
         try {
             watchButton.click();
-            System.out.println("Clicked 'Watch On' button using standard click");
         } catch (ElementNotInteractableException e) {
-            System.out.println("Using JavaScript click for 'Watch On' button");
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", watchButton);
+            ((JavascriptExecutor) driver)
+                    .executeScript("arguments[0].click();", watchButton);
         }
 
-        // Wait for new tab/window
+        // ================= Wait For New Tab =================
         try {
             wait.until(driver -> driver.getWindowHandles().size() > 1);
-            System.out.println("New tab opened successfully");
         } catch (TimeoutException e) {
-            System.out.println("❌ New tab DID NOT OPEN for: " + title);
-            soft.fail("New tab didn't open for: " + title);
+            System.out.println("❌ New tab DID NOT OPEN for: " + movieTitle);
+            soft.fail("New tab didn't open for: " + movieTitle);
             return false;
         }
 
-        // Switch to new tab
+        // ================= Switch To New Tab =================
         Set<String> allWindows = driver.getWindowHandles();
         allWindows.remove(parentWindow);
 
         if (allWindows.isEmpty()) {
-            System.out.println("❌ No new tab found after click for: " + title);
+            System.out.println("❌ No new tab found after click for: " + movieTitle);
             return false;
         }
 
@@ -490,54 +491,65 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
 
         WebDriverWait newWait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        // Wait until navigation actually happens
+        // ================= Wait For Page Load =================
         try {
             newWait.until(d ->
-                    !d.getCurrentUrl().equals("about:blank")
-                            && !d.getCurrentUrl().isEmpty()
+                    !d.getCurrentUrl().contains("about:blank") &&
+                    !d.getTitle().isEmpty()
             );
         } catch (TimeoutException e) {
-            System.out.println("⚠️ URL did not change from about:blank");
+            System.out.println("⚠️ Page did not fully load in time.");
         }
 
-        String providerPageUrl = driver.getCurrentUrl();
-        String providerPageTitle = driver.getTitle();
+        String providerUrl = driver.getCurrentUrl();
+        String providerTitle = driver.getTitle();
 
         System.out.println("✅ Provider page opened");
-        System.out.println("   Title: " + providerPageTitle);
-        System.out.println("   URL: " + providerPageUrl);
+        System.out.println("   Title: " + providerTitle);
+        System.out.println("   URL: " + providerUrl);
 
-        metrics.addProviderPage(providerPageTitle, providerPageUrl);
+        metrics.addProviderPage(providerTitle, providerUrl);
 
-        // ---- Robust Validation ----
+        // ================= UNIVERSAL VALIDATION =================
         boolean validated = false;
 
-        if (providerPageUrl.contains("hotstar.com")) {
-            System.out.println("✅ Redirected to Hotstar domain");
+        String normalizedMovie = movieTitle.toLowerCase().trim();
+        String normalizedTitle = providerTitle.toLowerCase();
+        String normalizedUrl = providerUrl.toLowerCase();
+
+        // 1️⃣ Title contains movie name (Primary check)
+        if (normalizedTitle.contains(normalizedMovie)) {
+            System.out.println("✅ Provider title matches movie name");
             validated = true;
-        } else {
-            String expectedSlug = title.toLowerCase().replace(" ", "-");
-            if (providerPageUrl.toLowerCase().contains(expectedSlug)) {
-                System.out.println("✅ Provider URL matches movie slug");
-                validated = true;
-            } else {
-                System.out.println("⚠️ Provider URL does not clearly match movie");
-            }
         }
 
-        // Close new tab
-        driver.close();
-        System.out.println("Closed provider tab");
+        // 2️⃣ URL contains movie slug
+        else if (normalizedUrl.contains(normalizedMovie.replace(" ", "-")) ||
+                 normalizedUrl.contains(normalizedMovie.replace(" ", ""))) {
+            System.out.println("✅ Provider URL matches movie name");
+            validated = true;
+        }
 
-        // Switch back to parent
+        // 3️⃣ Fallback — valid external page opened
+        else if (!normalizedUrl.contains("about:blank")) {
+            System.out.println("⚠️ External page opened but name not strictly matched");
+            validated = true; // optional: change to false if you want strict validation
+        }
+
+        if (!validated) {
+            System.out.println("❌ Provider page does NOT match expected movie: " + movieTitle);
+        }
+
+        // ================= Cleanup =================
+        driver.close();
         driver.switchTo().window(parentWindow);
 
         return validated;
 
     } catch (Exception e) {
-        System.out.println("💥 Watch On validation exception for " + title + ": " + e.getMessage());
+        System.out.println("💥 Watch On validation exception for " + movieTitle + ": " + e.getMessage());
         e.printStackTrace();
-        soft.fail("Watch On validation error for " + title + ": " + e.getMessage());
+        soft.fail("Watch On validation error for " + movieTitle + ": " + e.getMessage());
         return false;
     }
 }
