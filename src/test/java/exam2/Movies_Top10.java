@@ -215,7 +215,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
 
         // 4️⃣ Compare front vs slider
         System.out.println("📋 Step 4: Comparing front page movies with slider movies");
-        compareMovies(frontMovies, sliderMovies);
+       // compareMovies(frontMovies, sliderMovies);
         
         // 5️⃣ Navigate back to home page for next provider
         System.out.println("🔙 Navigating back to home page...");

@@ -244,38 +244,98 @@ public class FooterValidation {
 
         // 4️⃣ Use explicit wait (better than Thread.sleep)
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+   
+        
+        
+     /*   By signInBtn = By.id("signin-btn");
 
-        WebElement profileSection = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("signin-btn")));
+        WebElement profileSection = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(signInBtn));
 
-        System.out.println(profileSection.getText());
+        System.out.println(driver.findElement(signInBtn).getText());
+        
+        */
+      
         
         //click on profile 
         
         
-        WebElement xpatProfileElement= driver.findElement(By.xpath(" //a[@href='/profile']"));
+      //  WebElement xpatProfileElement= driver.findElement(By.xpath("//a[@href='/profile']"));
         
        
         
-        xpatProfileElement.click();
+  
+        
+        
+        
+         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+         driver.navigate().to("https://tldr.lumiolabs.ai/profile");
+
+       //   wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+       // Click Favourites
+         wait.until(ExpectedConditions.elementToBeClickable(
+                 By.xpath("(//span[text()='Favourites'])[1]")
+         )).click();
+
+        
         
     
         
         
-        WebElement xpathName= driver.findElement(By.xpath("//div[normalize-space()='name']/following-sibling::div"));
-        
-        WebElement xpathUserName= driver.findElement(By.xpath("//div[normalize-space()='username']/following-sibling::div"));
-        
-        WebElement xpathEmail= driver.findElement(By.xpath("//div[normalize-space()='email']/following-sibling::div"));
-        WebElement xpathmobile= driver.findElement(By.xpath("//div[normalize-space()='email']/following-sibling::div"));
+       
   
-       driver.findElement(By.xpath("(//span[text()='Favourites'])[1]")).click();
+      // driver.findElement(By.xpath("(//span[text()='Favourites'])[1]")).click();
+       
+         By editProfileBtn = By.xpath("//a[@href='/profile/edit']");
+
+      // 1️⃣ Wait for correct page
+      wait.until(ExpectedConditions.urlContains("/profile"));
+
+      // 2️⃣ Wait for React to finish rendering
+      wait.until(driver -> 
+          ((JavascriptExecutor) driver)
+              .executeScript("return document.readyState")
+              .equals("complete")
+      );
+
+      // 3️⃣ Wait until element appears in DOM
+      wait.until(ExpectedConditions.presenceOfElementLocated(editProfileBtn));
+
+      // 4️⃣ Use fresh reference
+      WebElement editBtn = driver.findElement(editProfileBtn);
+
+      // 5️⃣ Click using JS (prevents stale during click)
+      ((JavascriptExecutor) driver).executeScript("arguments[0].click();", editBtn);
+       
+       WebElement xpathName= driver.findElement(By.xpath("//input[@name='name']"));
+       
+       WebElement xpathUserName= driver.findElement(By.xpath("//input[@name='username']"));
+       
+       WebElement xpathEmail= driver.findElement(By.xpath("//input[@disabled]"));
+       WebElement xpathmobile= driver.findElement(By.xpath("//input[@name='mobile']"));
+       
+       xpathName.sendKeys("subesh");
+       xpathUserName.sendKeys("sudeep");
+       xpathmobile.sendKeys("8084637893");
+       
+     boolean checkemail= xpathEmail.isEnabled();
+     
+     
+     System.out.print("Email check " +checkemail);
+     soft.assertFalse(checkemail);
        
        
-       WebElement xpatProfileEditElement= driver.findElement(By.xpath("//a[@href='/profile/edit']"));
-       
-       WebElement xpathofsaveButton =driver.findElement(By.xpath("//div[contains(@class,'absolute') and contains(@class,'gap-4')]//button[text()='Save']"));
- 
-       xpatProfileEditElement.click();
+
+       // Click Save
+       By saveBtn = By.xpath("//button[text()='Save']");
+
+       wait.until(ExpectedConditions.elementToBeClickable(saveBtn)).click();
+      
+      
+      
+      
        
   
     	
