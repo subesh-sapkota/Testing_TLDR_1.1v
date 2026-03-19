@@ -182,6 +182,7 @@ public void TC_02_validate_Watch_Tailer_Button_FrontTopTenVsSliderMovies() throw
         // 1️⃣ Get front page Top Ten movies
         System.out.println("📋 Step 1: Collecting movies from front page");
         List<String> frontMovies = getFrontTopTenMovies();
+		soft.assertEquals(frontMovies.size(),10);
         soft.assertFalse(frontMovies.isEmpty(), "❌ No movies found on front page for provider " + (j + 1));
         
         metrics.setTotalMoviesOnFrontPage(frontMovies.size());
