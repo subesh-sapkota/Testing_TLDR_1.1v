@@ -568,7 +568,7 @@ else if (!normalizedUrl.contains("about:blank")) {
 }
 
         if (!validated) {
-            System.out.println("❌ Provider page does NOT match expected movie: " + movieTitle);
+            System.out.println("❌ Provider page does NOT match expected show: " + movieTitle);
         }
 
         // ================= Cleanup =================
