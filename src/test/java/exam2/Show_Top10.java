@@ -546,11 +546,26 @@ private boolean validateWatchOn(WebDriverWait wait, String xpath, String movieTi
             validated = true;
         }
 
-        // 3️⃣ Fallback — valid external page opened
-        else if (!normalizedUrl.contains("about:blank")) {
-            System.out.println("⚠️ External page opened but name not strictly matched");
-            validated = true; // optional: change to false if you want strict validation
-        }
+      // 3️⃣ Fallback — external page opened but title/url did not strictly match
+else if (!normalizedUrl.contains("about:blank")) {
+
+    System.out.println("⚠️ External page opened but name not strictly matched");
+
+    MetricsCollector.addExternalPageNameMismatch(
+            movieTitle,
+            providerTitle,
+            providerUrl
+    );
+
+    soft.fail(
+            "External page opened but name not strictly matched" +
+            " | Show: " + movieTitle +
+            " | Provider Title: " + providerTitle +
+            " | URL: " + providerUrl
+    );
+
+    validated = false;
+}
 
         if (!validated) {
             System.out.println("❌ Provider page does NOT match expected movie: " + movieTitle);
@@ -701,20 +716,28 @@ private boolean validateWatchOn(WebDriverWait wait, String xpath, String movieTi
     
     @AfterSuite
     
-    public void matric() {
-    	
-        // Print final metrics
-        System.out.println("\n========================================");
-        System.out.println("📊 FINAL METRICS for Watch and Tailer Button");
-      
-        metrics.printMetrics();
+   @AfterSuite
+public void matric() {
 
-     //   soft.assertAll();
-        System.out.println("========================================");
-        System.out.println("✅ TEST COMPLETED");
-        System.out.println("========================================");
-    	
+    // Print final metrics
+    System.out.println("\n========================================");
+    System.out.println("📊 FINAL METRICS for Watch and Tailer Button");
+
+    metrics.printMetrics();
+
+    System.out.println("External page opened but name not strictly matched count: "
+            + MetricsCollector.externalPageNameMismatchCount);
+
+    System.out.println("External page opened but name not strictly matched details:");
+
+    for (String detail : MetricsCollector.externalPageNameMismatchDetails) {
+        System.out.println(" - " + detail);
     }
+
+    System.out.println("========================================");
+    System.out.println("✅ TEST COMPLETED");
+    System.out.println("========================================");
+}
     
     
     
