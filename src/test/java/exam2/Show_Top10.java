@@ -713,9 +713,7 @@ else if (!normalizedUrl.contains("about:blank")) {
         }
     }
    
-    
-    @AfterSuite
-    
+   
    @AfterSuite
 public void matric() {
 
